@@ -11,7 +11,7 @@ Independent apprenticeship in empirical AI alignment: evaluations, oversight, re
 
 This is a small, independent apprenticeship in empirical AI alignment, built to strengthen a human researcher's mathematical, coding, experimental and explanatory abilities without becoming a single sprawling project. 
 
-The story title is a metaphor [One Thousand and One Nights](https://en.wikipedia.org/wiki/One_Thousand_and_One_Nights) for continuity through many short episodes, **not a demand to complete 1,001 experiments**. The desired endpoint is independent scientific agency, whether or not a frontier laboratory ever becomes the workplace.
+The story title references [One Thousand and One Nights](https://en.wikipedia.org/wiki/One_Thousand_and_One_Nights) as a metaphor for continuity through many short episodes, **not a demand to complete 1,001 experiments**. The desired endpoint is independent scientific agency, whether or not a frontier laboratory ever becomes the workplace.
 
 The principal learning pathway is **alignment evaluations, agent oversight, monitor reliability and calibration**; interpretability follows when ML fundamentals are stronger, and post-training methods later. Outside projects can inspire a question, but their code, governance, milestones and authority stay in their own lane.
 
@@ -23,7 +23,7 @@ The principal learning pathway is **alignment evaluations, agent oversight, moni
 4. **Independent verdict, appropriately scoped.** Use a prewritten acceptance test, an untouched holdout, manual numerical check, or an appropriately blinded second critic. The same uncritical assistant must not be its own sole referee. An outside human is **not required every night**.
 5. **Hard stop.** Write a compact receipt, archive the actual evidence and close. **PASS, FAIL, INCONCLUSIVE, NOT RUN** are all acceptable. **SKIPPED** means the session was not attempted and creates no deficit.
 
-**No second chances, no research dept across nights** means no overtime, cleanup debt, mandatory retry, post-hoc change of the success metric, or resurrection of a closed session. It does **not** forbid repeated trials, in-session debugging, replication, or later revisiting a skill in a newly framed experiment. Learning can be iterative; the historical verdict cannot be rewritten.
+**No second chances, no research debt across nights** means no overtime, cleanup debt, mandatory retry, post-hoc change of the success metric, or resurrection of a closed session. It does **not** forbid repeated trials, in-session debugging, replication, or later revisiting a skill in a newly framed experiment. Learning can be iterative; the historical verdict cannot be rewritten.
 
 **Failure is allowed, not manufactured.** We still try to measure something honestly. A failure that exposes a bug, a mistaken assumption or an invalid inference can be scientifically and educationally valuable; a fake failure, unrun experiment or undocumented data omission cannot become evidence.
 
