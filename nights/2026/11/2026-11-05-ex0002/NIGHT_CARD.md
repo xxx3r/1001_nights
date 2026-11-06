@@ -1,19 +1,19 @@
-# NIGHT CARD — ALGN-EX0002: The World Must Be Able to Answer
+# NIGHT CARD | ALGN-EX0002: The World Must Be Able to Answer
 
-**Date:** 2026-11-05 (America/Denver) | **Actual minutes:** not recorded | **Assistance:** D (AI-drafted) | **Verdict:** PASS, instrument only
+**Night / date:** 0002 · November 5, 2026 (America/Denver)  
+**Duration:** Not recorded; no estimate substituted · **Assistance:** D (AI-drafted)  
+**Verdict:** **PASS, scripted instrument discrimination** · **Status:** Closed; preregistration preserved
 
-**Question.** Can a small partially observed world distinguish truthful door-clue use from a habitual search preference, while testing whether a key is necessary?
+**Question.** Can a partially observed world distinguish clue-responsive search, habitual BLUE-first search, and conditional key use?
 
-**H1 / H2.** A responsive scripted policy should inspect a locked door and choose BLUE in BLUE-key world, GOLD in a GOLD-key world. A BLUE-first habit should select BLUE in both. Corrupting a GOLD clue to BLUE should break the responsive discrimination assertion.
+**H1 / H2.** A responsive script inspects the adjacent door, chooses the hinted BLUE/GOLD key region when locked, and heads directly to the goal when open. A habitual script searches BLUE first regardless of the clue. Matched locked BLUE/GOLD worlds must have identical initial observations; a corrupted GOLD clue must defeat the discrimination check.
 
-**Human reasoning before AI.** The researcher connected the Frozen T-Maze and Key2Door examples to a door hint, and proposed rewarding movement toward the hinted region. We excluded directional reward because its feedback could reveal the correct region independently of inspection. The assistant wrote all code and tests.
+**Human-owned reasoning.** The researcher connected *Bad Habits* to the door-hint proposal, rejected a potentially leaky direction reward, predicted GOLD versus BLUE choices, identified the difference between `door_blocked` feedback and an undiscovered `door_status`, tested a broken adjacency rule, and interpreted cleared-cell memory. Python and most assertions were AI-drafted, not proof of coding mastery.
 
-**Method.** Seeded 11×11 eight-connected map; no diagonal corner-cutting between two blocked side cells. Keys are hidden beyond one-cell local visibility, at least four shortest-path moves away, in matched-distance BLUE/GOLD regions. Inspection reports locked plus truthful region hint, or open without a hint. Five frozen seeds: **7, 11, 23, 47, 101**. Four conditions per seed (locked/open × BLUE/GOLD), two observation-limited scripted policies, **40 trials**. Primary metric: first search-region selection. Reward: −0.01/action, +1 at goal, no hint-direction shaping. A separately coded full-state Dijkstra oracle supplies distance checks, never policy actions.
+**Method.** Frozen procedural 11×11 instrument: seeds **7, 11, 23, 47, 101**; four locked/open × BLUE/GOLD worlds per seed; two scripts; **40 rollouts**; eight preregistered gates; no neural training. A separate, fixed-map, human-guided Colab reconstruction used eight matched episodes with action/observation traces. Do not pool their counts.
 
-**What ran.** All **8/8** frozen gates passed; **40/40** trials reached goal, **0** invalid actions, **0** truncated trials, **0** procedural rejections . On locked conditions, responsive choices matched the key region **10/10**; BLUE-first habit matched **5/10**, with extra travel in GOLD worlds. All **10/10** responsive open-door runs succeeded **without a key**. A corrupted GOLD→BLUE clue broke the intended assertion in **5/5** mutation probes.
+**Results.** Procedural evidence reports **8/8 gates PASS**, **40/40 goal completions**, zero rejected fixtures, invalid actions or truncations. Responsive locked-door first choices **10/10** correct; BLUE-first habit **5/10**. All ten responsive open-door trials reached the goal without a key; five clue-corruption probes broke the intended assertion. Colab: **8/8** goals reached across **99 actions**; locked GOLD took **15 responsive vs 22 habitual actions**, and open-door runs took **5 vs 13**. The JSON digest matches the audit; read-only review reported **1,019 passing trace checks**.
 
-**Evidence / limits.** `algn_ex0002.py` and `preflight.json` contain source, seeds, trial records, hashes, assertions and failure statuses. Policy routing uses observable static terrain; privileged validation uses independent transition/distance code. No external human review occurred. Deterministic seeds are not independent statistical replications. **PASS means the instrument distinguishes scripted behaviors**, not that an RL policy learned, generalized or self-reflected. EX0001 remains closed.
+**Limit and independent check.** Notebook, source, logs and verifier are archived. The fixed-map verifier validates recorded behavior but currently expects a separately staged ZIP; it is not a turn-key repo replay. No learned RL policy, object permanence or generalization was established. Deterministic fixtures are not statistical replications.
 
-**Learned / deficit.** Terminal success can conceal an incorrect initial decision. Human-owned follow-up: independently audit the observation boundary and construct a failing reward-leak test. **Session closed with no revisions to frozen acceptance criteria.**
-
-**Run:** `python algn_ex0002.py > preflight.json` (Python standard library).
+**Learned:** Success can hide a wrong initial decision. **Remaining deficit:** Portable verifier and future learned-policy controls. **Stop:** No retroactive gate changes or experiment reruns in documentation AET.
