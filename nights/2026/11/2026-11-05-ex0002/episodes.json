@@ -1,0 +1,5419 @@
+{
+  "date": "2026-11-05",
+  "environment": "Fixed 11x11 notebook world",
+  "episodes": [
+    {
+      "actions": 13,
+      "first": "BLUE",
+      "goal": true,
+      "initial_observation": {
+        "current_region": null,
+        "door_status": "unknown",
+        "door_visible": true,
+        "goal_visible": false,
+        "has_key": false,
+        "hint_region": "unknown",
+        "key_visible": false,
+        "last_action_result": null,
+        "position": [
+          5,
+          5
+        ],
+        "visible_key_offset": null
+      },
+      "key": true,
+      "key_region": "BLUE",
+      "locked": true,
+      "policy": "responsive",
+      "trace": [
+        {
+          "action": "inspect_door",
+          "direction": null,
+          "feedback": {
+            "result": "inspected"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "result": "inspected"
+            },
+            "position": [
+              5,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "unknown",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": null,
+            "position": [
+              5,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "step": 1
+        },
+        {
+          "action": "move",
+          "direction": "NW",
+          "feedback": {
+            "position": [
+              4,
+              4
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                4,
+                4
+              ],
+              "result": "moved"
+            },
+            "position": [
+              4,
+              4
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "result": "inspected"
+            },
+            "position": [
+              5,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "step": 2
+        },
+        {
+          "action": "move",
+          "direction": "NW",
+          "feedback": {
+            "position": [
+              3,
+              3
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                3,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              3,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                4,
+                4
+              ],
+              "result": "moved"
+            },
+            "position": [
+              4,
+              4
+            ],
+            "visible_key_offset": null
+          },
+          "step": 3
+        },
+        {
+          "action": "move",
+          "direction": "NW",
+          "feedback": {
+            "position": [
+              2,
+              2
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "BLUE",
+            "key_visible": true,
+            "last_action_result": {
+              "position": [
+                2,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              2,
+              2
+            ],
+            "visible_key_offset": [
+              -1,
+              0
+            ]
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                3,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              3,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "step": 4
+        },
+        {
+          "action": "move",
+          "direction": "N",
+          "feedback": {
+            "position": [
+              1,
+              2
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "BLUE",
+            "key_visible": true,
+            "last_action_result": {
+              "position": [
+                1,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              1,
+              2
+            ],
+            "visible_key_offset": [
+              0,
+              0
+            ]
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "BLUE",
+            "key_visible": true,
+            "last_action_result": {
+              "position": [
+                2,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              2,
+              2
+            ],
+            "visible_key_offset": [
+              -1,
+              0
+            ]
+          },
+          "step": 5
+        },
+        {
+          "action": "pickup_key",
+          "direction": null,
+          "feedback": {
+            "result": "key_collected"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "result": "key_collected"
+            },
+            "position": [
+              1,
+              2
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "BLUE",
+            "key_visible": true,
+            "last_action_result": {
+              "position": [
+                1,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              1,
+              2
+            ],
+            "visible_key_offset": [
+              0,
+              0
+            ]
+          },
+          "step": 6
+        },
+        {
+          "action": "move",
+          "direction": "SE",
+          "feedback": {
+            "position": [
+              2,
+              3
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                2,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              2,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "result": "key_collected"
+            },
+            "position": [
+              1,
+              2
+            ],
+            "visible_key_offset": null
+          },
+          "step": 7
+        },
+        {
+          "action": "move",
+          "direction": "SE",
+          "feedback": {
+            "position": [
+              3,
+              4
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                3,
+                4
+              ],
+              "result": "moved"
+            },
+            "position": [
+              3,
+              4
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                2,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              2,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "step": 8
+        },
+        {
+          "action": "move",
+          "direction": "SE",
+          "feedback": {
+            "position": [
+              4,
+              5
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                4,
+                5
+              ],
+              "result": "moved"
+            },
+            "position": [
+              4,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                3,
+                4
+              ],
+              "result": "moved"
+            },
+            "position": [
+              3,
+              4
+            ],
+            "visible_key_offset": null
+          },
+          "step": 9
+        },
+        {
+          "action": "move",
+          "direction": "SE",
+          "feedback": {
+            "position": [
+              5,
+              6
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                6
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              6
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                4,
+                5
+              ],
+              "result": "moved"
+            },
+            "position": [
+              4,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "step": 10
+        },
+        {
+          "action": "move",
+          "direction": "E",
+          "feedback": {
+            "position": [
+              5,
+              7
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                7
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              7
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                6
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              6
+            ],
+            "visible_key_offset": null
+          },
+          "step": 11
+        },
+        {
+          "action": "move",
+          "direction": "E",
+          "feedback": {
+            "position": [
+              5,
+              8
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": true,
+            "has_key": true,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                8
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              8
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                7
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              7
+            ],
+            "visible_key_offset": null
+          },
+          "step": 12
+        },
+        {
+          "action": "move",
+          "direction": "E",
+          "feedback": {
+            "position": [
+              5,
+              9
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": true,
+            "has_key": true,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                9
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              9
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": true,
+            "has_key": true,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                8
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              8
+            ],
+            "visible_key_offset": null
+          },
+          "step": 13
+        }
+      ]
+    },
+    {
+      "actions": 13,
+      "first": "BLUE",
+      "goal": true,
+      "initial_observation": {
+        "current_region": null,
+        "door_status": "unknown",
+        "door_visible": true,
+        "goal_visible": false,
+        "has_key": false,
+        "hint_region": "unknown",
+        "key_visible": false,
+        "last_action_result": null,
+        "position": [
+          5,
+          5
+        ],
+        "visible_key_offset": null
+      },
+      "key": true,
+      "key_region": "BLUE",
+      "locked": true,
+      "policy": "habitual",
+      "trace": [
+        {
+          "action": "inspect_door",
+          "direction": null,
+          "feedback": {
+            "result": "inspected"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "result": "inspected"
+            },
+            "position": [
+              5,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "unknown",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": null,
+            "position": [
+              5,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "step": 1
+        },
+        {
+          "action": "move",
+          "direction": "NW",
+          "feedback": {
+            "position": [
+              4,
+              4
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                4,
+                4
+              ],
+              "result": "moved"
+            },
+            "position": [
+              4,
+              4
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "result": "inspected"
+            },
+            "position": [
+              5,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "step": 2
+        },
+        {
+          "action": "move",
+          "direction": "NW",
+          "feedback": {
+            "position": [
+              3,
+              3
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                3,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              3,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                4,
+                4
+              ],
+              "result": "moved"
+            },
+            "position": [
+              4,
+              4
+            ],
+            "visible_key_offset": null
+          },
+          "step": 3
+        },
+        {
+          "action": "move",
+          "direction": "NW",
+          "feedback": {
+            "position": [
+              2,
+              2
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "BLUE",
+            "key_visible": true,
+            "last_action_result": {
+              "position": [
+                2,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              2,
+              2
+            ],
+            "visible_key_offset": [
+              -1,
+              0
+            ]
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                3,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              3,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "step": 4
+        },
+        {
+          "action": "move",
+          "direction": "N",
+          "feedback": {
+            "position": [
+              1,
+              2
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "BLUE",
+            "key_visible": true,
+            "last_action_result": {
+              "position": [
+                1,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              1,
+              2
+            ],
+            "visible_key_offset": [
+              0,
+              0
+            ]
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "BLUE",
+            "key_visible": true,
+            "last_action_result": {
+              "position": [
+                2,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              2,
+              2
+            ],
+            "visible_key_offset": [
+              -1,
+              0
+            ]
+          },
+          "step": 5
+        },
+        {
+          "action": "pickup_key",
+          "direction": null,
+          "feedback": {
+            "result": "key_collected"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "result": "key_collected"
+            },
+            "position": [
+              1,
+              2
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "BLUE",
+            "key_visible": true,
+            "last_action_result": {
+              "position": [
+                1,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              1,
+              2
+            ],
+            "visible_key_offset": [
+              0,
+              0
+            ]
+          },
+          "step": 6
+        },
+        {
+          "action": "move",
+          "direction": "SE",
+          "feedback": {
+            "position": [
+              2,
+              3
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                2,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              2,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "result": "key_collected"
+            },
+            "position": [
+              1,
+              2
+            ],
+            "visible_key_offset": null
+          },
+          "step": 7
+        },
+        {
+          "action": "move",
+          "direction": "SE",
+          "feedback": {
+            "position": [
+              3,
+              4
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                3,
+                4
+              ],
+              "result": "moved"
+            },
+            "position": [
+              3,
+              4
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                2,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              2,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "step": 8
+        },
+        {
+          "action": "move",
+          "direction": "SE",
+          "feedback": {
+            "position": [
+              4,
+              5
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                4,
+                5
+              ],
+              "result": "moved"
+            },
+            "position": [
+              4,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                3,
+                4
+              ],
+              "result": "moved"
+            },
+            "position": [
+              3,
+              4
+            ],
+            "visible_key_offset": null
+          },
+          "step": 9
+        },
+        {
+          "action": "move",
+          "direction": "SE",
+          "feedback": {
+            "position": [
+              5,
+              6
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                6
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              6
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                4,
+                5
+              ],
+              "result": "moved"
+            },
+            "position": [
+              4,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "step": 10
+        },
+        {
+          "action": "move",
+          "direction": "E",
+          "feedback": {
+            "position": [
+              5,
+              7
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                7
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              7
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                6
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              6
+            ],
+            "visible_key_offset": null
+          },
+          "step": 11
+        },
+        {
+          "action": "move",
+          "direction": "E",
+          "feedback": {
+            "position": [
+              5,
+              8
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": true,
+            "has_key": true,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                8
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              8
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                7
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              7
+            ],
+            "visible_key_offset": null
+          },
+          "step": 12
+        },
+        {
+          "action": "move",
+          "direction": "E",
+          "feedback": {
+            "position": [
+              5,
+              9
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": true,
+            "has_key": true,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                9
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              9
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": true,
+            "has_key": true,
+            "hint_region": "BLUE",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                8
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              8
+            ],
+            "visible_key_offset": null
+          },
+          "step": 13
+        }
+      ]
+    },
+    {
+      "actions": 15,
+      "first": "GOLD",
+      "goal": true,
+      "initial_observation": {
+        "current_region": null,
+        "door_status": "unknown",
+        "door_visible": true,
+        "goal_visible": false,
+        "has_key": false,
+        "hint_region": "unknown",
+        "key_visible": false,
+        "last_action_result": null,
+        "position": [
+          5,
+          5
+        ],
+        "visible_key_offset": null
+      },
+      "key": true,
+      "key_region": "GOLD",
+      "locked": true,
+      "policy": "responsive",
+      "trace": [
+        {
+          "action": "inspect_door",
+          "direction": null,
+          "feedback": {
+            "result": "inspected"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "result": "inspected"
+            },
+            "position": [
+              5,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "unknown",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": null,
+            "position": [
+              5,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "step": 1
+        },
+        {
+          "action": "move",
+          "direction": "S",
+          "feedback": {
+            "position": [
+              6,
+              5
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                6,
+                5
+              ],
+              "result": "moved"
+            },
+            "position": [
+              6,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "result": "inspected"
+            },
+            "position": [
+              5,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "step": 2
+        },
+        {
+          "action": "move",
+          "direction": "SW",
+          "feedback": {
+            "position": [
+              7,
+              4
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                7,
+                4
+              ],
+              "result": "moved"
+            },
+            "position": [
+              7,
+              4
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                6,
+                5
+              ],
+              "result": "moved"
+            },
+            "position": [
+              6,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "step": 3
+        },
+        {
+          "action": "move",
+          "direction": "W",
+          "feedback": {
+            "position": [
+              7,
+              3
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                7,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              7,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                7,
+                4
+              ],
+              "result": "moved"
+            },
+            "position": [
+              7,
+              4
+            ],
+            "visible_key_offset": null
+          },
+          "step": 4
+        },
+        {
+          "action": "move",
+          "direction": "W",
+          "feedback": {
+            "position": [
+              7,
+              2
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                7,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              7,
+              2
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                7,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              7,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "step": 5
+        },
+        {
+          "action": "move",
+          "direction": "S",
+          "feedback": {
+            "position": [
+              8,
+              2
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": true,
+            "last_action_result": {
+              "position": [
+                8,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              8,
+              2
+            ],
+            "visible_key_offset": [
+              1,
+              0
+            ]
+          },
+          "observation_before": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                7,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              7,
+              2
+            ],
+            "visible_key_offset": null
+          },
+          "step": 6
+        },
+        {
+          "action": "move",
+          "direction": "S",
+          "feedback": {
+            "position": [
+              9,
+              2
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": true,
+            "last_action_result": {
+              "position": [
+                9,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              9,
+              2
+            ],
+            "visible_key_offset": [
+              0,
+              0
+            ]
+          },
+          "observation_before": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": true,
+            "last_action_result": {
+              "position": [
+                8,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              8,
+              2
+            ],
+            "visible_key_offset": [
+              1,
+              0
+            ]
+          },
+          "step": 7
+        },
+        {
+          "action": "pickup_key",
+          "direction": null,
+          "feedback": {
+            "result": "key_collected"
+          },
+          "observation_after": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "result": "key_collected"
+            },
+            "position": [
+              9,
+              2
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": true,
+            "last_action_result": {
+              "position": [
+                9,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              9,
+              2
+            ],
+            "visible_key_offset": [
+              0,
+              0
+            ]
+          },
+          "step": 8
+        },
+        {
+          "action": "move",
+          "direction": "NE",
+          "feedback": {
+            "position": [
+              8,
+              3
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                8,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              8,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "result": "key_collected"
+            },
+            "position": [
+              9,
+              2
+            ],
+            "visible_key_offset": null
+          },
+          "step": 9
+        },
+        {
+          "action": "move",
+          "direction": "NE",
+          "feedback": {
+            "position": [
+              7,
+              4
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                7,
+                4
+              ],
+              "result": "moved"
+            },
+            "position": [
+              7,
+              4
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                8,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              8,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "step": 10
+        },
+        {
+          "action": "move",
+          "direction": "NE",
+          "feedback": {
+            "position": [
+              6,
+              5
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                6,
+                5
+              ],
+              "result": "moved"
+            },
+            "position": [
+              6,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                7,
+                4
+              ],
+              "result": "moved"
+            },
+            "position": [
+              7,
+              4
+            ],
+            "visible_key_offset": null
+          },
+          "step": 11
+        },
+        {
+          "action": "move",
+          "direction": "NE",
+          "feedback": {
+            "position": [
+              5,
+              6
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                6
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              6
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                6,
+                5
+              ],
+              "result": "moved"
+            },
+            "position": [
+              6,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "step": 12
+        },
+        {
+          "action": "move",
+          "direction": "E",
+          "feedback": {
+            "position": [
+              5,
+              7
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                7
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              7
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                6
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              6
+            ],
+            "visible_key_offset": null
+          },
+          "step": 13
+        },
+        {
+          "action": "move",
+          "direction": "E",
+          "feedback": {
+            "position": [
+              5,
+              8
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": true,
+            "has_key": true,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                8
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              8
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                7
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              7
+            ],
+            "visible_key_offset": null
+          },
+          "step": 14
+        },
+        {
+          "action": "move",
+          "direction": "E",
+          "feedback": {
+            "position": [
+              5,
+              9
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": true,
+            "has_key": true,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                9
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              9
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": true,
+            "has_key": true,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                8
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              8
+            ],
+            "visible_key_offset": null
+          },
+          "step": 15
+        }
+      ]
+    },
+    {
+      "actions": 22,
+      "first": "BLUE",
+      "goal": true,
+      "initial_observation": {
+        "current_region": null,
+        "door_status": "unknown",
+        "door_visible": true,
+        "goal_visible": false,
+        "has_key": false,
+        "hint_region": "unknown",
+        "key_visible": false,
+        "last_action_result": null,
+        "position": [
+          5,
+          5
+        ],
+        "visible_key_offset": null
+      },
+      "key": true,
+      "key_region": "GOLD",
+      "locked": true,
+      "policy": "habitual",
+      "trace": [
+        {
+          "action": "inspect_door",
+          "direction": null,
+          "feedback": {
+            "result": "inspected"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "result": "inspected"
+            },
+            "position": [
+              5,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "unknown",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": null,
+            "position": [
+              5,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "step": 1
+        },
+        {
+          "action": "move",
+          "direction": "NW",
+          "feedback": {
+            "position": [
+              4,
+              4
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                4,
+                4
+              ],
+              "result": "moved"
+            },
+            "position": [
+              4,
+              4
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "result": "inspected"
+            },
+            "position": [
+              5,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "step": 2
+        },
+        {
+          "action": "move",
+          "direction": "NW",
+          "feedback": {
+            "position": [
+              3,
+              3
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                3,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              3,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                4,
+                4
+              ],
+              "result": "moved"
+            },
+            "position": [
+              4,
+              4
+            ],
+            "visible_key_offset": null
+          },
+          "step": 3
+        },
+        {
+          "action": "move",
+          "direction": "NW",
+          "feedback": {
+            "position": [
+              2,
+              2
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                2,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              2,
+              2
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                3,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              3,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "step": 4
+        },
+        {
+          "action": "move",
+          "direction": "E",
+          "feedback": {
+            "position": [
+              2,
+              3
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                2,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              2,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                2,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              2,
+              2
+            ],
+            "visible_key_offset": null
+          },
+          "step": 5
+        },
+        {
+          "action": "move",
+          "direction": "SW",
+          "feedback": {
+            "position": [
+              3,
+              2
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                3,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              3,
+              2
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                2,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              2,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "step": 6
+        },
+        {
+          "action": "move",
+          "direction": "S",
+          "feedback": {
+            "position": [
+              4,
+              2
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                4,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              4,
+              2
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                3,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              3,
+              2
+            ],
+            "visible_key_offset": null
+          },
+          "step": 7
+        },
+        {
+          "action": "move",
+          "direction": "S",
+          "feedback": {
+            "position": [
+              5,
+              2
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              2
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                4,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              4,
+              2
+            ],
+            "visible_key_offset": null
+          },
+          "step": 8
+        },
+        {
+          "action": "move",
+          "direction": "SE",
+          "feedback": {
+            "position": [
+              6,
+              3
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                6,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              6,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              2
+            ],
+            "visible_key_offset": null
+          },
+          "step": 9
+        },
+        {
+          "action": "move",
+          "direction": "SE",
+          "feedback": {
+            "position": [
+              7,
+              4
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                7,
+                4
+              ],
+              "result": "moved"
+            },
+            "position": [
+              7,
+              4
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                6,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              6,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "step": 10
+        },
+        {
+          "action": "move",
+          "direction": "W",
+          "feedback": {
+            "position": [
+              7,
+              3
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                7,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              7,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                7,
+                4
+              ],
+              "result": "moved"
+            },
+            "position": [
+              7,
+              4
+            ],
+            "visible_key_offset": null
+          },
+          "step": 11
+        },
+        {
+          "action": "move",
+          "direction": "W",
+          "feedback": {
+            "position": [
+              7,
+              2
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                7,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              7,
+              2
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                7,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              7,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "step": 12
+        },
+        {
+          "action": "move",
+          "direction": "S",
+          "feedback": {
+            "position": [
+              8,
+              2
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": true,
+            "last_action_result": {
+              "position": [
+                8,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              8,
+              2
+            ],
+            "visible_key_offset": [
+              1,
+              0
+            ]
+          },
+          "observation_before": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                7,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              7,
+              2
+            ],
+            "visible_key_offset": null
+          },
+          "step": 13
+        },
+        {
+          "action": "move",
+          "direction": "S",
+          "feedback": {
+            "position": [
+              9,
+              2
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": true,
+            "last_action_result": {
+              "position": [
+                9,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              9,
+              2
+            ],
+            "visible_key_offset": [
+              0,
+              0
+            ]
+          },
+          "observation_before": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": true,
+            "last_action_result": {
+              "position": [
+                8,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              8,
+              2
+            ],
+            "visible_key_offset": [
+              1,
+              0
+            ]
+          },
+          "step": 14
+        },
+        {
+          "action": "pickup_key",
+          "direction": null,
+          "feedback": {
+            "result": "key_collected"
+          },
+          "observation_after": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "result": "key_collected"
+            },
+            "position": [
+              9,
+              2
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "GOLD",
+            "key_visible": true,
+            "last_action_result": {
+              "position": [
+                9,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              9,
+              2
+            ],
+            "visible_key_offset": [
+              0,
+              0
+            ]
+          },
+          "step": 15
+        },
+        {
+          "action": "move",
+          "direction": "NE",
+          "feedback": {
+            "position": [
+              8,
+              3
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                8,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              8,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "result": "key_collected"
+            },
+            "position": [
+              9,
+              2
+            ],
+            "visible_key_offset": null
+          },
+          "step": 16
+        },
+        {
+          "action": "move",
+          "direction": "NE",
+          "feedback": {
+            "position": [
+              7,
+              4
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                7,
+                4
+              ],
+              "result": "moved"
+            },
+            "position": [
+              7,
+              4
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                8,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              8,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "step": 17
+        },
+        {
+          "action": "move",
+          "direction": "NE",
+          "feedback": {
+            "position": [
+              6,
+              5
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                6,
+                5
+              ],
+              "result": "moved"
+            },
+            "position": [
+              6,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "GOLD",
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                7,
+                4
+              ],
+              "result": "moved"
+            },
+            "position": [
+              7,
+              4
+            ],
+            "visible_key_offset": null
+          },
+          "step": 18
+        },
+        {
+          "action": "move",
+          "direction": "NE",
+          "feedback": {
+            "position": [
+              5,
+              6
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                6
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              6
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                6,
+                5
+              ],
+              "result": "moved"
+            },
+            "position": [
+              6,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "step": 19
+        },
+        {
+          "action": "move",
+          "direction": "E",
+          "feedback": {
+            "position": [
+              5,
+              7
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                7
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              7
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                6
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              6
+            ],
+            "visible_key_offset": null
+          },
+          "step": 20
+        },
+        {
+          "action": "move",
+          "direction": "E",
+          "feedback": {
+            "position": [
+              5,
+              8
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": true,
+            "has_key": true,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                8
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              8
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                7
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              7
+            ],
+            "visible_key_offset": null
+          },
+          "step": 21
+        },
+        {
+          "action": "move",
+          "direction": "E",
+          "feedback": {
+            "position": [
+              5,
+              9
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": true,
+            "has_key": true,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                9
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              9
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "locked",
+            "door_visible": false,
+            "goal_visible": true,
+            "has_key": true,
+            "hint_region": "GOLD",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                8
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              8
+            ],
+            "visible_key_offset": null
+          },
+          "step": 22
+        }
+      ]
+    },
+    {
+      "actions": 5,
+      "first": "GOAL",
+      "goal": true,
+      "initial_observation": {
+        "current_region": null,
+        "door_status": "unknown",
+        "door_visible": true,
+        "goal_visible": false,
+        "has_key": false,
+        "hint_region": "unknown",
+        "key_visible": false,
+        "last_action_result": null,
+        "position": [
+          5,
+          5
+        ],
+        "visible_key_offset": null
+      },
+      "key": false,
+      "key_region": "BLUE",
+      "locked": false,
+      "policy": "responsive",
+      "trace": [
+        {
+          "action": "inspect_door",
+          "direction": null,
+          "feedback": {
+            "result": "inspected"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "result": "inspected"
+            },
+            "position": [
+              5,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "unknown",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": null,
+            "position": [
+              5,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "step": 1
+        },
+        {
+          "action": "move",
+          "direction": "E",
+          "feedback": {
+            "position": [
+              5,
+              6
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                6
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              6
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "result": "inspected"
+            },
+            "position": [
+              5,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "step": 2
+        },
+        {
+          "action": "move",
+          "direction": "E",
+          "feedback": {
+            "position": [
+              5,
+              7
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                7
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              7
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                6
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              6
+            ],
+            "visible_key_offset": null
+          },
+          "step": 3
+        },
+        {
+          "action": "move",
+          "direction": "E",
+          "feedback": {
+            "position": [
+              5,
+              8
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": true,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                8
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              8
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                7
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              7
+            ],
+            "visible_key_offset": null
+          },
+          "step": 4
+        },
+        {
+          "action": "move",
+          "direction": "E",
+          "feedback": {
+            "position": [
+              5,
+              9
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": true,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                9
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              9
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": true,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                8
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              8
+            ],
+            "visible_key_offset": null
+          },
+          "step": 5
+        }
+      ]
+    },
+    {
+      "actions": 13,
+      "first": "BLUE",
+      "goal": true,
+      "initial_observation": {
+        "current_region": null,
+        "door_status": "unknown",
+        "door_visible": true,
+        "goal_visible": false,
+        "has_key": false,
+        "hint_region": "unknown",
+        "key_visible": false,
+        "last_action_result": null,
+        "position": [
+          5,
+          5
+        ],
+        "visible_key_offset": null
+      },
+      "key": true,
+      "key_region": "BLUE",
+      "locked": false,
+      "policy": "habitual",
+      "trace": [
+        {
+          "action": "inspect_door",
+          "direction": null,
+          "feedback": {
+            "result": "inspected"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "result": "inspected"
+            },
+            "position": [
+              5,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "unknown",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": null,
+            "position": [
+              5,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "step": 1
+        },
+        {
+          "action": "move",
+          "direction": "NW",
+          "feedback": {
+            "position": [
+              4,
+              4
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                4,
+                4
+              ],
+              "result": "moved"
+            },
+            "position": [
+              4,
+              4
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "result": "inspected"
+            },
+            "position": [
+              5,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "step": 2
+        },
+        {
+          "action": "move",
+          "direction": "NW",
+          "feedback": {
+            "position": [
+              3,
+              3
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                3,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              3,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                4,
+                4
+              ],
+              "result": "moved"
+            },
+            "position": [
+              4,
+              4
+            ],
+            "visible_key_offset": null
+          },
+          "step": 3
+        },
+        {
+          "action": "move",
+          "direction": "NW",
+          "feedback": {
+            "position": [
+              2,
+              2
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": true,
+            "last_action_result": {
+              "position": [
+                2,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              2,
+              2
+            ],
+            "visible_key_offset": [
+              -1,
+              0
+            ]
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                3,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              3,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "step": 4
+        },
+        {
+          "action": "move",
+          "direction": "N",
+          "feedback": {
+            "position": [
+              1,
+              2
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": true,
+            "last_action_result": {
+              "position": [
+                1,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              1,
+              2
+            ],
+            "visible_key_offset": [
+              0,
+              0
+            ]
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": true,
+            "last_action_result": {
+              "position": [
+                2,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              2,
+              2
+            ],
+            "visible_key_offset": [
+              -1,
+              0
+            ]
+          },
+          "step": 5
+        },
+        {
+          "action": "pickup_key",
+          "direction": null,
+          "feedback": {
+            "result": "key_collected"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "result": "key_collected"
+            },
+            "position": [
+              1,
+              2
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": true,
+            "last_action_result": {
+              "position": [
+                1,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              1,
+              2
+            ],
+            "visible_key_offset": [
+              0,
+              0
+            ]
+          },
+          "step": 6
+        },
+        {
+          "action": "move",
+          "direction": "SE",
+          "feedback": {
+            "position": [
+              2,
+              3
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                2,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              2,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "result": "key_collected"
+            },
+            "position": [
+              1,
+              2
+            ],
+            "visible_key_offset": null
+          },
+          "step": 7
+        },
+        {
+          "action": "move",
+          "direction": "SE",
+          "feedback": {
+            "position": [
+              3,
+              4
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                3,
+                4
+              ],
+              "result": "moved"
+            },
+            "position": [
+              3,
+              4
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                2,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              2,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "step": 8
+        },
+        {
+          "action": "move",
+          "direction": "SE",
+          "feedback": {
+            "position": [
+              4,
+              5
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                4,
+                5
+              ],
+              "result": "moved"
+            },
+            "position": [
+              4,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                3,
+                4
+              ],
+              "result": "moved"
+            },
+            "position": [
+              3,
+              4
+            ],
+            "visible_key_offset": null
+          },
+          "step": 9
+        },
+        {
+          "action": "move",
+          "direction": "SE",
+          "feedback": {
+            "position": [
+              5,
+              6
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                6
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              6
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                4,
+                5
+              ],
+              "result": "moved"
+            },
+            "position": [
+              4,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "step": 10
+        },
+        {
+          "action": "move",
+          "direction": "E",
+          "feedback": {
+            "position": [
+              5,
+              7
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                7
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              7
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                6
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              6
+            ],
+            "visible_key_offset": null
+          },
+          "step": 11
+        },
+        {
+          "action": "move",
+          "direction": "E",
+          "feedback": {
+            "position": [
+              5,
+              8
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": true,
+            "has_key": true,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                8
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              8
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": true,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                7
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              7
+            ],
+            "visible_key_offset": null
+          },
+          "step": 12
+        },
+        {
+          "action": "move",
+          "direction": "E",
+          "feedback": {
+            "position": [
+              5,
+              9
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": true,
+            "has_key": true,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                9
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              9
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": true,
+            "has_key": true,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                8
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              8
+            ],
+            "visible_key_offset": null
+          },
+          "step": 13
+        }
+      ]
+    },
+    {
+      "actions": 5,
+      "first": "GOAL",
+      "goal": true,
+      "initial_observation": {
+        "current_region": null,
+        "door_status": "unknown",
+        "door_visible": true,
+        "goal_visible": false,
+        "has_key": false,
+        "hint_region": "unknown",
+        "key_visible": false,
+        "last_action_result": null,
+        "position": [
+          5,
+          5
+        ],
+        "visible_key_offset": null
+      },
+      "key": false,
+      "key_region": "GOLD",
+      "locked": false,
+      "policy": "responsive",
+      "trace": [
+        {
+          "action": "inspect_door",
+          "direction": null,
+          "feedback": {
+            "result": "inspected"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "result": "inspected"
+            },
+            "position": [
+              5,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "unknown",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": null,
+            "position": [
+              5,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "step": 1
+        },
+        {
+          "action": "move",
+          "direction": "E",
+          "feedback": {
+            "position": [
+              5,
+              6
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                6
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              6
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "result": "inspected"
+            },
+            "position": [
+              5,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "step": 2
+        },
+        {
+          "action": "move",
+          "direction": "E",
+          "feedback": {
+            "position": [
+              5,
+              7
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                7
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              7
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                6
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              6
+            ],
+            "visible_key_offset": null
+          },
+          "step": 3
+        },
+        {
+          "action": "move",
+          "direction": "E",
+          "feedback": {
+            "position": [
+              5,
+              8
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": true,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                8
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              8
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                7
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              7
+            ],
+            "visible_key_offset": null
+          },
+          "step": 4
+        },
+        {
+          "action": "move",
+          "direction": "E",
+          "feedback": {
+            "position": [
+              5,
+              9
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": true,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                9
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              9
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": true,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                8
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              8
+            ],
+            "visible_key_offset": null
+          },
+          "step": 5
+        }
+      ]
+    },
+    {
+      "actions": 13,
+      "first": "BLUE",
+      "goal": true,
+      "initial_observation": {
+        "current_region": null,
+        "door_status": "unknown",
+        "door_visible": true,
+        "goal_visible": false,
+        "has_key": false,
+        "hint_region": "unknown",
+        "key_visible": false,
+        "last_action_result": null,
+        "position": [
+          5,
+          5
+        ],
+        "visible_key_offset": null
+      },
+      "key": false,
+      "key_region": "GOLD",
+      "locked": false,
+      "policy": "habitual",
+      "trace": [
+        {
+          "action": "inspect_door",
+          "direction": null,
+          "feedback": {
+            "result": "inspected"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "result": "inspected"
+            },
+            "position": [
+              5,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "unknown",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": null,
+            "position": [
+              5,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "step": 1
+        },
+        {
+          "action": "move",
+          "direction": "NW",
+          "feedback": {
+            "position": [
+              4,
+              4
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                4,
+                4
+              ],
+              "result": "moved"
+            },
+            "position": [
+              4,
+              4
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "result": "inspected"
+            },
+            "position": [
+              5,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "step": 2
+        },
+        {
+          "action": "move",
+          "direction": "NW",
+          "feedback": {
+            "position": [
+              3,
+              3
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                3,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              3,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                4,
+                4
+              ],
+              "result": "moved"
+            },
+            "position": [
+              4,
+              4
+            ],
+            "visible_key_offset": null
+          },
+          "step": 3
+        },
+        {
+          "action": "move",
+          "direction": "NW",
+          "feedback": {
+            "position": [
+              2,
+              2
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                2,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              2,
+              2
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                3,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              3,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "step": 4
+        },
+        {
+          "action": "move",
+          "direction": "E",
+          "feedback": {
+            "position": [
+              2,
+              3
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                2,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              2,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                2,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              2,
+              2
+            ],
+            "visible_key_offset": null
+          },
+          "step": 5
+        },
+        {
+          "action": "move",
+          "direction": "SW",
+          "feedback": {
+            "position": [
+              3,
+              2
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                3,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              3,
+              2
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                2,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              2,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "step": 6
+        },
+        {
+          "action": "move",
+          "direction": "E",
+          "feedback": {
+            "position": [
+              3,
+              3
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                3,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              3,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                3,
+                2
+              ],
+              "result": "moved"
+            },
+            "position": [
+              3,
+              2
+            ],
+            "visible_key_offset": null
+          },
+          "step": 7
+        },
+        {
+          "action": "move",
+          "direction": "E",
+          "feedback": {
+            "position": [
+              3,
+              4
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": "BLUE",
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                3,
+                4
+              ],
+              "result": "moved"
+            },
+            "position": [
+              3,
+              4
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                3,
+                3
+              ],
+              "result": "moved"
+            },
+            "position": [
+              3,
+              3
+            ],
+            "visible_key_offset": null
+          },
+          "step": 8
+        },
+        {
+          "action": "move",
+          "direction": "SE",
+          "feedback": {
+            "position": [
+              4,
+              5
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                4,
+                5
+              ],
+              "result": "moved"
+            },
+            "position": [
+              4,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": "BLUE",
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                3,
+                4
+              ],
+              "result": "moved"
+            },
+            "position": [
+              3,
+              4
+            ],
+            "visible_key_offset": null
+          },
+          "step": 9
+        },
+        {
+          "action": "move",
+          "direction": "SE",
+          "feedback": {
+            "position": [
+              5,
+              6
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                6
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              6
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                4,
+                5
+              ],
+              "result": "moved"
+            },
+            "position": [
+              4,
+              5
+            ],
+            "visible_key_offset": null
+          },
+          "step": 10
+        },
+        {
+          "action": "move",
+          "direction": "E",
+          "feedback": {
+            "position": [
+              5,
+              7
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                7
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              7
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                6
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              6
+            ],
+            "visible_key_offset": null
+          },
+          "step": 11
+        },
+        {
+          "action": "move",
+          "direction": "E",
+          "feedback": {
+            "position": [
+              5,
+              8
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": true,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                8
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              8
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": true,
+            "goal_visible": false,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                7
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              7
+            ],
+            "visible_key_offset": null
+          },
+          "step": 12
+        },
+        {
+          "action": "move",
+          "direction": "E",
+          "feedback": {
+            "position": [
+              5,
+              9
+            ],
+            "result": "moved"
+          },
+          "observation_after": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": true,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                9
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              9
+            ],
+            "visible_key_offset": null
+          },
+          "observation_before": {
+            "current_region": null,
+            "door_status": "open",
+            "door_visible": false,
+            "goal_visible": true,
+            "has_key": false,
+            "hint_region": "unknown",
+            "key_visible": false,
+            "last_action_result": {
+              "position": [
+                5,
+                8
+              ],
+              "result": "moved"
+            },
+            "position": [
+              5,
+              8
+            ],
+            "visible_key_offset": null
+          },
+          "step": 13
+        }
+      ]
+    }
+  ],
+  "experiment": "ALGN-EX0002",
+  "neural_training": false,
+  "scope": "Scripted instrument validation"
+}

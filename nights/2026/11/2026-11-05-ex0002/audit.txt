@@ -1,0 +1,10 @@
+ALGN-EX0002 COLAB EVIDENCE
+Episodes: 8/8 completed
+Trace consistency: PASS
+Observation boundary: PASS
+Locked-door possession checks: PASS
+Corrupted-clue mutation: DETECTED
+Neural training: NONE
+Map: one fixed notebook layout
+Assistance: D (AI-drafted implementation)
+Episodes JSON SHA-256: dedd313d1bdd0aef627f69690e3b344ab603e34b00decc0805ff3daf356529af

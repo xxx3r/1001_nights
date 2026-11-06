@@ -1,0 +1,867 @@
+{
+  "conditions": 4,
+  "experiment": "ALGN-EX0002",
+  "fixture_attempts": 5,
+  "fixture_hashes": {
+    "101": "1e7688f16f2993cf91830b6cd50d3ef9fc0fec7afc29132c9ebb3867c1fe71e7",
+    "11": "e148352687da8c9b7f63615b6bf7c0e36cd85399d3b4119df04a1f2f354dca51",
+    "23": "3909e466754af5084f5954203cedd036f93c14f5c1cc7dbd745caec84d2d101d",
+    "47": "2c8ef860e68333cfd06dd150ee86d7dddb3e1fe58ed446a3cd4f2da6484e162d",
+    "7": "587d63f406c3eccffb2d320afdb29033e6e445040be70b00055c5297845ef264"
+  },
+  "fixture_rejections": 0,
+  "policies": 2,
+  "provenance": {
+    "agent": "AI-drafted deterministic scripts, not trained RL",
+    "assistance": "D (AI-drafted)",
+    "execution": "local CPython standard library",
+    "key_placement": "seeded matched-distance eligible cells, positions hidden",
+    "reward": "-0.01 each action, +1 terminal goal, no hint-direction shaping"
+  },
+  "seeds": [
+    7,
+    11,
+    23,
+    47,
+    101
+  ],
+  "source_plan": "ALGN_EX0002_PRE_REGISTERED_PLAN.md",
+  "status": "PASS",
+  "tests": [
+    {
+      "gate": "A_geometry",
+      "status": "PASS"
+    },
+    {
+      "gate": "B_observation_boundary",
+      "status": "PASS"
+    },
+    {
+      "gate": "C_discovery",
+      "status": "PASS"
+    },
+    {
+      "gate": "D_baseline_discrimination",
+      "status": "PASS"
+    },
+    {
+      "gate": "E_conditional_key_use",
+      "status": "PASS"
+    },
+    {
+      "gate": "F_feedback_and_mask",
+      "status": "PASS"
+    },
+    {
+      "gate": "G_reproducibility",
+      "status": "PASS"
+    },
+    {
+      "gate": "H_clue_mutation_kills_discrimination",
+      "status": "PASS"
+    }
+  ],
+  "trial_count": 40,
+  "trials": [
+    {
+      "done": true,
+      "excess_steps": 2,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": "BLUE",
+      "first_search_region": "BLUE",
+      "invalid_actions": 0,
+      "key_collected": true,
+      "key_region": "BLUE",
+      "locked": true,
+      "policy": "responsive",
+      "reference_steps": 16,
+      "reward": 0.82,
+      "seed": 7,
+      "steps": 18,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 2,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": "BLUE",
+      "first_search_region": "BLUE",
+      "invalid_actions": 0,
+      "key_collected": true,
+      "key_region": "BLUE",
+      "locked": true,
+      "policy": "habit_BLUE",
+      "reference_steps": 16,
+      "reward": 0.82,
+      "seed": 7,
+      "steps": 18,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 1,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": "GOLD",
+      "first_search_region": "GOLD",
+      "invalid_actions": 0,
+      "key_collected": true,
+      "key_region": "GOLD",
+      "locked": true,
+      "policy": "responsive",
+      "reference_steps": 14,
+      "reward": 0.85,
+      "seed": 7,
+      "steps": 15,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 11,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": "BLUE",
+      "first_search_region": "BLUE",
+      "invalid_actions": 0,
+      "key_collected": true,
+      "key_region": "GOLD",
+      "locked": true,
+      "policy": "habit_BLUE",
+      "reference_steps": 14,
+      "reward": 0.75,
+      "seed": 7,
+      "steps": 25,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 1,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": null,
+      "first_search_region": null,
+      "invalid_actions": 0,
+      "key_collected": false,
+      "key_region": "BLUE",
+      "locked": false,
+      "policy": "responsive",
+      "reference_steps": 3,
+      "reward": 0.96,
+      "seed": 7,
+      "steps": 4,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 15,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": "BLUE",
+      "first_search_region": "BLUE",
+      "invalid_actions": 0,
+      "key_collected": true,
+      "key_region": "BLUE",
+      "locked": false,
+      "policy": "habit_BLUE",
+      "reference_steps": 3,
+      "reward": 0.82,
+      "seed": 7,
+      "steps": 18,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 1,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": null,
+      "first_search_region": null,
+      "invalid_actions": 0,
+      "key_collected": false,
+      "key_region": "GOLD",
+      "locked": false,
+      "policy": "responsive",
+      "reference_steps": 3,
+      "reward": 0.96,
+      "seed": 7,
+      "steps": 4,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 22,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": "BLUE",
+      "first_search_region": "BLUE",
+      "invalid_actions": 0,
+      "key_collected": true,
+      "key_region": "GOLD",
+      "locked": false,
+      "policy": "habit_BLUE",
+      "reference_steps": 3,
+      "reward": 0.75,
+      "seed": 7,
+      "steps": 25,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 2,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": "BLUE",
+      "first_search_region": "BLUE",
+      "invalid_actions": 0,
+      "key_collected": true,
+      "key_region": "BLUE",
+      "locked": true,
+      "policy": "responsive",
+      "reference_steps": 13,
+      "reward": 0.85,
+      "seed": 11,
+      "steps": 15,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 2,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": "BLUE",
+      "first_search_region": "BLUE",
+      "invalid_actions": 0,
+      "key_collected": true,
+      "key_region": "BLUE",
+      "locked": true,
+      "policy": "habit_BLUE",
+      "reference_steps": 13,
+      "reward": 0.85,
+      "seed": 11,
+      "steps": 15,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 2,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": "GOLD",
+      "first_search_region": "GOLD",
+      "invalid_actions": 0,
+      "key_collected": true,
+      "key_region": "GOLD",
+      "locked": true,
+      "policy": "responsive",
+      "reference_steps": 14,
+      "reward": 0.84,
+      "seed": 11,
+      "steps": 16,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 10,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": "BLUE",
+      "first_search_region": "BLUE",
+      "invalid_actions": 0,
+      "key_collected": true,
+      "key_region": "GOLD",
+      "locked": true,
+      "policy": "habit_BLUE",
+      "reference_steps": 14,
+      "reward": 0.76,
+      "seed": 11,
+      "steps": 24,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 1,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": null,
+      "first_search_region": null,
+      "invalid_actions": 0,
+      "key_collected": false,
+      "key_region": "BLUE",
+      "locked": false,
+      "policy": "responsive",
+      "reference_steps": 3,
+      "reward": 0.96,
+      "seed": 11,
+      "steps": 4,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 12,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": "BLUE",
+      "first_search_region": "BLUE",
+      "invalid_actions": 0,
+      "key_collected": true,
+      "key_region": "BLUE",
+      "locked": false,
+      "policy": "habit_BLUE",
+      "reference_steps": 3,
+      "reward": 0.85,
+      "seed": 11,
+      "steps": 15,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 1,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": null,
+      "first_search_region": null,
+      "invalid_actions": 0,
+      "key_collected": false,
+      "key_region": "GOLD",
+      "locked": false,
+      "policy": "responsive",
+      "reference_steps": 3,
+      "reward": 0.96,
+      "seed": 11,
+      "steps": 4,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 21,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": "BLUE",
+      "first_search_region": "BLUE",
+      "invalid_actions": 0,
+      "key_collected": true,
+      "key_region": "GOLD",
+      "locked": false,
+      "policy": "habit_BLUE",
+      "reference_steps": 3,
+      "reward": 0.76,
+      "seed": 11,
+      "steps": 24,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 2,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": "BLUE",
+      "first_search_region": "BLUE",
+      "invalid_actions": 0,
+      "key_collected": true,
+      "key_region": "BLUE",
+      "locked": true,
+      "policy": "responsive",
+      "reference_steps": 13,
+      "reward": 0.85,
+      "seed": 23,
+      "steps": 15,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 2,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": "BLUE",
+      "first_search_region": "BLUE",
+      "invalid_actions": 0,
+      "key_collected": true,
+      "key_region": "BLUE",
+      "locked": true,
+      "policy": "habit_BLUE",
+      "reference_steps": 13,
+      "reward": 0.85,
+      "seed": 23,
+      "steps": 15,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 1,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": "GOLD",
+      "first_search_region": "GOLD",
+      "invalid_actions": 0,
+      "key_collected": true,
+      "key_region": "GOLD",
+      "locked": true,
+      "policy": "responsive",
+      "reference_steps": 15,
+      "reward": 0.84,
+      "seed": 23,
+      "steps": 16,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 11,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": "BLUE",
+      "first_search_region": "BLUE",
+      "invalid_actions": 0,
+      "key_collected": true,
+      "key_region": "GOLD",
+      "locked": true,
+      "policy": "habit_BLUE",
+      "reference_steps": 15,
+      "reward": 0.74,
+      "seed": 23,
+      "steps": 26,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 1,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": null,
+      "first_search_region": null,
+      "invalid_actions": 0,
+      "key_collected": false,
+      "key_region": "BLUE",
+      "locked": false,
+      "policy": "responsive",
+      "reference_steps": 3,
+      "reward": 0.96,
+      "seed": 23,
+      "steps": 4,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 12,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": "BLUE",
+      "first_search_region": "BLUE",
+      "invalid_actions": 0,
+      "key_collected": true,
+      "key_region": "BLUE",
+      "locked": false,
+      "policy": "habit_BLUE",
+      "reference_steps": 3,
+      "reward": 0.85,
+      "seed": 23,
+      "steps": 15,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 1,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": null,
+      "first_search_region": null,
+      "invalid_actions": 0,
+      "key_collected": false,
+      "key_region": "GOLD",
+      "locked": false,
+      "policy": "responsive",
+      "reference_steps": 3,
+      "reward": 0.96,
+      "seed": 23,
+      "steps": 4,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 23,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": "BLUE",
+      "first_search_region": "BLUE",
+      "invalid_actions": 0,
+      "key_collected": true,
+      "key_region": "GOLD",
+      "locked": false,
+      "policy": "habit_BLUE",
+      "reference_steps": 3,
+      "reward": 0.74,
+      "seed": 23,
+      "steps": 26,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 1,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": "BLUE",
+      "first_search_region": "BLUE",
+      "invalid_actions": 0,
+      "key_collected": true,
+      "key_region": "BLUE",
+      "locked": true,
+      "policy": "responsive",
+      "reference_steps": 14,
+      "reward": 0.85,
+      "seed": 47,
+      "steps": 15,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 1,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": "BLUE",
+      "first_search_region": "BLUE",
+      "invalid_actions": 0,
+      "key_collected": true,
+      "key_region": "BLUE",
+      "locked": true,
+      "policy": "habit_BLUE",
+      "reference_steps": 14,
+      "reward": 0.85,
+      "seed": 47,
+      "steps": 15,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 1,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": "GOLD",
+      "first_search_region": "GOLD",
+      "invalid_actions": 0,
+      "key_collected": true,
+      "key_region": "GOLD",
+      "locked": true,
+      "policy": "responsive",
+      "reference_steps": 11,
+      "reward": 0.88,
+      "seed": 47,
+      "steps": 12,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 10,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": "BLUE",
+      "first_search_region": "BLUE",
+      "invalid_actions": 0,
+      "key_collected": true,
+      "key_region": "GOLD",
+      "locked": true,
+      "policy": "habit_BLUE",
+      "reference_steps": 11,
+      "reward": 0.79,
+      "seed": 47,
+      "steps": 21,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 1,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": null,
+      "first_search_region": null,
+      "invalid_actions": 0,
+      "key_collected": false,
+      "key_region": "BLUE",
+      "locked": false,
+      "policy": "responsive",
+      "reference_steps": 3,
+      "reward": 0.96,
+      "seed": 47,
+      "steps": 4,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 12,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": "BLUE",
+      "first_search_region": "BLUE",
+      "invalid_actions": 0,
+      "key_collected": true,
+      "key_region": "BLUE",
+      "locked": false,
+      "policy": "habit_BLUE",
+      "reference_steps": 3,
+      "reward": 0.85,
+      "seed": 47,
+      "steps": 15,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 1,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": null,
+      "first_search_region": null,
+      "invalid_actions": 0,
+      "key_collected": false,
+      "key_region": "GOLD",
+      "locked": false,
+      "policy": "responsive",
+      "reference_steps": 3,
+      "reward": 0.96,
+      "seed": 47,
+      "steps": 4,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 18,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": "BLUE",
+      "first_search_region": "BLUE",
+      "invalid_actions": 0,
+      "key_collected": true,
+      "key_region": "GOLD",
+      "locked": false,
+      "policy": "habit_BLUE",
+      "reference_steps": 3,
+      "reward": 0.79,
+      "seed": 47,
+      "steps": 21,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 1,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": "BLUE",
+      "first_search_region": "BLUE",
+      "invalid_actions": 0,
+      "key_collected": true,
+      "key_region": "BLUE",
+      "locked": true,
+      "policy": "responsive",
+      "reference_steps": 17,
+      "reward": 0.82,
+      "seed": 101,
+      "steps": 18,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 1,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": "BLUE",
+      "first_search_region": "BLUE",
+      "invalid_actions": 0,
+      "key_collected": true,
+      "key_region": "BLUE",
+      "locked": true,
+      "policy": "habit_BLUE",
+      "reference_steps": 17,
+      "reward": 0.82,
+      "seed": 101,
+      "steps": 18,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 1,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": "GOLD",
+      "first_search_region": "GOLD",
+      "invalid_actions": 0,
+      "key_collected": true,
+      "key_region": "GOLD",
+      "locked": true,
+      "policy": "responsive",
+      "reference_steps": 15,
+      "reward": 0.84,
+      "seed": 101,
+      "steps": 16,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 11,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": "BLUE",
+      "first_search_region": "BLUE",
+      "invalid_actions": 0,
+      "key_collected": true,
+      "key_region": "GOLD",
+      "locked": true,
+      "policy": "habit_BLUE",
+      "reference_steps": 15,
+      "reward": 0.74,
+      "seed": 101,
+      "steps": 26,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 1,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": null,
+      "first_search_region": null,
+      "invalid_actions": 0,
+      "key_collected": false,
+      "key_region": "BLUE",
+      "locked": false,
+      "policy": "responsive",
+      "reference_steps": 3,
+      "reward": 0.96,
+      "seed": 101,
+      "steps": 4,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 15,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": "BLUE",
+      "first_search_region": "BLUE",
+      "invalid_actions": 0,
+      "key_collected": true,
+      "key_region": "BLUE",
+      "locked": false,
+      "policy": "habit_BLUE",
+      "reference_steps": 3,
+      "reward": 0.82,
+      "seed": 101,
+      "steps": 18,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 1,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": null,
+      "first_search_region": null,
+      "invalid_actions": 0,
+      "key_collected": false,
+      "key_region": "GOLD",
+      "locked": false,
+      "policy": "responsive",
+      "reference_steps": 3,
+      "reward": 0.96,
+      "seed": 101,
+      "steps": 4,
+      "truncated": false
+    },
+    {
+      "done": true,
+      "excess_steps": 23,
+      "feedback_counts": {
+        "door_blocked": 0,
+        "nothing_to_pick_up": 0
+      },
+      "first_entered_region": "BLUE",
+      "first_search_region": "BLUE",
+      "invalid_actions": 0,
+      "key_collected": true,
+      "key_region": "GOLD",
+      "locked": false,
+      "policy": "habit_BLUE",
+      "reference_steps": 3,
+      "reward": 0.74,
+      "seed": 101,
+      "steps": 26,
+      "truncated": false
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+door,key_region,policy,first_destination,actions,goal
+locked,BLUE,responsive,BLUE,13,True
+locked,BLUE,habitual,BLUE,13,True
+locked,GOLD,responsive,GOLD,15,True
+locked,GOLD,habitual,BLUE,22,True
+open,BLUE,responsive,GOAL,5,True
+open,BLUE,habitual,BLUE,13,True
+open,GOLD,responsive,GOAL,5,True
+open,GOLD,habitual,BLUE,13,True
