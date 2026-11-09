@@ -1,0 +1,91 @@
+{
+  "candidate_set": {
+    "no_edit": {
+      "base": "corrupt",
+      "patch": []
+    },
+    "numerical_heuristic": {
+      "base": "corrupt",
+      "patch": [
+        {
+          "index": [
+            0,
+            7
+          ],
+          "new_value": 0.0,
+          "parameter": "fc2.weight"
+        }
+      ]
+    },
+    "qwen_aware": {
+      "base": "corrupt",
+      "patch": [
+        {
+          "index": [
+            0,
+            0
+          ],
+          "new_value": 0.0,
+          "parameter": "fc1.weight"
+        }
+      ]
+    },
+    "qwen_blind": {
+      "base": "corrupt",
+      "patch": [
+        {
+          "index": [
+            0,
+            0
+          ],
+          "new_value": 0.0,
+          "parameter": "fc1.weight"
+        }
+      ]
+    },
+    "qwen_permuted": {
+      "base": "permuted",
+      "patch": [
+        {
+          "index": [
+            0,
+            0
+          ],
+          "new_value": 0.0,
+          "parameter": "fc2.weight"
+        }
+      ]
+    },
+    "random_zero_edit": {
+      "base": "corrupt",
+      "patch": [
+        {
+          "index": [
+            1,
+            0
+          ],
+          "new_value": 0.0,
+          "parameter": "fc1.weight"
+        }
+      ]
+    }
+  },
+  "evaluation_contract": {
+    "locked_evaluation_used_for_selection": false,
+    "max_changed_parameters": 2,
+    "maximum_id_loss_vs_healthy_pp": 2.0,
+    "minimum_shift_improvement_pp": 15.0,
+    "permutation_test_required": true,
+    "teacher_patch_attempts_per_condition": 1
+  },
+  "experiment": "ALGN-EX0003",
+  "final_evaluation_inspected": false,
+  "original_state_sha256": "06b9febe90697d89b85ad485b561b3ad5b43872c6ebedf3c7e9cc6993e5b9579",
+  "permuted_state_sha256": "21149821377e16fd73de987e5b46e3f95dc129e18814a08253f955c5f1c1bfe2",
+  "random_baseline_seed": 20261512,
+  "teacher_response_sha256": {
+    "aware": "9e07d4ee5eb9908763a044924b6d6ff7769c9813abbf63ebcd1e7af56d2a8122",
+    "blind": "f6c316d78db0b6703b33ba08cc08533f1e2d95d0580ccfe978018314d9f99382",
+    "permuted": "ee8db113574f39430661e378edcb3b43d548b96fa5b3d9c351472e38d3cc42c9"
+  }
+}

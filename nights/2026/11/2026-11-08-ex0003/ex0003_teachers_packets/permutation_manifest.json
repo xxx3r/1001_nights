@@ -1,0 +1,19 @@
+{
+  "condition": "weight_aware_permuted",
+  "base_condition_sha256": "9aed4db031cec5e177e552bf296bd74e01e4e279118e965cfb95d8d92dfb03da",
+  "prompt_sha256": "d864b631c5fcede8e950416d953841a786c8d69ad508ebdab38f96d848193f6a",
+  "permutation_new_to_old": [
+    7,
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "state_sha256": "21149821377e16fd73de987e5b46e3f95dc129e18814a08253f955c5f1c1bfe2",
+  "max_development_logit_difference": 7.62939453125e-06,
+  "function_preserved": true,
+  "final_evaluation_inspected": false
+}

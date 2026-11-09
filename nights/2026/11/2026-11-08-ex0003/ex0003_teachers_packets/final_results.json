@@ -1,0 +1,189 @@
+{
+  "experiment": "ALGN-EX0003",
+  "manifest_sha256": "f3599e1f3c290da40560f6219b81f65e8dadff72d7049a465a7ec813c4ed767c",
+  "evaluation_hashes": {
+    "EVAL_ID": "41444ad38a16d9ffb8336c6f1cffbd84abbeb9845aedc9797b7b84282a441651",
+    "EVAL_SHIFT": "7bfd55de34de7428c504f8feae42d3d3d835b45b2f7efb2404075e558ec64996"
+  },
+  "results": {
+    "healthy_reference": {
+      "EVAL_ID": {
+        "correct": 1000,
+        "total": 1000,
+        "accuracy": 1.0,
+        "tp": 497,
+        "tn": 503,
+        "fp": 0,
+        "fn": 0
+      },
+      "EVAL_SHIFT": {
+        "correct": 997,
+        "total": 1000,
+        "accuracy": 0.997,
+        "tp": 478,
+        "tn": 519,
+        "fp": 3,
+        "fn": 0
+      }
+    },
+    "no_edit": {
+      "EVAL_ID": {
+        "correct": 982,
+        "total": 1000,
+        "accuracy": 0.982,
+        "tp": 497,
+        "tn": 485,
+        "fp": 18,
+        "fn": 0
+      },
+      "EVAL_SHIFT": {
+        "correct": 504,
+        "total": 1000,
+        "accuracy": 0.504,
+        "tp": 478,
+        "tn": 26,
+        "fp": 496,
+        "fn": 0
+      }
+    },
+    "numerical_heuristic": {
+      "EVAL_ID": {
+        "correct": 1000,
+        "total": 1000,
+        "accuracy": 1.0,
+        "tp": 497,
+        "tn": 503,
+        "fp": 0,
+        "fn": 0
+      },
+      "EVAL_SHIFT": {
+        "correct": 997,
+        "total": 1000,
+        "accuracy": 0.997,
+        "tp": 478,
+        "tn": 519,
+        "fp": 3,
+        "fn": 0
+      }
+    },
+    "qwen_aware": {
+      "EVAL_ID": {
+        "correct": 966,
+        "total": 1000,
+        "accuracy": 0.966,
+        "tp": 497,
+        "tn": 469,
+        "fp": 34,
+        "fn": 0
+      },
+      "EVAL_SHIFT": {
+        "correct": 490,
+        "total": 1000,
+        "accuracy": 0.49,
+        "tp": 464,
+        "tn": 26,
+        "fp": 496,
+        "fn": 14
+      }
+    },
+    "qwen_blind": {
+      "EVAL_ID": {
+        "correct": 966,
+        "total": 1000,
+        "accuracy": 0.966,
+        "tp": 497,
+        "tn": 469,
+        "fp": 34,
+        "fn": 0
+      },
+      "EVAL_SHIFT": {
+        "correct": 490,
+        "total": 1000,
+        "accuracy": 0.49,
+        "tp": 464,
+        "tn": 26,
+        "fp": 496,
+        "fn": 14
+      }
+    },
+    "qwen_permuted": {
+      "EVAL_ID": {
+        "correct": 1000,
+        "total": 1000,
+        "accuracy": 1.0,
+        "tp": 497,
+        "tn": 503,
+        "fp": 0,
+        "fn": 0
+      },
+      "EVAL_SHIFT": {
+        "correct": 997,
+        "total": 1000,
+        "accuracy": 0.997,
+        "tp": 478,
+        "tn": 519,
+        "fp": 3,
+        "fn": 0
+      }
+    },
+    "random_zero_edit": {
+      "EVAL_ID": {
+        "correct": 964,
+        "total": 1000,
+        "accuracy": 0.964,
+        "tp": 497,
+        "tn": 467,
+        "fp": 36,
+        "fn": 0
+      },
+      "EVAL_SHIFT": {
+        "correct": 493,
+        "total": 1000,
+        "accuracy": 0.493,
+        "tp": 467,
+        "tn": 26,
+        "fp": 496,
+        "fn": 11
+      }
+    }
+  },
+  "verdicts": {
+    "no_edit": {
+      "shift_gain_pp": 0.0,
+      "id_loss_vs_healthy_pp": 1.8000000000000016,
+      "functional_gate_pass": false,
+      "changed_parameters": 0
+    },
+    "numerical_heuristic": {
+      "shift_gain_pp": 49.3,
+      "id_loss_vs_healthy_pp": 0.0,
+      "functional_gate_pass": true,
+      "changed_parameters": 1
+    },
+    "qwen_aware": {
+      "shift_gain_pp": -1.4000000000000012,
+      "id_loss_vs_healthy_pp": 3.400000000000003,
+      "functional_gate_pass": false,
+      "changed_parameters": 1
+    },
+    "qwen_blind": {
+      "shift_gain_pp": -1.4000000000000012,
+      "id_loss_vs_healthy_pp": 3.400000000000003,
+      "functional_gate_pass": false,
+      "changed_parameters": 1
+    },
+    "qwen_permuted": {
+      "shift_gain_pp": 49.3,
+      "id_loss_vs_healthy_pp": 0.0,
+      "functional_gate_pass": true,
+      "changed_parameters": 1
+    },
+    "random_zero_edit": {
+      "shift_gain_pp": -1.100000000000001,
+      "id_loss_vs_healthy_pp": 3.600000000000003,
+      "functional_gate_pass": false,
+      "changed_parameters": 1
+    }
+  },
+  "mechanistic_understanding_established": false
+}

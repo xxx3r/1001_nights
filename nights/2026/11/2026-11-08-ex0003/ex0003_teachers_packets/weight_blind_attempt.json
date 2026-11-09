@@ -1,0 +1,9 @@
+{
+  "condition": "weight_blind",
+  "prompt_sha256": "cb37578daff8bd2b8dcee6972161efb7c3ea8e29e08c48c14b925e1528b90bae",
+  "model": "Qwen/Qwen3-0.6B",
+  "seed_offset": 2,
+  "status": "completed",
+  "generated_tokens": 862,
+  "thinking_finished": true
+}

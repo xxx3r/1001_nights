@@ -1,0 +1,173 @@
+You are auditing a frozen, small neural network.
+
+ARCHITECTURE:
+- 6 inputs
+- 8 ReLU hidden neurons
+- 1 linear output logit
+- Classification: logit >= 0 predicts class 1
+- Exactly 65 scalar parameters
+
+TRUE TASK:
+y = 1 if x0 + x1 > 0, otherwise y = 0.
+
+FEATURES:
+- x0 and x1 determine the true label.
+- x2 is correlated with the label in some environments,
+  but its relationship can reverse.
+- x3, x4 and x5 are irrelevant noise.
+
+OBSERVED DEVELOPMENT PERFORMANCE:
+CLEAN_DEV: 388/512 correct (75.78%)
+AUDIT_DEV: 248/256 correct (96.88%)
+SHIFT_DEV: 260/512 correct (50.78%)
+
+YOUR TASK:
+Diagnose the student's failure and propose one patch.
+
+RULES:
+- Modify at most TWO scalar parameters.
+- You may propose zero changes if evidence is insufficient.
+- Edits must specify existing tensor names, zero-based
+  indices and finite replacement values.
+- No gradient descent or additional training.
+- No access to held-out evaluation results.
+- You receive no feedback about patch performance.
+- Do not claim that you tested your proposed patch.
+- State uncertainty rather than inventing evidence.
+
+OUTPUT:
+Return only valid JSON with these fields:
+
+{
+  "hypothesis": "Your diagnosis",
+  "weight_based_evidence": "Numerical evidence, if available",
+  "patch": [
+    {
+      "parameter": "fc1.weight",
+      "index": [0, 0],
+      "new_value": 0.0
+    }
+  ],
+  "predicted_effect": "What should change and why",
+  "uncertainty": "What remains unverified"
+}
+
+The patch shown above is an output-format example,
+not a suggested repair. Do not copy it automatically.
+
+NETWORK PARAMETERS:
+{
+  "fc1.weight": {
+    "shape": [
+      8,
+      6
+    ],
+    "values": [
+      [
+        0.0,
+        0.0,
+        6.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.6205352544784546,
+        1.2506344318389893,
+        0.030559513717889786,
+        -0.031650152057409286,
+        -0.04237968474626541,
+        0.015851521864533424
+      ],
+      [
+        1.6923655271530151,
+        1.6930592060089111,
+        -0.07973950356245041,
+        -0.045552659779787064,
+        -0.007202642969787121,
+        0.05700874328613281
+      ],
+      [
+        -1.302143931388855,
+        -1.6156821250915527,
+        -0.08215202391147614,
+        0.13169974088668823,
+        0.07623237371444702,
+        -0.05985477194190025
+      ],
+      [
+        -1.277709722518921,
+        -1.50567626953125,
+        -0.08135692030191422,
+        -0.05060828477144241,
+        -0.09117677062749863,
+        0.127237007021904
+      ],
+      [
+        2.135666847229004,
+        1.7095643281936646,
+        0.045179516077041626,
+        0.05053991079330444,
+        0.008763646706938744,
+        0.025596627965569496
+      ],
+      [
+        -0.07028746604919434,
+        0.5542811155319214,
+        -0.6825606226921082,
+        0.018823498860001564,
+        0.39725610613822937,
+        -0.4667872190475464
+      ],
+      [
+        -1.6010686159133911,
+        -1.815133810043335,
+        0.12806658446788788,
+        -0.07812995463609695,
+        0.04156283661723137,
+        -0.01227868814021349
+      ]
+    ]
+  },
+  "fc1.bias": {
+    "shape": [
+      8
+    ],
+    "values": [
+      0.0,
+      0.9944363832473755,
+      0.8656517863273621,
+      1.064927101135254,
+      0.9390156865119934,
+      1.0285542011260986,
+      -0.6252146363258362,
+      0.9988856911659241
+    ]
+  },
+  "fc2.weight": {
+    "shape": [
+      1,
+      8
+    ],
+    "values": [
+      [
+        6.0,
+        1.631914734840393,
+        1.772186517715454,
+        -1.561279296875,
+        -1.7804328203201294,
+        1.5607380867004395,
+        0.22043217718601227,
+        -1.730318307876587
+      ]
+    ]
+  },
+  "fc2.bias": {
+    "shape": [
+      1
+    ],
+    "values": [
+      0.26617079973220825
+    ]
+  }
+}

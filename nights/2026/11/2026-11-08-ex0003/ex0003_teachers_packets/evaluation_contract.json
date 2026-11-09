@@ -1,0 +1,8 @@
+{
+  "minimum_shift_improvement_pp": 15.0,
+  "maximum_id_loss_vs_healthy_pp": 2.0,
+  "max_changed_parameters": 2,
+  "teacher_patch_attempts_per_condition": 1,
+  "locked_evaluation_used_for_selection": false,
+  "permutation_test_required": true
+}

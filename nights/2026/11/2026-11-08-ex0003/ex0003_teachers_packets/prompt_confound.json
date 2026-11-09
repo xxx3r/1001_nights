@@ -1,0 +1,7 @@
+{
+  "condition": "weight_aware",
+  "observation": "Proposed patch matches prompt example",
+  "exact_match": true,
+  "interpretation": "Prompt copying is a plausible alternative to weight-specific reasoning.",
+  "status": "recorded_before_blind_inference"
+}

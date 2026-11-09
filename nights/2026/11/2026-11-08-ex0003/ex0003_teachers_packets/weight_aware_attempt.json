@@ -1,0 +1,10 @@
+{
+  "condition": "weight_aware",
+  "prompt_sha256": "9aed4db031cec5e177e552bf296bd74e01e4e279118e965cfb95d8d92dfb03da",
+  "model": "Qwen/Qwen3-0.6B",
+  "seed_offset": 1,
+  "max_new_tokens": 2048,
+  "status": "completed",
+  "generated_tokens": 620,
+  "thinking_finished": true
+}
