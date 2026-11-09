@@ -1,0 +1,8 @@
+{
+  "status": "started",
+  "manifest_sha256": "f3599e1f3c290da40560f6219b81f65e8dadff72d7049a465a7ec813c4ed767c",
+  "dataset_hashes": {
+    "EVAL_ID": "41444ad38a16d9ffb8336c6f1cffbd84abbeb9845aedc9797b7b84282a441651",
+    "EVAL_SHIFT": "7bfd55de34de7428c504f8feae42d3d3d835b45b2f7efb2404075e558ec64996"
+  }
+}
