@@ -1,0 +1,29 @@
+{
+  "experiment": "ALGN_EX0004_Lands_Quiet_Scalpel_2",
+  "disposition": "PILOT_STOPPED",
+  "scientific_verdict": "NOT RUN",
+  "reason": "Teacher diagnosis, final patch, and sealed evaluation were not completed.",
+  "diagnostic_calls": 6,
+  "valid_calls": 3,
+  "invalid_calls": 3,
+  "amendments": [
+    "R1",
+    "R2",
+    "R3"
+  ],
+  "patient_sha256": "b6d5903d89be7a920db14597cbbb01775c8844a93eef22739108e55a950664c2",
+  "zero_only_recovery": 0.7884992172792995,
+  "teacher_model": "Qwen/Qwen3-8B",
+  "teacher_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "patch_evaluations": 0,
+  "sealed_evaluation": "NOT EXECUTED",
+  "successor": "EX0004B_PROPOSED",
+  "lessons": [
+    "Test tool schemas before teacher exposure.",
+    "Use canonical names and explicit argument types.",
+    "Separate construction, teacher, and final data.",
+    "Predefine a substantial zero-only failure margin.",
+    "Provide a diagnosis commitment endpoint.",
+    "Avoid adaptive prompt corrections during trials."
+  ]
+}
