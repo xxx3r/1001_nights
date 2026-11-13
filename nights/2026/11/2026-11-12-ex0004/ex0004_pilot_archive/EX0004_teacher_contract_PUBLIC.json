@@ -1,0 +1,37 @@
+{
+  "activation": "tanh",
+  "allowed_diagnostics": [
+    "bounded_weight_inspection",
+    "forward_probes",
+    "activation_summaries"
+  ],
+  "architecture": [
+    6,
+    12,
+    12,
+    1
+  ],
+  "fault_structure": "Two planted fault groups in different hidden layers; four altered scalars total.",
+  "forbidden_access": [
+    "healthy_checkpoint",
+    "ground_truth_generator",
+    "private_lesion_key",
+    "oracle_outcomes",
+    "sealed_evaluation",
+    "notebook_filesystem"
+  ],
+  "maximum_diagnostic_calls": 12,
+  "maximum_final_scalar_edits": 6,
+  "maximum_patch_evaluations": 2,
+  "parameters": 253,
+  "required_before_patch_feedback": [
+    "ranked_fault_regions",
+    "causal_mechanism",
+    "isolated_effect_ranking",
+    "interaction_sign",
+    "joint_nuisance_prediction",
+    "uncertainty",
+    "initial_proposed_intervention_or_abstain"
+  ],
+  "task": "Continuous scalar prediction. Input x5 is a nuisance feature whose relationship to the target shifts."
+}

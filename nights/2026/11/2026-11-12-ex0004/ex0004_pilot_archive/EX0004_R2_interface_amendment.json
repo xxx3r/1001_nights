@@ -1,0 +1,14 @@
+{
+  "amendment_type": "PUBLIC_INTERFACE_CLARIFICATION",
+  "apply_to_repair_only_arm": true,
+  "calls_refunded": 0,
+  "diagnostic_calls_already_consumed": 2,
+  "disclosure_required": true,
+  "generation_config_changed": false,
+  "notice": "R2 TOOL-SYNTAX CLARIFICATION.\nYour first two requests were rejected. Both still count toward the 12-call diagnostic budget.\n\nFor the weights tool:\n- \"tool\" must be the string \"weights\".\n- \"tensor\" must be a literal STRING tensor name, NOT an integer index.\n- Allowed tensor names: [\"fc1.weight\", \"fc1.bias\", \"fc2.weight\", \"fc2.bias\", \"readout.weight\", \"readout.bias\"].\n- \"start\" must be an integer offset >= 0.\n- \"count\" must be an integer from 1 through 24.\n- The requested slice must fit inside the tensor.\n\nSyntactically valid example, NOT a recommended diagnostic location:\n{\"tool\": \"weights\", \"tensor\": \"readout.weight\", \"start\": 0, \"count\": 8}\n\nAll original scientific constraints remain. There are 10 diagnostic calls remaining. Choose ONE diagnostic request using the existing tool schema. Output one JSON object only.",
+  "patient_changed": false,
+  "primary_thresholds_changed": false,
+  "reason": "Public schema omitted explicit argument types; generic validator error did not identify the invalid field.",
+  "stage": "AFTER_TWO_INVALID_TEACHER_CALLS",
+  "version": "R2"
+}

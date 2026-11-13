@@ -1,0 +1,155 @@
+{
+  "experiment": "ALGN_EX0004_Lands_Quiet_Scalpel_2",
+  "healthy_sha256": "e8c9093ced49082136584cddd8eb2c1077bdaf11d90e5524a66521c8a76c3d90",
+  "factory_sha256": "567151a7af6be8cf02058ac2bf87bd7dc9644e30dfeef6791a0885666c819c52",
+  "development_seeds": {
+    "id": 20261113,
+    "shift": 20261114
+  },
+  "development_counts": {
+    "id": 256,
+    "shift": 256
+  },
+  "target_variance": 0.23096835613250732,
+  "tested_candidates": [
+    {
+      "candidate_id": "C01",
+      "p": 8,
+      "q": 8,
+      "metrics": {
+        "00": {
+          "id_mse": 0.00019142513338010758,
+          "shift_mse": 0.0002932341303676367,
+          "shift_variance": 0.23277027904987335
+        },
+        "10": {
+          "id_mse": 0.166649729013443,
+          "shift_mse": 0.2866687774658203,
+          "shift_variance": 0.3183748424053192
+        },
+        "01": {
+          "id_mse": 0.020758280530571938,
+          "shift_mse": 0.020892512053251266,
+          "shift_variance": 0.22815069556236267
+        },
+        "11": {
+          "id_mse": 0.2151058465242386,
+          "shift_mse": 0.41473817825317383,
+          "shift_variance": 0.36132916808128357
+        }
+      },
+      "loss_gap_G": 0.4144449441228062,
+      "loss_interaction_I": 0.10747012286446989,
+      "interaction_over_gap": 0.25931097577251394,
+      "effect_A": 0.2863755433354527,
+      "effect_B": 0.02059927792288363,
+      "output_interaction_rms": 0.19558767974376678,
+      "zero_recovery": 0.7542495688020223,
+      "zero_functional_pass": false,
+      "oracle_recovery": 1.0,
+      "checks": {
+        "substantial_gap": true,
+        "two_fault_interaction": true,
+        "fault_A_matters": true,
+        "fault_B_matters": false,
+        "oracle_restores": true,
+        "zero_only_fails": true,
+        "noncollapsed_corrupt_output": true
+      },
+      "qualifies": false
+    },
+    {
+      "candidate_id": "C02",
+      "p": 3,
+      "q": 0,
+      "metrics": {
+        "00": {
+          "id_mse": 0.00019142513338010758,
+          "shift_mse": 0.0002932341303676367,
+          "shift_variance": 0.23277027904987335
+        },
+        "10": {
+          "id_mse": 0.1460011899471283,
+          "shift_mse": 0.19225434958934784,
+          "shift_variance": 0.3129423260688782
+        },
+        "01": {
+          "id_mse": 0.03087478131055832,
+          "shift_mse": 0.02823529578745365,
+          "shift_variance": 0.32094088196754456
+        },
+        "11": {
+          "id_mse": 0.4256213307380676,
+          "shift_mse": 0.5774081945419312,
+          "shift_variance": 0.4890660047531128
+        }
+      },
+      "loss_gap_G": 0.5771149604115635,
+      "loss_interaction_I": 0.3572117832954973,
+      "interaction_over_gap": 0.6189612257508547,
+      "effect_A": 0.1919611154589802,
+      "effect_B": 0.027942061657086015,
+      "output_interaction_rms": 0.34882521629333496,
+      "zero_recovery": 0.8084224877666332,
+      "zero_functional_pass": true,
+      "oracle_recovery": 1.0,
+      "checks": {
+        "substantial_gap": true,
+        "two_fault_interaction": true,
+        "fault_A_matters": true,
+        "fault_B_matters": false,
+        "oracle_restores": true,
+        "zero_only_fails": false,
+        "noncollapsed_corrupt_output": true
+      },
+      "qualifies": false
+    },
+    {
+      "candidate_id": "C03",
+      "p": 10,
+      "q": 1,
+      "metrics": {
+        "00": {
+          "id_mse": 0.00019142513338010758,
+          "shift_mse": 0.0002932341303676367,
+          "shift_variance": 0.23277027904987335
+        },
+        "10": {
+          "id_mse": 0.024240585044026375,
+          "shift_mse": 0.025731537491083145,
+          "shift_variance": 0.2657405138015747
+        },
+        "01": {
+          "id_mse": 0.0294572152197361,
+          "shift_mse": 0.02688264288008213,
+          "shift_variance": 0.29667016863822937
+        },
+        "11": {
+          "id_mse": 0.08707671612501144,
+          "shift_mse": 0.08214575052261353,
+          "shift_variance": 0.3585922420024872
+        }
+      },
+      "loss_gap_G": 0.08185251639224589,
+      "loss_interaction_I": 0.029824804281815886,
+      "interaction_over_gap": 0.36437247865285266,
+      "effect_A": 0.02543830336071551,
+      "effect_B": 0.026589408749714494,
+      "output_interaction_rms": 0.17711664736270905,
+      "zero_recovery": 0.7884992172792995,
+      "zero_functional_pass": false,
+      "oracle_recovery": 1.0,
+      "checks": {
+        "substantial_gap": true,
+        "two_fault_interaction": true,
+        "fault_A_matters": true,
+        "fault_B_matters": true,
+        "oracle_restores": true,
+        "zero_only_fails": true,
+        "noncollapsed_corrupt_output": true
+      },
+      "qualifies": true
+    }
+  ],
+  "selected_candidate": "C03"
+}

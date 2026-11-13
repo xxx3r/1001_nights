@@ -1,0 +1,38 @@
+{
+  "amendment_stage": "AFTER_CONSTRUCTION_BEFORE_TEACHER",
+  "construction_data_reused_for_teacher": false,
+  "experiment": "ALGN_EX0004_Lands_Quiet_Scalpel_2",
+  "new_role_seeds": {
+    "final_counterfactual": 1195518332,
+    "final_id": 2102178724,
+    "final_shift": 1595735432,
+    "teacher_id": 1840901476,
+    "teacher_shift": 1378672136
+  },
+  "note": "Prospective correction after observing construction outcomes. Must be disclosed as amendment, not original preregistration.",
+  "original_factory_sha256": "567151a7af6be8cf02058ac2bf87bd7dc9644e30dfeef6791a0885666c819c52",
+  "original_patient_sha256": "b6d5903d89be7a920db14597cbbb01775c8844a93eef22739108e55a950664c2",
+  "original_reserved_seed": 20261114,
+  "reason": "Development shifted seed collided with the originally reserved sealed seed; construction data also needed separation from teacher-feedback data.",
+  "sealed_data_counts": {
+    "counterfactual_pairs": 256,
+    "id": 1000,
+    "shift": 1000
+  },
+  "sealed_data_generated": false,
+  "selected_patient": "C03",
+  "teacher_data_counts": {
+    "id": 256,
+    "shift": 256
+  },
+  "teacher_exposed": false,
+  "unchanged": [
+    "patient_weights",
+    "lesion_indices",
+    "teacher_budget",
+    "primary_functional_threshold",
+    "mechanistic_verdict",
+    "zero_only_control"
+  ],
+  "version": "R1"
+}

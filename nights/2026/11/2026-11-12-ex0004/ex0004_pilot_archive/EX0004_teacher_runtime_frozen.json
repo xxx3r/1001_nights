@@ -1,0 +1,23 @@
+{
+  "attention": "sdpa",
+  "device": "cuda:0",
+  "dtype": "bfloat16",
+  "execution": "local_colab",
+  "generation": {
+    "do_sample": true,
+    "enable_thinking": true,
+    "max_new_tokens": 2048,
+    "seed": 718009056,
+    "temperature": 0.6,
+    "top_k": 20,
+    "top_p": 0.95
+  },
+  "model_id": "Qwen/Qwen3-8B",
+  "parameters": 8190735360,
+  "patch_evaluations_so_far": 0,
+  "patient_probes_so_far": 0,
+  "relay_mode": "restricted_python_interface",
+  "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "torch_version": "2.14.1+cu130",
+  "transformers_version": "4.57.6"
+}

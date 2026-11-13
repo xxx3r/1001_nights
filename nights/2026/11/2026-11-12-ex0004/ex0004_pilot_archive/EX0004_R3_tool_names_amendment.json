@@ -1,0 +1,13 @@
+{
+  "calls_refunded": 0,
+  "comparison_caveat": "Diagnosis-first arm received adaptive interface clarifications. Repair-only comparison cannot establish clean causal superiority.",
+  "diagnostic_tool_implementation_changed": false,
+  "evaluation_rules_changed": false,
+  "generation_settings_changed": false,
+  "notice": "R3 PUBLIC TOOL-INTERFACE CORRECTION\n\nThe original experiment contract used descriptive names\nfor diagnostic capabilities. Those names are NOT callable\ntool identifiers. This was an interface documentation error.\n\nThe ONLY callable tool names are:\n1. weights\n2. examples\n3. activations\n4. counterfactual\n\nExact JSON structures:\n\nWEIGHTS\n{\"tool\":\"weights\",\"tensor\":\"fc1.bias\",\n  \"start\":0,\"count\":8}\n\n- tensor: exact string name from [\"fc1.weight\", \"fc1.bias\", \"fc2.weight\", \"fc2.bias\", \"readout.weight\", \"readout.bias\"]\n- start: nonnegative integer flat offset\n- count: integer 1 through 24\n- slice must fit within the tensor\n\nEXAMPLES\n{\"tool\":\"examples\",\"regime\":\"id\",\"indices\":[0]}\n\n- regime: \"id\" or \"shift\"\n- indices: 1 through 8 distinct integers from 0 to 255\n\nACTIVATIONS\n{\"tool\":\"activations\",\"regime\":\"id\"}\n\n- regime: \"id\" or \"shift\"\n- returns aggregate hidden-layer activation statistics\n\nCOUNTERFACTUAL\n{\"tool\":\"counterfactual\",\"regime\":\"id\",\n  \"indices\":[0],\"x5\":0.0}\n\n- regime: \"id\" or \"shift\"\n- indices: 1 through 8 distinct integers from 0 to 255\n- x5: finite number in [-1,1]\n\nThese examples illustrate JSON syntax only.\nThey do not recommend particular diagnostic actions.\n\nNo prior diagnostic calls have been refunded.\nFive of twelve attempts have been consumed.\nSeven diagnostic calls remain.\n\nAll scientific hypotheses, patient weights, diagnostic\nbudgets, repair limits, and evaluation criteria are unchanged.\n\nChoose exactly ONE diagnostic request.\nReturn only the JSON object.",
+  "patient_changed": false,
+  "prior_calls": 5,
+  "reason": "Public contract capability names conflicted with actual callable tool identifiers.",
+  "stage": "AFTER_FIVE_DIAGNOSTIC_REQUESTS",
+  "version": "R3"
+}

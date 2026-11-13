@@ -1,0 +1,55 @@
+{
+  "index_range": [
+    0,
+    255
+  ],
+  "regimes": [
+    "id",
+    "shift"
+  ],
+  "tensor_names": [
+    "fc1.weight",
+    "fc1.bias",
+    "fc2.weight",
+    "fc2.bias",
+    "readout.weight",
+    "readout.bias"
+  ],
+  "tools": {
+    "activations": {
+      "arguments": [
+        "regime"
+      ],
+      "returns": "per-neuron aggregate statistics"
+    },
+    "counterfactual": {
+      "arguments": [
+        "regime",
+        "indices",
+        "x5"
+      ],
+      "max_examples": 8,
+      "x5_range": [
+        -1.0,
+        1.0
+      ]
+    },
+    "examples": {
+      "arguments": [
+        "regime",
+        "indices"
+      ],
+      "max_examples": 8
+    },
+    "weights": {
+      "arguments": [
+        "tensor",
+        "start",
+        "count"
+      ],
+      "max_scalars": 24
+    }
+  },
+  "total_diagnostic_calls": 12,
+  "version": "EX0004_DIAGNOSTIC_V1"
+}

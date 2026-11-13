@@ -1,0 +1,349 @@
+{
+  "candidate_order": [
+    {
+      "edits": [
+        {
+          "delta": 2.5,
+          "group": "A",
+          "index": [
+            8,
+            5
+          ],
+          "tensor": "fc1.weight"
+        },
+        {
+          "delta": 0.8,
+          "group": "A",
+          "index": [
+            8
+          ],
+          "tensor": "fc1.bias"
+        },
+        {
+          "delta": -2.6,
+          "group": "B",
+          "index": [
+            8,
+            8
+          ],
+          "tensor": "fc2.weight"
+        },
+        {
+          "delta": -0.9,
+          "group": "B",
+          "index": [
+            8
+          ],
+          "tensor": "fc2.bias"
+        }
+      ],
+      "id": "C01",
+      "p": 8,
+      "q": 8,
+      "route_score": 0.17459716
+    },
+    {
+      "edits": [
+        {
+          "delta": -2.5,
+          "group": "A",
+          "index": [
+            3,
+            5
+          ],
+          "tensor": "fc1.weight"
+        },
+        {
+          "delta": -0.8,
+          "group": "A",
+          "index": [
+            3
+          ],
+          "tensor": "fc1.bias"
+        },
+        {
+          "delta": 2.6,
+          "group": "B",
+          "index": [
+            0,
+            3
+          ],
+          "tensor": "fc2.weight"
+        },
+        {
+          "delta": -0.9,
+          "group": "B",
+          "index": [
+            0
+          ],
+          "tensor": "fc2.bias"
+        }
+      ],
+      "id": "C02",
+      "p": 3,
+      "q": 0,
+      "route_score": 0.14768786
+    },
+    {
+      "edits": [
+        {
+          "delta": -2.5,
+          "group": "A",
+          "index": [
+            10,
+            5
+          ],
+          "tensor": "fc1.weight"
+        },
+        {
+          "delta": -0.8,
+          "group": "A",
+          "index": [
+            10
+          ],
+          "tensor": "fc1.bias"
+        },
+        {
+          "delta": 2.6,
+          "group": "B",
+          "index": [
+            1,
+            10
+          ],
+          "tensor": "fc2.weight"
+        },
+        {
+          "delta": -0.9,
+          "group": "B",
+          "index": [
+            1
+          ],
+          "tensor": "fc2.bias"
+        }
+      ],
+      "id": "C03",
+      "p": 10,
+      "q": 1,
+      "route_score": 0.14021445
+    },
+    {
+      "edits": [
+        {
+          "delta": -2.5,
+          "group": "A",
+          "index": [
+            3,
+            5
+          ],
+          "tensor": "fc1.weight"
+        },
+        {
+          "delta": -0.8,
+          "group": "A",
+          "index": [
+            3
+          ],
+          "tensor": "fc1.bias"
+        },
+        {
+          "delta": 2.6,
+          "group": "B",
+          "index": [
+            7,
+            3
+          ],
+          "tensor": "fc2.weight"
+        },
+        {
+          "delta": -0.9,
+          "group": "B",
+          "index": [
+            7
+          ],
+          "tensor": "fc2.bias"
+        }
+      ],
+      "id": "C04",
+      "p": 3,
+      "q": 7,
+      "route_score": 0.13980795
+    },
+    {
+      "edits": [
+        {
+          "delta": -2.5,
+          "group": "A",
+          "index": [
+            2,
+            5
+          ],
+          "tensor": "fc1.weight"
+        },
+        {
+          "delta": -0.8,
+          "group": "A",
+          "index": [
+            2
+          ],
+          "tensor": "fc1.bias"
+        },
+        {
+          "delta": 2.6,
+          "group": "B",
+          "index": [
+            3,
+            2
+          ],
+          "tensor": "fc2.weight"
+        },
+        {
+          "delta": -0.9,
+          "group": "B",
+          "index": [
+            3
+          ],
+          "tensor": "fc2.bias"
+        }
+      ],
+      "id": "C05",
+      "p": 2,
+      "q": 3,
+      "route_score": 0.10025847
+    },
+    {
+      "edits": [
+        {
+          "delta": 2.5,
+          "group": "A",
+          "index": [
+            2,
+            5
+          ],
+          "tensor": "fc1.weight"
+        },
+        {
+          "delta": 0.8,
+          "group": "A",
+          "index": [
+            2
+          ],
+          "tensor": "fc1.bias"
+        },
+        {
+          "delta": -2.6,
+          "group": "B",
+          "index": [
+            2,
+            2
+          ],
+          "tensor": "fc2.weight"
+        },
+        {
+          "delta": -0.9,
+          "group": "B",
+          "index": [
+            2
+          ],
+          "tensor": "fc2.bias"
+        }
+      ],
+      "id": "C06",
+      "p": 2,
+      "q": 2,
+      "route_score": 0.05160889
+    },
+    {
+      "edits": [
+        {
+          "delta": 2.5,
+          "group": "A",
+          "index": [
+            2,
+            5
+          ],
+          "tensor": "fc1.weight"
+        },
+        {
+          "delta": 0.8,
+          "group": "A",
+          "index": [
+            2
+          ],
+          "tensor": "fc1.bias"
+        },
+        {
+          "delta": -2.6,
+          "group": "B",
+          "index": [
+            10,
+            2
+          ],
+          "tensor": "fc2.weight"
+        },
+        {
+          "delta": -0.9,
+          "group": "B",
+          "index": [
+            10
+          ],
+          "tensor": "fc2.bias"
+        }
+      ],
+      "id": "C07",
+      "p": 2,
+      "q": 10,
+      "route_score": 0.03145543
+    },
+    {
+      "edits": [
+        {
+          "delta": 2.5,
+          "group": "A",
+          "index": [
+            4,
+            5
+          ],
+          "tensor": "fc1.weight"
+        },
+        {
+          "delta": 0.8,
+          "group": "A",
+          "index": [
+            4
+          ],
+          "tensor": "fc1.bias"
+        },
+        {
+          "delta": -2.6,
+          "group": "B",
+          "index": [
+            6,
+            4
+          ],
+          "tensor": "fc2.weight"
+        },
+        {
+          "delta": -0.9,
+          "group": "B",
+          "index": [
+            6
+          ],
+          "tensor": "fc2.bias"
+        }
+      ],
+      "id": "C08",
+      "p": 4,
+      "q": 6,
+      "route_score": 0.02660217
+    }
+  ],
+  "construction_gate": {
+    "maximum_candidates": 8,
+    "minimum_abs_interaction_over_gap": 0.15,
+    "minimum_abs_single_effect_over_gap": 0.05,
+    "minimum_gap_over_target_variance": 0.1,
+    "minimum_recovery_fraction": 0.8
+  },
+  "experiment": "ALGN_EX0004_Lands_Quiet_Scalpel_2",
+  "healthy_sha256": "e8c9093ced49082136584cddd8eb2c1077bdaf11d90e5524a66521c8a76c3d90"
+}

@@ -1,0 +1,11 @@
+{
+  "additional_lesson": "Use nonoverlapping seed namespaces for construction, teacher feedback, and sealed evaluation from the start.",
+  "current_disposition": "KEEP C03. Report zero-only recovery and teacher improvement over baseline.",
+  "experiment": "ALGN_EX0004_Lands_Quiet_Scalpel_2",
+  "functional_threshold": 0.8,
+  "future_design_lesson": "For the next experiment, preregister a substantial zero-only failure margin before candidate generation or selection.",
+  "margin_percentage_points": 1.1500782720700542,
+  "patient": "C03",
+  "thresholds_changed": false,
+  "zero_only_recovery": 0.7884992172792995
+}

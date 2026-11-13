@@ -1,0 +1,50 @@
+{
+  "corrupted_sha256": "b6d5903d89be7a920db14597cbbb01775c8844a93eef22739108e55a950664c2",
+  "diagnosis_must_precede_patch_feedback": true,
+  "fault_A": {
+    "affected_bias": [
+      "fc1.bias",
+      [
+        10
+      ]
+    ],
+    "affected_edge": [
+      "fc1.weight",
+      [
+        10,
+        5
+      ]
+    ],
+    "hidden_neuron": 10,
+    "layer": "fc1"
+  },
+  "fault_B": {
+    "affected_bias": [
+      "fc2.bias",
+      [
+        1
+      ]
+    ],
+    "affected_edge": [
+      "fc2.weight",
+      [
+        1,
+        10
+      ]
+    ],
+    "hidden_neuron": 1,
+    "layer": "fc2"
+  },
+  "localization_rule": "Correctly identify both affected hidden neurons and their relevant input pathways. Exact bias values are not required.",
+  "patient": "C03",
+  "primary_mechanistic_gate": [
+    "both_fault_regions_correct",
+    "isolated_effect_ranking_correct",
+    "interaction_sign_correct"
+  ],
+  "prospective_predictions": {
+    "interaction_sign": "Sign of sealed L11-L10-L01+L00.",
+    "isolated_effect_ranking": "Compare oracle A-only and B-only shifted loss effects on sealed data.",
+    "nuisance_prediction": "Direction of nuisance-invariance change under joint restoration."
+  }
+}
