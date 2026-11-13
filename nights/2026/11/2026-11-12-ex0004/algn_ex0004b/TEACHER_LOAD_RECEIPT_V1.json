@@ -1,0 +1,26 @@
+{
+  "attention": "sdpa",
+  "corrupted_patient_sha256": "066625c083f1c4e9307feba2a11c17bf3d9021e683a66dd432ca4974313e2272",
+  "device": "cuda:0",
+  "diagnostic_calls": 0,
+  "generation": {
+    "diagnosis_seed": 356819380,
+    "do_sample": true,
+    "enable_thinking": true,
+    "max_new_tokens": 2048,
+    "repair_only_seed": 1911855661,
+    "temperature": 0.6,
+    "top_k": 20,
+    "top_p": 0.95
+  },
+  "model_id": "Qwen/Qwen3-8B",
+  "parameter_count": 8190735360,
+  "patch_evaluations": 0,
+  "precision": "bfloat16",
+  "public_guide_sha256": "9a9ec913a9836d28e1c645e90165ff05a46a1a27fc38a6f75062556ed5bd6907",
+  "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "status": "LOADED_NOT_EXPOSED",
+  "teacher_data_sha256": "6ca8302d9d15e41ce872e7b57ee9adf1b6bdb127c3148b0f4f0f239d32dd3c0b",
+  "torch_version": "2.14.1+cu130",
+  "transformers_version": "4.57.6"
+}

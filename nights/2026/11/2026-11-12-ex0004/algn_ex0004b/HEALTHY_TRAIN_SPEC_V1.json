@@ -1,0 +1,34 @@
+{
+  "activation": "tanh",
+  "architecture": [
+    6,
+    12,
+    12,
+    1
+  ],
+  "batch_size": 512,
+  "healthy_gate": {
+    "maximum_id_mse": 0.005,
+    "maximum_nuisance_mse": 0.005,
+    "maximum_shift_mse": 0.005,
+    "minimum_prediction_variance_ratio": 0.5
+  },
+  "learning_rate": 0.007,
+  "optimizer": "Adam",
+  "precision": "float32",
+  "seeds": {
+    "patient_initialization": 1993529347,
+    "training_batches": 1318250997,
+    "training_id": 1627870523,
+    "training_shift": 2020610919,
+    "validation_id": 494311876,
+    "validation_shift": 1177876877
+  },
+  "steps": 1600,
+  "target_function": "EX0004_original_synthetic_target",
+  "training_id": 4096,
+  "training_shift": 4096,
+  "validation_id": 512,
+  "validation_shift": 512,
+  "version": "EX0004B_HEALTHY_TRAIN_V1"
+}

@@ -1,0 +1,23 @@
+{
+  "experiment": "ALGN_EX0004B_Lands_Quiet_Scalpel_2_Clean",
+  "status": "SEALED_EVALUATION_STARTED",
+  "scoring_sha256": "7e3b2ea948664e9b15b5228cf65626c73be644096d7d01ab53aae4b03e355168",
+  "outcome_lock_sha256": "479e4f741cd2a99e97ab6ee9cceadd98bd848151a2888a6328530cd3e6c66e47",
+  "patient_sha256": "066625c083f1c4e9307feba2a11c17bf3d9021e683a66dd432ca4974313e2272",
+  "candidate_id": "C06",
+  "model_keys": [
+    "corrupted",
+    "diagnosis_first",
+    "healthy",
+    "oracle_A",
+    "oracle_B",
+    "oracle_joint",
+    "repair_only",
+    "repair_only_permuted_1",
+    "repair_only_permuted_2",
+    "repair_only_permuted_3",
+    "zero_only"
+  ],
+  "sealed_data_generated_before_start": false,
+  "reexecution_permitted": false
+}

@@ -1,0 +1,139 @@
+{
+  "comparators": [
+    "healthy",
+    "corrupted",
+    "zero_only",
+    "oracle_A",
+    "oracle_B",
+    "oracle_joint",
+    "repair_only_teacher",
+    "permuted_delta_controls"
+  ],
+  "construction_gate": {
+    "first_qualifying_candidate_wins": true,
+    "maximum_candidates": 16,
+    "maximum_zero_only_recovery": 0.5,
+    "minimum_abs_interaction_over_gap": 0.15,
+    "minimum_abs_single_effect_over_gap": 0.05,
+    "minimum_gap_over_target_variance": 0.1,
+    "minimum_output_interaction_rms": 0.05,
+    "minimum_ranking_separation_over_gap": 0.1,
+    "no_qualifying_patient": "STOP_NOT_RUN",
+    "oracle_must_restore_exactly": true
+  },
+  "data": {
+    "construction_calibration_id": 256,
+    "construction_calibration_shift": 256,
+    "sealed_access": "AFTER_FINAL_PATCH_COMMIT",
+    "sealed_counterfactual_pairs": 256,
+    "sealed_id": 1000,
+    "sealed_shift": 1000,
+    "seeds": {
+      "calibration_id": 268328091,
+      "calibration_shift": 320976766,
+      "diagnosis_generation": 356819380,
+      "lesion_permutation": 1701860446,
+      "patient_initialization": 1993529347,
+      "permuted_control_1": 1267362071,
+      "permuted_control_2": 1644426177,
+      "permuted_control_3": 1137599779,
+      "repair_only_generation": 1911855661,
+      "sealed_counterfactual": 1063559087,
+      "sealed_id": 2104411291,
+      "sealed_shift": 1837819799,
+      "teacher_id": 81739287,
+      "teacher_shift": 163435871,
+      "training_batches": 1318250997,
+      "training_id": 1627870523,
+      "training_shift": 2020610919,
+      "validation_id": 494311876,
+      "validation_shift": 1177876877
+    },
+    "teacher_development_id": 256,
+    "teacher_development_shift": 256,
+    "training_id": 4096,
+    "training_shift": 4096,
+    "validation_id": 512,
+    "validation_shift": 512
+  },
+  "experiment": "ALGN_EX0004B_Lands_Quiet_Scalpel_2_Clean",
+  "functional_gate": {
+    "maximum_id_loss_increase_over_gap": 0.05,
+    "minimum_prediction_variance_ratio": 0.5,
+    "minimum_recovery_fraction": 0.8
+  },
+  "healthy_gate": {
+    "maximum_id_mse": 0.005,
+    "maximum_nuisance_mse": 0.005,
+    "maximum_shift_mse": 0.005,
+    "minimum_prediction_variance_ratio": 0.5
+  },
+  "interface": {
+    "canonical_diagnostic_tools": [
+      "weights",
+      "examples",
+      "activations",
+      "counterfactual"
+    ],
+    "diagnosis_must_precede_patch_feedback": true,
+    "diagnosis_submission": "submit_diagnosis",
+    "diagnosis_submission_counts_as_probe": false,
+    "final_patch_submission": "submit_patch",
+    "invalid_diagnostic_calls_count": true,
+    "no_arbitrary_python_execution": true,
+    "no_teacher_filesystem_access": true,
+    "require_mock_interface_preflight": true
+  },
+  "mechanistic_gate": {
+    "both_fault_regions_correct": true,
+    "interaction_sign_correct": true,
+    "isolated_effect_ranking_correct": true,
+    "predictions_committed_before_patch": true
+  },
+  "patient": {
+    "activation": "tanh",
+    "altered_scalars_per_group": 2,
+    "architecture": [
+      6,
+      12,
+      12,
+      1
+    ],
+    "fault_groups": 2,
+    "fresh_initialization": true,
+    "parameter_count": 253,
+    "retrain_from_scratch": true
+  },
+  "pilot_informed_design": true,
+  "session": {
+    "date": "2026-11-12",
+    "exception_authorized_by": "human_researcher",
+    "four_hour_cap_exception": true,
+    "hard_cutoff": "2026-11-13T00:00:00-07:00",
+    "timezone": "America/Denver"
+  },
+  "source_pilot": "EX0004",
+  "status": "REGISTERED_NOT_EXECUTED",
+  "teacher": {
+    "max_new_tokens_per_turn": 2048,
+    "maximum_diagnostic_calls": 12,
+    "maximum_final_scalar_edits": 6,
+    "maximum_patch_evaluations": 2,
+    "model": "Qwen/Qwen3-8B",
+    "no_adaptive_prompt_repairs": true,
+    "no_automatic_inference_retries": true,
+    "precision": "bfloat16",
+    "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "temperature": 0.6,
+    "thinking": true,
+    "top_k": 20,
+    "top_p": 0.95
+  },
+  "verdicts": [
+    "PASS",
+    "FAIL",
+    "INCONCLUSIVE",
+    "NOT_RUN"
+  ],
+  "version": "1.0"
+}

@@ -1,0 +1,423 @@
+{
+  "calibration_examples": {
+    "id": 256,
+    "shift": 256
+  },
+  "calibration_seeds": {
+    "id": 268328091,
+    "shift": 320976766
+  },
+  "calibration_target_variance": 0.23322941362857819,
+  "corrupted_checkpoint_sha256": "066625c083f1c4e9307feba2a11c17bf3d9021e683a66dd432ca4974313e2272",
+  "experiment": "ALGN_EX0004B_Lands_Quiet_Scalpel_2_Clean",
+  "factory_sha256": "6604edbe576d33025a4cc8bef9762fd61e4b2ad22fca0dc4a9f33716f1c46826",
+  "healthy_sha256": "85e3560f2a6cb7811b2abf9f1b2fc78c33cd54c54ba6e6f6ef76f9dcee862eae",
+  "protocol_sha256": "ebbfbc477af7ff24928163b08bb6cafbdac7520b7c0c5915c91ce9eedd7fb94f",
+  "sealed_evaluation_accessed": false,
+  "selected_candidate": "C06",
+  "teacher_exposed": false,
+  "tested_candidates": [
+    {
+      "candidate_id": "C01",
+      "checks": {
+        "fault_A_matters": false,
+        "fault_B_matters": true,
+        "loss_interaction": true,
+        "oracle_restores_exactly": true,
+        "output_interaction": true,
+        "ranking_separation": true,
+        "substantial_corruption": true,
+        "zero_only_insufficient": false
+      },
+      "corruption_gap": 0.09173035617277492,
+      "interaction_over_gap": -0.24590149821890586,
+      "isolated_A": 0.0030236683815019205,
+      "isolated_B": 0.11126331980631221,
+      "loss_interaction": -0.022556632015039213,
+      "losses": {
+        "00": 0.00021204356744419783,
+        "01": 0.11147536337375641,
+        "10": 0.0032357119489461184,
+        "11": 0.09194239974021912
+      },
+      "metrics": {
+        "00": {
+          "id_mse": 0.00019643764244392514,
+          "prediction_variance": 0.23588214814662933,
+          "shift_mse": 0.00021204356744419783
+        },
+        "01": {
+          "id_mse": 0.11336840689182281,
+          "prediction_variance": 0.21550172567367554,
+          "shift_mse": 0.11147536337375641
+        },
+        "10": {
+          "id_mse": 0.0041734506376087666,
+          "prediction_variance": 0.22633570432662964,
+          "shift_mse": 0.0032357119489461184
+        },
+        "11": {
+          "id_mse": 0.09558838605880737,
+          "prediction_variance": 0.20921477675437927,
+          "shift_mse": 0.09194239974021912
+        }
+      },
+      "oracle": {
+        "id_mse": 0.00019643764244392514,
+        "prediction_variance": 0.23588214814662933,
+        "shift_mse": 0.00021204356744419783
+      },
+      "oracle_recovery": 1.0,
+      "output_interaction_rms": 0.1467220038175583,
+      "private_route": {
+        "p": 6,
+        "q": 4
+      },
+      "qualifies": false,
+      "ranking_separation_over_gap": 1.1799763561469223,
+      "zero_only": {
+        "id_mse": 0.008553771302103996,
+        "prediction_variance": 0.25408414006233215,
+        "shift_mse": 0.008260269649326801
+      },
+      "zero_recovery": 0.9122621298153067
+    },
+    {
+      "candidate_id": "C02",
+      "checks": {
+        "fault_A_matters": true,
+        "fault_B_matters": true,
+        "loss_interaction": true,
+        "oracle_restores_exactly": true,
+        "output_interaction": true,
+        "ranking_separation": true,
+        "substantial_corruption": false,
+        "zero_only_insufficient": true
+      },
+      "corruption_gap": 0.018398854837869294,
+      "interaction_over_gap": -2.689422355724177,
+      "isolated_A": 0.05069172005460132,
+      "isolated_B": 0.01718942630395759,
+      "loss_interaction": -0.049482291520689614,
+      "losses": {
+        "00": 0.00021204356744419783,
+        "01": 0.017401469871401787,
+        "10": 0.05090376362204552,
+        "11": 0.018610898405313492
+      },
+      "metrics": {
+        "00": {
+          "id_mse": 0.00019643764244392514,
+          "prediction_variance": 0.23588214814662933,
+          "shift_mse": 0.00021204356744419783
+        },
+        "01": {
+          "id_mse": 0.017707007005810738,
+          "prediction_variance": 0.21056386828422546,
+          "shift_mse": 0.017401469871401787
+        },
+        "10": {
+          "id_mse": 0.03475852683186531,
+          "prediction_variance": 0.21918347477912903,
+          "shift_mse": 0.05090376362204552
+        },
+        "11": {
+          "id_mse": 0.01664944365620613,
+          "prediction_variance": 0.20478928089141846,
+          "shift_mse": 0.018610898405313492
+        }
+      },
+      "oracle": {
+        "id_mse": 0.00019643764244392514,
+        "prediction_variance": 0.23588214814662933,
+        "shift_mse": 0.00021204356744419783
+      },
+      "oracle_recovery": 1.0,
+      "output_interaction_rms": 0.18705691397190094,
+      "private_route": {
+        "p": 11,
+        "q": 0
+      },
+      "qualifies": false,
+      "ranking_separation_over_gap": 1.8208901611467636,
+      "zero_only": {
+        "id_mse": 0.010332368314266205,
+        "prediction_variance": 0.21802830696105957,
+        "shift_mse": 0.010598658584058285
+      },
+      "zero_recovery": 0.4354749190565969
+    },
+    {
+      "candidate_id": "C03",
+      "checks": {
+        "fault_A_matters": true,
+        "fault_B_matters": true,
+        "loss_interaction": false,
+        "oracle_restores_exactly": true,
+        "output_interaction": true,
+        "ranking_separation": true,
+        "substantial_corruption": true,
+        "zero_only_insufficient": false
+      },
+      "corruption_gap": 0.4911933838884579,
+      "interaction_over_gap": 0.03292600324135414,
+      "isolated_A": 0.3000192045728909,
+      "isolated_B": 0.17500114436552394,
+      "loss_interaction": 0.016173034950043075,
+      "losses": {
+        "00": 0.00021204356744419783,
+        "01": 0.17521318793296814,
+        "10": 0.3002312481403351,
+        "11": 0.4914054274559021
+      },
+      "metrics": {
+        "00": {
+          "id_mse": 0.00019643764244392514,
+          "prediction_variance": 0.23588214814662933,
+          "shift_mse": 0.00021204356744419783
+        },
+        "01": {
+          "id_mse": 0.16559839248657227,
+          "prediction_variance": 0.14797313511371613,
+          "shift_mse": 0.17521318793296814
+        },
+        "10": {
+          "id_mse": 0.376347154378891,
+          "prediction_variance": 0.4046659767627716,
+          "shift_mse": 0.3002312481403351
+        },
+        "11": {
+          "id_mse": 0.7793762683868408,
+          "prediction_variance": 0.5813092589378357,
+          "shift_mse": 0.4914054274559021
+        }
+      },
+      "oracle": {
+        "id_mse": 0.00019643764244392514,
+        "prediction_variance": 0.23588214814662933,
+        "shift_mse": 0.00021204356744419783
+      },
+      "oracle_recovery": 1.0,
+      "output_interaction_rms": 0.3793465197086334,
+      "private_route": {
+        "p": 4,
+        "q": 10
+      },
+      "qualifies": false,
+      "ranking_separation_over_gap": 0.25451902307331675,
+      "zero_only": {
+        "id_mse": 0.10889003425836563,
+        "prediction_variance": 0.22802168130874634,
+        "shift_mse": 0.10714491456747055
+      },
+      "zero_recovery": 0.7822998547873171
+    },
+    {
+      "candidate_id": "C04",
+      "checks": {
+        "fault_A_matters": true,
+        "fault_B_matters": true,
+        "loss_interaction": true,
+        "oracle_restores_exactly": true,
+        "output_interaction": true,
+        "ranking_separation": true,
+        "substantial_corruption": true,
+        "zero_only_insufficient": false
+      },
+      "corruption_gap": 0.045821417079423554,
+      "interaction_over_gap": -1.243588564968944,
+      "isolated_A": 0.057794965759967454,
+      "isolated_B": 0.0450094416300999,
+      "loss_interaction": -0.0569829903106438,
+      "losses": {
+        "00": 0.00021204356744419783,
+        "01": 0.0452214851975441,
+        "10": 0.05800700932741165,
+        "11": 0.04603346064686775
+      },
+      "metrics": {
+        "00": {
+          "id_mse": 0.00019643764244392514,
+          "prediction_variance": 0.23588214814662933,
+          "shift_mse": 0.00021204356744419783
+        },
+        "01": {
+          "id_mse": 0.042991556227207184,
+          "prediction_variance": 0.2014942616224289,
+          "shift_mse": 0.0452214851975441
+        },
+        "10": {
+          "id_mse": 0.07308753579854965,
+          "prediction_variance": 0.24824318289756775,
+          "shift_mse": 0.05800700932741165
+        },
+        "11": {
+          "id_mse": 0.049414753913879395,
+          "prediction_variance": 0.16666950285434723,
+          "shift_mse": 0.04603346064686775
+        }
+      },
+      "oracle": {
+        "id_mse": 0.00019643764244392514,
+        "prediction_variance": 0.23588214814662933,
+        "shift_mse": 0.00021204356744419783
+      },
+      "oracle_recovery": 1.0,
+      "output_interaction_rms": 0.28257277607917786,
+      "private_route": {
+        "p": 3,
+        "q": 9
+      },
+      "qualifies": false,
+      "ranking_separation_over_gap": 0.27902943524653645,
+      "zero_only": {
+        "id_mse": 0.007559401914477348,
+        "prediction_variance": 0.22413723170757294,
+        "shift_mse": 0.007886836305260658
+      },
+      "zero_recovery": 0.8325064298095904
+    },
+    {
+      "candidate_id": "C05",
+      "checks": {
+        "fault_A_matters": true,
+        "fault_B_matters": true,
+        "loss_interaction": true,
+        "oracle_restores_exactly": true,
+        "output_interaction": true,
+        "ranking_separation": true,
+        "substantial_corruption": true,
+        "zero_only_insufficient": false
+      },
+      "corruption_gap": 0.1250388621847378,
+      "interaction_over_gap": 0.32447427808797863,
+      "isolated_A": 0.04890065263316501,
+      "isolated_B": 0.03556631501123775,
+      "loss_interaction": 0.04057189454033505,
+      "losses": {
+        "00": 0.00021204356744419783,
+        "01": 0.035778358578681946,
+        "10": 0.04911269620060921,
+        "11": 0.125250905752182
+      },
+      "metrics": {
+        "00": {
+          "id_mse": 0.00019643764244392514,
+          "prediction_variance": 0.23588214814662933,
+          "shift_mse": 0.00021204356744419783
+        },
+        "01": {
+          "id_mse": 0.035322654992341995,
+          "prediction_variance": 0.23768925666809082,
+          "shift_mse": 0.035778358578681946
+        },
+        "10": {
+          "id_mse": 0.049080558121204376,
+          "prediction_variance": 0.29280850291252136,
+          "shift_mse": 0.04911269620060921
+        },
+        "11": {
+          "id_mse": 0.12182807922363281,
+          "prediction_variance": 0.32558673620224,
+          "shift_mse": 0.125250905752182
+        }
+      },
+      "oracle": {
+        "id_mse": 0.00019643764244392514,
+        "prediction_variance": 0.23588214814662933,
+        "shift_mse": 0.00021204356744419783
+      },
+      "oracle_recovery": 1.0,
+      "output_interaction_rms": 0.1371442824602127,
+      "private_route": {
+        "p": 0,
+        "q": 5
+      },
+      "qualifies": false,
+      "ranking_separation_over_gap": 0.10664154638760656,
+      "zero_only": {
+        "id_mse": 0.02205202728509903,
+        "prediction_variance": 0.24916718900203705,
+        "shift_mse": 0.022462783381342888
+      },
+      "zero_recovery": 0.8220494058797138
+    },
+    {
+      "candidate_id": "C06",
+      "checks": {
+        "fault_A_matters": true,
+        "fault_B_matters": true,
+        "loss_interaction": true,
+        "oracle_restores_exactly": true,
+        "output_interaction": true,
+        "ranking_separation": true,
+        "substantial_corruption": true,
+        "zero_only_insufficient": true
+      },
+      "corruption_gap": 0.1303300410072552,
+      "interaction_over_gap": -0.5339787069567699,
+      "isolated_A": 0.1289979069988476,
+      "isolated_B": 0.07092560078308452,
+      "loss_interaction": -0.06959346677467693,
+      "losses": {
+        "00": 0.00021204356744419783,
+        "01": 0.07113764435052872,
+        "10": 0.1292099505662918,
+        "11": 0.1305420845746994
+      },
+      "metrics": {
+        "00": {
+          "id_mse": 0.00019643764244392514,
+          "prediction_variance": 0.23588214814662933,
+          "shift_mse": 0.00021204356744419783
+        },
+        "01": {
+          "id_mse": 0.07428672164678574,
+          "prediction_variance": 0.12029062956571579,
+          "shift_mse": 0.07113764435052872
+        },
+        "10": {
+          "id_mse": 0.056321606040000916,
+          "prediction_variance": 0.25221124291419983,
+          "shift_mse": 0.1292099505662918
+        },
+        "11": {
+          "id_mse": 0.06170162558555603,
+          "prediction_variance": 0.13097481429576874,
+          "shift_mse": 0.1305420845746994
+        }
+      },
+      "oracle": {
+        "id_mse": 0.00019643764244392514,
+        "prediction_variance": 0.23588214814662933,
+        "shift_mse": 0.00021204356744419783
+      },
+      "oracle_recovery": 1.0,
+      "output_interaction_rms": 0.12052775919437408,
+      "private_route": {
+        "p": 4,
+        "q": 8
+      },
+      "qualifies": true,
+      "ranking_separation_over_gap": 0.4455788225565764,
+      "zero_only": {
+        "id_mse": 0.12671849131584167,
+        "prediction_variance": 0.24072381854057312,
+        "shift_mse": 0.12642964720726013
+      },
+      "zero_recovery": 0.03155402496351811
+    }
+  ],
+  "untested_candidates": [
+    "C07",
+    "C08",
+    "C09",
+    "C10",
+    "C11",
+    "C12",
+    "C13",
+    "C14",
+    "C15",
+    "C16"
+  ]
+}

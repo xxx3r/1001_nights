@@ -1,0 +1,135 @@
+{
+  "arm_evidence": {
+    "diagnosis_first": {
+      "diagnosis": {
+        "confidence": 0.5,
+        "fault_A": {
+          "input_feature": 0,
+          "layer": "fc1",
+          "neuron": 0
+        },
+        "fault_B": {
+          "layer": "fc2",
+          "neuron": 0,
+          "source_neuron": 0
+        },
+        "initial_patch": [],
+        "mechanism": "FORMAT EXAMPLE ONLY. Not a diagnosis.",
+        "predictions": {
+          "interaction_sign": "positive",
+          "isolated_effect_rank": "A_gt_B",
+          "nuisance_restoration": "unchanged"
+        },
+        "tool": "submit_diagnosis"
+      },
+      "diagnostic_calls": 0,
+      "final_patch": [],
+      "journal_records": 13,
+      "journal_sha256": "589b5c627393dd006bb5a035bb6fb1d7bdad46199aefde531b902b1cdbf52940",
+      "patch_trials": 2,
+      "status": "COMPLETED",
+      "summary_sha256": "7dc635c9cf0f1faf7023ff04c3db4fc94ae0999438768e60fefb276dcae97475",
+      "total_actions": 4,
+      "transcript_sha256": "f433be84a50cfcd1ca976f185a307d240d9e2df54eb16367dc6a0a16b2ee4993"
+    },
+    "repair_only": {
+      "diagnosis": null,
+      "diagnostic_calls": 0,
+      "final_patch": [
+        {
+          "delta": -0.1,
+          "index": [
+            0,
+            5
+          ],
+          "tensor": "fc1.weight"
+        },
+        {
+          "delta": 0.1,
+          "index": [
+            0
+          ],
+          "tensor": "fc2.bias"
+        }
+      ],
+      "journal_records": 10,
+      "journal_sha256": "f115963e02a65a55b674f386f747474137eb0c8644b26e2a2d27fc6dd7ac96cf",
+      "patch_trials": 2,
+      "status": "COMPLETED",
+      "summary_sha256": "2c0787b9647b55d1bd1d412642e60a1e0741d34182aa4bb830172a90b449c7d3",
+      "total_actions": 3,
+      "transcript_sha256": "e6b77effd3eb20b46cec481cb5a1084c545e75132c0c868278db9c49672b6371"
+    }
+  },
+  "comparators": [
+    "healthy",
+    "corrupted",
+    "zero_only",
+    "oracle_A",
+    "oracle_B",
+    "oracle_joint",
+    "diagnosis_first",
+    "repair_only"
+  ],
+  "corrupted_patient_sha256": "066625c083f1c4e9307feba2a11c17bf3d9021e683a66dd432ca4974313e2272",
+  "experiment": "ALGN_EX0004B_Lands_Quiet_Scalpel_2_Clean",
+  "functional_scoring": {
+    "all_three_thresholds_required": true,
+    "gap": "corrupted_shift_mse - healthy_shift_mse",
+    "id_excess_fraction": "(repaired_id_mse - healthy_id_mse) / gap",
+    "maximum_id_excess_fraction": 0.05,
+    "minimum_recovery": 0.8,
+    "minimum_variance_ratio": 0.5,
+    "no_final_patch": "EVALUATE_CORRUPTED_BASELINE",
+    "nonpositive_gap": "INCONCLUSIVE",
+    "recovery": "(corrupted_shift_mse - repaired_shift_mse) / gap",
+    "variance_ratio": "variance(repaired_shift_predictions) / variance(shift_targets)"
+  },
+  "interpretation": {
+    "A1_binary_equivalence_unresolved": true,
+    "no_population_level_causal_claim": true,
+    "no_post_evaluation_patch_changes": true,
+    "sealed_evaluation_only_once": true,
+    "single_patient": true,
+    "zero_diagnostic_calls_in_both_arms": true
+  },
+  "mechanistic_scoring": {
+    "fault_A": "Exact fc1 neuron and input_feature of planted A weight edge.",
+    "fault_B": "Exact fc2 neuron and source_neuron of planted B weight edge.",
+    "interaction_sign": "Sign of L11-L10-L01+L00 on sealed SHIFT.",
+    "isolated_effect_rank": "Compare oracle_A-only and oracle_B-only lesion states against healthy on sealed SHIFT.",
+    "mechanistic_pass_requires": [
+      "both_fault_regions_correct",
+      "isolated_effect_rank_correct",
+      "interaction_sign_correct",
+      "predictions_committed_before_patch_feedback"
+    ],
+    "nuisance_direction_reported_separately": true,
+    "nuisance_direction_threshold": "5 percent relative change; within threshold is unchanged.",
+    "nuisance_restoration": "Compare oracle_joint vs corrupted counterfactual nuisance sensitivity, using mean squared output difference when x5 is negated.",
+    "repair_only_mechanistic_score": "NOT_APPLICABLE",
+    "tie_tolerance": 1e-08
+  },
+  "permuted_patch_controls": {
+    "count_per_nonempty_patch": 3,
+    "method": "For each nonempty final patch, independently relocate its deltas to other valid scalar positions within the same named tensor, without duplicate indices or changing deltas. If relocation is impossible, mark that control NOT_APPLICABLE.",
+    "role": "DESCRIPTIVE_NEGATIVE_CONTROLS_ONLY",
+    "seeds": [
+      1267362071,
+      1644426177,
+      1137599779
+    ]
+  },
+  "protocol_sha256": "ebbfbc477af7ff24928163b08bb6cafbdac7520b7c0c5915c91ce9eedd7fb94f",
+  "sealed_sampling": {
+    "counterfactual_operation": "negate_x5",
+    "counterfactual_pair_count": 256,
+    "counterfactual_regime": "shift",
+    "counterfactual_seed": 1063559087,
+    "id_count": 1000,
+    "id_seed": 2104411291,
+    "shift_count": 1000,
+    "shift_seed": 1837819799
+  },
+  "version": "EX0004B_SEALED_SCORING_V1"
+}

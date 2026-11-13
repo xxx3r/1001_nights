@@ -1,0 +1,27 @@
+{
+  "amendment": "A1_PRE_EXPOSURE",
+  "binary_difference_cause": "UNRESOLVED",
+  "binary_equivalence_established": false,
+  "decision": "Proceed with source-level verification and passing behavioral mock tests. Preserve residual binary-fingerprint uncertainty in final report.",
+  "diagnostic_budget_changed": false,
+  "experiment": "ALGN_EX0004B_Lands_Quiet_Scalpel_2_Clean",
+  "live_teacher_calls_before_amendment": 0,
+  "mock_diagnosis_first": "COMPLETED",
+  "mock_repair_only": "COMPLETED",
+  "observed_runner_marshal_sha256": "0ea514e09101ac8ffd8b832b2f24ce30b1d85bf5a309238c8e579f729dc6c673",
+  "original_loop_sha256": "6adf16a9353165115468c64f302e4717ba2f36b0663cea6d1a6b2c314588a41b",
+  "original_runner_marshal_sha256": "84b9e2778b6ed0b5187bf221603f2a5ded5d128b0caf4c18e40e7ac5454831f4",
+  "original_source_history_entry": 8,
+  "original_source_sha256": "78608385640c3b54cc7961656e9ce7c2679e1fb80b749017a08e2f84620729f7",
+  "patient_changed": false,
+  "reason": "Original marshal-based executable fingerprint differs from the current notebook function fingerprint.",
+  "runner_implementation_edited": false,
+  "scientific_protocol_changed": false,
+  "sealed_evaluation": "UNOPENED",
+  "source_ast_matches": true,
+  "teacher_prompts_changed": false,
+  "verified_source_ast_hashes": {
+    "b_live_decision": "c6c82ee39bdab705d17b29ebfe76622b48dbc9fa30ded20148966c3d1675c9ef",
+    "b_run_arm": "bf5b24cfdf17d87d4bee35c4ccb930c9f217199294dca69a99901b58835fe624"
+  }
+}

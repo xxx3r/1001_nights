@@ -1,0 +1,780 @@
+{
+  "candidate_count": 16,
+  "candidate_performance_evaluated": false,
+  "candidate_selection": "Healthy-weight route ranking; maximum 2 uses per hidden neuron; seeded permutation; first qualifying candidate wins.",
+  "candidates": [
+    {
+      "edits": [
+        {
+          "delta": 2.0,
+          "group": "A",
+          "index": [
+            6,
+            5
+          ],
+          "tensor": "fc1.weight"
+        },
+        {
+          "delta": 0.8,
+          "group": "A",
+          "index": [
+            6
+          ],
+          "tensor": "fc1.bias"
+        },
+        {
+          "delta": 2.4,
+          "group": "B",
+          "index": [
+            4,
+            6
+          ],
+          "tensor": "fc2.weight"
+        },
+        {
+          "delta": 0.9,
+          "group": "B",
+          "index": [
+            4
+          ],
+          "tensor": "fc2.bias"
+        }
+      ],
+      "healthy_route_score": 0.040881632904050225,
+      "id": "C01",
+      "magnitude_profile": 0,
+      "p": 6,
+      "q": 4,
+      "sign_profile": 0
+    },
+    {
+      "edits": [
+        {
+          "delta": -2.0,
+          "group": "A",
+          "index": [
+            11,
+            5
+          ],
+          "tensor": "fc1.weight"
+        },
+        {
+          "delta": 0.8,
+          "group": "A",
+          "index": [
+            11
+          ],
+          "tensor": "fc1.bias"
+        },
+        {
+          "delta": 2.4,
+          "group": "B",
+          "index": [
+            0,
+            11
+          ],
+          "tensor": "fc2.weight"
+        },
+        {
+          "delta": 0.9,
+          "group": "B",
+          "index": [
+            0
+          ],
+          "tensor": "fc2.bias"
+        }
+      ],
+      "healthy_route_score": 0.06845358625387998,
+      "id": "C02",
+      "magnitude_profile": 0,
+      "p": 11,
+      "q": 0,
+      "sign_profile": 1
+    },
+    {
+      "edits": [
+        {
+          "delta": -2.0,
+          "group": "A",
+          "index": [
+            4,
+            5
+          ],
+          "tensor": "fc1.weight"
+        },
+        {
+          "delta": 0.8,
+          "group": "A",
+          "index": [
+            4
+          ],
+          "tensor": "fc1.bias"
+        },
+        {
+          "delta": 2.4,
+          "group": "B",
+          "index": [
+            10,
+            4
+          ],
+          "tensor": "fc2.weight"
+        },
+        {
+          "delta": -0.9,
+          "group": "B",
+          "index": [
+            10
+          ],
+          "tensor": "fc2.bias"
+        }
+      ],
+      "healthy_route_score": 0.19090122248906205,
+      "id": "C03",
+      "magnitude_profile": 0,
+      "p": 4,
+      "q": 10,
+      "sign_profile": 2
+    },
+    {
+      "edits": [
+        {
+          "delta": 2.0,
+          "group": "A",
+          "index": [
+            3,
+            5
+          ],
+          "tensor": "fc1.weight"
+        },
+        {
+          "delta": 0.8,
+          "group": "A",
+          "index": [
+            3
+          ],
+          "tensor": "fc1.bias"
+        },
+        {
+          "delta": 2.4,
+          "group": "B",
+          "index": [
+            9,
+            3
+          ],
+          "tensor": "fc2.weight"
+        },
+        {
+          "delta": -0.9,
+          "group": "B",
+          "index": [
+            9
+          ],
+          "tensor": "fc2.bias"
+        }
+      ],
+      "healthy_route_score": 0.03624350420119882,
+      "id": "C04",
+      "magnitude_profile": 0,
+      "p": 3,
+      "q": 9,
+      "sign_profile": 3
+    },
+    {
+      "edits": [
+        {
+          "delta": -2.6,
+          "group": "A",
+          "index": [
+            0,
+            5
+          ],
+          "tensor": "fc1.weight"
+        },
+        {
+          "delta": -1.2,
+          "group": "A",
+          "index": [
+            0
+          ],
+          "tensor": "fc1.bias"
+        },
+        {
+          "delta": 3.1,
+          "group": "B",
+          "index": [
+            5,
+            0
+          ],
+          "tensor": "fc2.weight"
+        },
+        {
+          "delta": -1.1,
+          "group": "B",
+          "index": [
+            5
+          ],
+          "tensor": "fc2.bias"
+        }
+      ],
+      "healthy_route_score": 0.04136164767484418,
+      "id": "C05",
+      "magnitude_profile": 1,
+      "p": 0,
+      "q": 5,
+      "sign_profile": 0
+    },
+    {
+      "edits": [
+        {
+          "delta": 2.6,
+          "group": "A",
+          "index": [
+            4,
+            5
+          ],
+          "tensor": "fc1.weight"
+        },
+        {
+          "delta": -1.2,
+          "group": "A",
+          "index": [
+            4
+          ],
+          "tensor": "fc1.bias"
+        },
+        {
+          "delta": -3.1,
+          "group": "B",
+          "index": [
+            8,
+            4
+          ],
+          "tensor": "fc2.weight"
+        },
+        {
+          "delta": 1.1,
+          "group": "B",
+          "index": [
+            8
+          ],
+          "tensor": "fc2.bias"
+        }
+      ],
+      "healthy_route_score": 0.10354110691648266,
+      "id": "C06",
+      "magnitude_profile": 1,
+      "p": 4,
+      "q": 8,
+      "sign_profile": 1
+    },
+    {
+      "edits": [
+        {
+          "delta": 2.6,
+          "group": "A",
+          "index": [
+            5,
+            5
+          ],
+          "tensor": "fc1.weight"
+        },
+        {
+          "delta": -1.2,
+          "group": "A",
+          "index": [
+            5
+          ],
+          "tensor": "fc1.bias"
+        },
+        {
+          "delta": 3.1,
+          "group": "B",
+          "index": [
+            11,
+            5
+          ],
+          "tensor": "fc2.weight"
+        },
+        {
+          "delta": 1.1,
+          "group": "B",
+          "index": [
+            11
+          ],
+          "tensor": "fc2.bias"
+        }
+      ],
+      "healthy_route_score": 0.0659409731046523,
+      "id": "C07",
+      "magnitude_profile": 1,
+      "p": 5,
+      "q": 11,
+      "sign_profile": 2
+    },
+    {
+      "edits": [
+        {
+          "delta": -2.6,
+          "group": "A",
+          "index": [
+            8,
+            5
+          ],
+          "tensor": "fc1.weight"
+        },
+        {
+          "delta": -1.2,
+          "group": "A",
+          "index": [
+            8
+          ],
+          "tensor": "fc1.bias"
+        },
+        {
+          "delta": 3.1,
+          "group": "B",
+          "index": [
+            1,
+            8
+          ],
+          "tensor": "fc2.weight"
+        },
+        {
+          "delta": 1.1,
+          "group": "B",
+          "index": [
+            1
+          ],
+          "tensor": "fc2.bias"
+        }
+      ],
+      "healthy_route_score": 0.05208525487651938,
+      "id": "C08",
+      "magnitude_profile": 1,
+      "p": 8,
+      "q": 1,
+      "sign_profile": 3
+    },
+    {
+      "edits": [
+        {
+          "delta": 3.2,
+          "group": "A",
+          "index": [
+            9,
+            5
+          ],
+          "tensor": "fc1.weight"
+        },
+        {
+          "delta": 0.6,
+          "group": "A",
+          "index": [
+            9
+          ],
+          "tensor": "fc1.bias"
+        },
+        {
+          "delta": 2.0,
+          "group": "B",
+          "index": [
+            9,
+            9
+          ],
+          "tensor": "fc2.weight"
+        },
+        {
+          "delta": 1.5,
+          "group": "B",
+          "index": [
+            9
+          ],
+          "tensor": "fc2.bias"
+        }
+      ],
+      "healthy_route_score": 0.04781006295210943,
+      "id": "C09",
+      "magnitude_profile": 2,
+      "p": 9,
+      "q": 9,
+      "sign_profile": 0
+    },
+    {
+      "edits": [
+        {
+          "delta": -3.2,
+          "group": "A",
+          "index": [
+            7,
+            5
+          ],
+          "tensor": "fc1.weight"
+        },
+        {
+          "delta": 0.6,
+          "group": "A",
+          "index": [
+            7
+          ],
+          "tensor": "fc1.bias"
+        },
+        {
+          "delta": -2.0,
+          "group": "B",
+          "index": [
+            11,
+            7
+          ],
+          "tensor": "fc2.weight"
+        },
+        {
+          "delta": -1.5,
+          "group": "B",
+          "index": [
+            11
+          ],
+          "tensor": "fc2.bias"
+        }
+      ],
+      "healthy_route_score": 0.10282131880186052,
+      "id": "C10",
+      "magnitude_profile": 2,
+      "p": 7,
+      "q": 11,
+      "sign_profile": 1
+    },
+    {
+      "edits": [
+        {
+          "delta": -3.2,
+          "group": "A",
+          "index": [
+            9,
+            5
+          ],
+          "tensor": "fc1.weight"
+        },
+        {
+          "delta": 0.6,
+          "group": "A",
+          "index": [
+            9
+          ],
+          "tensor": "fc1.bias"
+        },
+        {
+          "delta": -2.0,
+          "group": "B",
+          "index": [
+            5,
+            9
+          ],
+          "tensor": "fc2.weight"
+        },
+        {
+          "delta": 1.5,
+          "group": "B",
+          "index": [
+            5
+          ],
+          "tensor": "fc2.bias"
+        }
+      ],
+      "healthy_route_score": 0.04310020147247684,
+      "id": "C11",
+      "magnitude_profile": 2,
+      "p": 9,
+      "q": 5,
+      "sign_profile": 2
+    },
+    {
+      "edits": [
+        {
+          "delta": 3.2,
+          "group": "A",
+          "index": [
+            1,
+            5
+          ],
+          "tensor": "fc1.weight"
+        },
+        {
+          "delta": 0.6,
+          "group": "A",
+          "index": [
+            1
+          ],
+          "tensor": "fc1.bias"
+        },
+        {
+          "delta": 2.0,
+          "group": "B",
+          "index": [
+            8,
+            1
+          ],
+          "tensor": "fc2.weight"
+        },
+        {
+          "delta": -1.5,
+          "group": "B",
+          "index": [
+            8
+          ],
+          "tensor": "fc2.bias"
+        }
+      ],
+      "healthy_route_score": 0.10691877472009281,
+      "id": "C12",
+      "magnitude_profile": 2,
+      "p": 1,
+      "q": 8,
+      "sign_profile": 3
+    },
+    {
+      "edits": [
+        {
+          "delta": -3.6,
+          "group": "A",
+          "index": [
+            0,
+            5
+          ],
+          "tensor": "fc1.weight"
+        },
+        {
+          "delta": -1.5,
+          "group": "A",
+          "index": [
+            0
+          ],
+          "tensor": "fc1.bias"
+        },
+        {
+          "delta": -3.4,
+          "group": "B",
+          "index": [
+            0,
+            0
+          ],
+          "tensor": "fc2.weight"
+        },
+        {
+          "delta": 0.6,
+          "group": "B",
+          "index": [
+            0
+          ],
+          "tensor": "fc2.bias"
+        }
+      ],
+      "healthy_route_score": 0.06996460632128598,
+      "id": "C13",
+      "magnitude_profile": 3,
+      "p": 0,
+      "q": 0,
+      "sign_profile": 0
+    },
+    {
+      "edits": [
+        {
+          "delta": -3.6,
+          "group": "A",
+          "index": [
+            1,
+            5
+          ],
+          "tensor": "fc1.weight"
+        },
+        {
+          "delta": 1.5,
+          "group": "A",
+          "index": [
+            1
+          ],
+          "tensor": "fc1.bias"
+        },
+        {
+          "delta": 3.4,
+          "group": "B",
+          "index": [
+            10,
+            1
+          ],
+          "tensor": "fc2.weight"
+        },
+        {
+          "delta": 0.6,
+          "group": "B",
+          "index": [
+            10
+          ],
+          "tensor": "fc2.bias"
+        }
+      ],
+      "healthy_route_score": 0.2140847463219231,
+      "id": "C14",
+      "magnitude_profile": 3,
+      "p": 1,
+      "q": 10,
+      "sign_profile": 1
+    },
+    {
+      "edits": [
+        {
+          "delta": -3.6,
+          "group": "A",
+          "index": [
+            2,
+            5
+          ],
+          "tensor": "fc1.weight"
+        },
+        {
+          "delta": 1.5,
+          "group": "A",
+          "index": [
+            2
+          ],
+          "tensor": "fc1.bias"
+        },
+        {
+          "delta": 3.4,
+          "group": "B",
+          "index": [
+            4,
+            2
+          ],
+          "tensor": "fc2.weight"
+        },
+        {
+          "delta": -0.6,
+          "group": "B",
+          "index": [
+            4
+          ],
+          "tensor": "fc2.bias"
+        }
+      ],
+      "healthy_route_score": 0.03878449176152543,
+      "id": "C15",
+      "magnitude_profile": 3,
+      "p": 2,
+      "q": 4,
+      "sign_profile": 2
+    },
+    {
+      "edits": [
+        {
+          "delta": 3.6,
+          "group": "A",
+          "index": [
+            3,
+            5
+          ],
+          "tensor": "fc1.weight"
+        },
+        {
+          "delta": 1.5,
+          "group": "A",
+          "index": [
+            3
+          ],
+          "tensor": "fc1.bias"
+        },
+        {
+          "delta": -3.4,
+          "group": "B",
+          "index": [
+            1,
+            3
+          ],
+          "tensor": "fc2.weight"
+        },
+        {
+          "delta": 0.6,
+          "group": "B",
+          "index": [
+            1
+          ],
+          "tensor": "fc2.bias"
+        }
+      ],
+      "healthy_route_score": 0.049911618335567454,
+      "id": "C16",
+      "magnitude_profile": 3,
+      "p": 3,
+      "q": 1,
+      "sign_profile": 3
+    }
+  ],
+  "construction_gate": {
+    "first_qualifying_candidate_wins": true,
+    "maximum_candidates": 16,
+    "maximum_zero_only_recovery": 0.5,
+    "minimum_abs_interaction_over_gap": 0.15,
+    "minimum_abs_single_effect_over_gap": 0.05,
+    "minimum_gap_over_target_variance": 0.1,
+    "minimum_output_interaction_rms": 0.05,
+    "minimum_ranking_separation_over_gap": 0.1,
+    "no_qualifying_patient": "STOP_NOT_RUN",
+    "oracle_must_restore_exactly": true
+  },
+  "experiment": "ALGN_EX0004B_Lands_Quiet_Scalpel_2_Clean",
+  "healthy_checkpoint_sha256": "85e3560f2a6cb7811b2abf9f1b2fc78c33cd54c54ba6e6f6ef76f9dcee862eae",
+  "magnitude_profiles": [
+    [
+      2.0,
+      0.8,
+      2.4,
+      0.9
+    ],
+    [
+      2.6,
+      1.2,
+      3.1,
+      1.1
+    ],
+    [
+      3.2,
+      0.6,
+      2.0,
+      1.5
+    ],
+    [
+      3.6,
+      1.5,
+      3.4,
+      0.6
+    ]
+  ],
+  "protocol_sha256": "ebbfbc477af7ff24928163b08bb6cafbdac7520b7c0c5915c91ce9eedd7fb94f",
+  "selection_seed": 1701860446,
+  "sign_profiles": [
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    [
+      -1,
+      1,
+      1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  ],
+  "version": "EX0004B_LESION_FACTORY_V1"
+}

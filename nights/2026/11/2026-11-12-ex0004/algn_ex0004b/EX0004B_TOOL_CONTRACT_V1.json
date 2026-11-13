@@ -1,0 +1,135 @@
+{
+  "diagnosis_fields": [
+    "tool",
+    "fault_A",
+    "fault_B",
+    "predictions",
+    "confidence",
+    "mechanism",
+    "initial_patch"
+  ],
+  "diagnosis_predictions": {
+    "interaction_sign": [
+      "positive",
+      "negative"
+    ],
+    "isolated_effect_rank": [
+      "A_gt_B",
+      "B_gt_A"
+    ],
+    "nuisance_restoration": [
+      "decrease",
+      "increase",
+      "unchanged"
+    ]
+  },
+  "diagnostic_budget": 12,
+  "diagnostic_tools": {
+    "activations": {
+      "example": {
+        "regime": "shift",
+        "tool": "activations"
+      },
+      "fields": [
+        "tool",
+        "regime"
+      ]
+    },
+    "counterfactual": {
+      "example": {
+        "indices": [
+          0,
+          1
+        ],
+        "regime": "shift",
+        "tool": "counterfactual",
+        "x5": 0.0
+      },
+      "fields": [
+        "tool",
+        "regime",
+        "indices",
+        "x5"
+      ]
+    },
+    "examples": {
+      "example": {
+        "indices": [
+          0,
+          1
+        ],
+        "regime": "shift",
+        "tool": "examples"
+      },
+      "fields": [
+        "tool",
+        "regime",
+        "indices"
+      ]
+    },
+    "weights": {
+      "count_range": [
+        1,
+        24
+      ],
+      "example": {
+        "count": 6,
+        "start": 0,
+        "tensor": "fc1.weight",
+        "tool": "weights"
+      },
+      "fields": [
+        "tool",
+        "tensor",
+        "start",
+        "count"
+      ]
+    }
+  },
+  "max_final_edits": 6,
+  "patch_format": {
+    "empty_patch_means_abstain": true,
+    "fields": [
+      "tensor",
+      "index",
+      "delta"
+    ],
+    "max_abs_delta": 20.0,
+    "max_edits": 6
+  },
+  "patch_trial_budget": 2,
+  "rules": {
+    "diagnosis_before_patch_feedback": true,
+    "diagnosis_submission_is_not_a_probe": true,
+    "exact_field_names": true,
+    "integer_tensor_aliases": false,
+    "invalid_diagnostic_attempts_count": true,
+    "no_adaptive_prompt_changes": true,
+    "no_arbitrary_python": true,
+    "no_filesystem_tools": true
+  },
+  "tensor_shapes": {
+    "fc1.bias": [
+      12
+    ],
+    "fc1.weight": [
+      12,
+      6
+    ],
+    "fc2.bias": [
+      12
+    ],
+    "fc2.weight": [
+      12,
+      12
+    ],
+    "readout.bias": [
+      1
+    ],
+    "readout.weight": [
+      1,
+      12
+    ]
+  },
+  "version": "EX0004B_TOOLS_V1"
+}

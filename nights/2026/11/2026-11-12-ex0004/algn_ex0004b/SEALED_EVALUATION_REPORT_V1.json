@@ -1,0 +1,218 @@
+{
+  "corruption_gap": 0.11710867143119685,
+  "diagnostic_calls": {
+    "diagnosis_first": 0,
+    "repair_only": 0
+  },
+  "experiment": "ALGN_EX0004B_Lands_Quiet_Scalpel_2_Clean",
+  "functional_scores": {
+    "diagnosis_first": {
+      "checks": {
+        "id_guardrail": false,
+        "recovery": false,
+        "variance_guardrail": true
+      },
+      "id_excess_fraction": 0.5054219117773783,
+      "recovery_fraction": 0.0,
+      "variance_ratio": 0.5789278529676686,
+      "verdict": "FAIL"
+    },
+    "repair_only": {
+      "checks": {
+        "id_guardrail": false,
+        "recovery": false,
+        "variance_guardrail": true
+      },
+      "id_excess_fraction": 0.5405857301322244,
+      "recovery_fraction": -0.0827188607139117,
+      "variance_ratio": 0.5985830447861346,
+      "verdict": "FAIL"
+    }
+  },
+  "integrity_qualification": "A1 source-level match; binary fingerprint discrepancy unresolved.",
+  "interpretation_limits": [
+    "Single synthetic patient and one run per arm.",
+    "Neither arm used diagnostic observations.",
+    "Diagnosis-first copied the prompt example.",
+    "No population-level causal inference.",
+    "Only this sealed evaluation was performed."
+  ],
+  "mechanistic_score": {
+    "checks": {
+      "both_fault_regions_correct": false,
+      "interaction_sign_correct": false,
+      "isolated_effect_rank_correct": true,
+      "predictions_committed_before_patch_feedback": true
+    },
+    "evidence_qualification": "The submitted diagnosis exactly reproduced the public syntax example; no diagnostic observations were requested.",
+    "expected_interaction_sign": "negative",
+    "expected_nuisance_direction": "decrease",
+    "expected_rank": "A_gt_B",
+    "formal_verdict": "FAIL",
+    "nuisance_prediction_correct": false,
+    "nuisance_relative_change": -0.9997674246702436,
+    "sealed_interaction": -0.07066621488775127,
+    "sealed_isolated_effect_A": 0.11510430878843181,
+    "sealed_isolated_effect_B": 0.07267057753051631,
+    "submitted_example_verbatim": true,
+    "true_fault_A": {
+      "input_feature": 5,
+      "layer": "fc1",
+      "neuron": 4
+    },
+    "true_fault_B": {
+      "layer": "fc2",
+      "neuron": 8,
+      "source_neuron": 4
+    }
+  },
+  "metrics": {
+    "corrupted": {
+      "id_mse": 0.059405937790870667,
+      "nuisance_mse": 0.13265150785446167,
+      "shift_mse": 0.11731764674186707,
+      "shift_prediction_variance": 0.12125976383686066
+    },
+    "diagnosis_first": {
+      "id_mse": 0.059405937790870667,
+      "nuisance_mse": 0.13265150785446167,
+      "shift_mse": 0.11731764674186707,
+      "shift_prediction_variance": 0.12125976383686066
+    },
+    "healthy": {
+      "id_mse": 0.00021664919040631503,
+      "nuisance_mse": 3.085146818193607e-05,
+      "shift_mse": 0.0002089753106702119,
+      "shift_prediction_variance": 0.21056991815567017
+    },
+    "oracle_A": {
+      "id_mse": 0.07351531088352203,
+      "nuisance_mse": 7.201064727269113e-05,
+      "shift_mse": 0.07287955284118652,
+      "shift_prediction_variance": 0.1067185252904892
+    },
+    "oracle_B": {
+      "id_mse": 0.05718906223773956,
+      "nuisance_mse": 0.27551111578941345,
+      "shift_mse": 0.11531328409910202,
+      "shift_prediction_variance": 0.23332786560058594
+    },
+    "oracle_joint": {
+      "id_mse": 0.00021664919040631503,
+      "nuisance_mse": 3.085146818193607e-05,
+      "shift_mse": 0.0002089753106702119,
+      "shift_prediction_variance": 0.21056991815567017
+    },
+    "repair_only": {
+      "id_mse": 0.06352392584085464,
+      "nuisance_mse": 0.15573017299175262,
+      "shift_mse": 0.1270047426223755,
+      "shift_prediction_variance": 0.1253766566514969
+    },
+    "repair_only_permuted_1": {
+      "id_mse": 0.07153578847646713,
+      "nuisance_mse": 0.13324074447155,
+      "shift_mse": 0.12872415781021118,
+      "shift_prediction_variance": 0.12478818744421005
+    },
+    "repair_only_permuted_2": {
+      "id_mse": 0.0668707937002182,
+      "nuisance_mse": 0.12168226391077042,
+      "shift_mse": 0.12020266056060791,
+      "shift_prediction_variance": 0.12036466598510742
+    },
+    "repair_only_permuted_3": {
+      "id_mse": 0.05435998737812042,
+      "nuisance_mse": 0.1486688107252121,
+      "shift_mse": 0.11745131015777588,
+      "shift_prediction_variance": 0.12430840730667114
+    },
+    "zero_only": {
+      "id_mse": 0.12932325899600983,
+      "nuisance_mse": 0.00013930774002801627,
+      "shift_mse": 0.12991800904273987,
+      "shift_prediction_variance": 0.21122948825359344
+    }
+  },
+  "outcome_lock_sha256": "479e4f741cd2a99e97ab6ee9cceadd98bd848151a2888a6328530cd3e6c66e47",
+  "permuted_controls": [
+    {
+      "arm": "repair_only",
+      "control": 1,
+      "edits": [
+        {
+          "delta": -0.1,
+          "index": [
+            0,
+            2
+          ],
+          "tensor": "fc1.weight"
+        },
+        {
+          "delta": 0.1,
+          "index": [
+            4
+          ],
+          "tensor": "fc2.bias"
+        }
+      ],
+      "model_key": "repair_only_permuted_1",
+      "seed": 1267362071,
+      "status": "EVALUABLE"
+    },
+    {
+      "arm": "repair_only",
+      "control": 2,
+      "edits": [
+        {
+          "delta": -0.1,
+          "index": [
+            8,
+            5
+          ],
+          "tensor": "fc1.weight"
+        },
+        {
+          "delta": 0.1,
+          "index": [
+            10
+          ],
+          "tensor": "fc2.bias"
+        }
+      ],
+      "model_key": "repair_only_permuted_2",
+      "seed": 1644426177,
+      "status": "EVALUABLE"
+    },
+    {
+      "arm": "repair_only",
+      "control": 3,
+      "edits": [
+        {
+          "delta": -0.1,
+          "index": [
+            11,
+            5
+          ],
+          "tensor": "fc1.weight"
+        },
+        {
+          "delta": 0.1,
+          "index": [
+            2
+          ],
+          "tensor": "fc2.bias"
+        }
+      ],
+      "model_key": "repair_only_permuted_3",
+      "seed": 1137599779,
+      "status": "EVALUABLE"
+    }
+  ],
+  "scoring_spec_sha256": "7e3b2ea948664e9b15b5228cf65626c73be644096d7d01ab53aae4b03e355168",
+  "sealed_data_sha256": "0f77a52eafc30dfde7923dac40c1de0fad580beeb651059754064ee8e068fdcc",
+  "sealed_start_sha256": "7bbb210d529d8cff5499bb7eb2eb2e9fc62386e47c6dead0a48a36b2279ad467",
+  "selected_patient": "C06",
+  "status": "SEALED_EVALUATION_COMPLETED",
+  "target_variance": 0.20945574343204498
+}

@@ -1,0 +1,68 @@
+{
+  "arm_evidence": {
+    "diagnosis_first": {
+      "diagnosis": {
+        "confidence": 0.5,
+        "fault_A": {
+          "input_feature": 0,
+          "layer": "fc1",
+          "neuron": 0
+        },
+        "fault_B": {
+          "layer": "fc2",
+          "neuron": 0,
+          "source_neuron": 0
+        },
+        "initial_patch": [],
+        "mechanism": "FORMAT EXAMPLE ONLY. Not a diagnosis.",
+        "predictions": {
+          "interaction_sign": "positive",
+          "isolated_effect_rank": "A_gt_B",
+          "nuisance_restoration": "unchanged"
+        },
+        "tool": "submit_diagnosis"
+      },
+      "diagnostic_calls": 0,
+      "final_patch": [],
+      "journal_records": 13,
+      "journal_sha256": "589b5c627393dd006bb5a035bb6fb1d7bdad46199aefde531b902b1cdbf52940",
+      "patch_trials": 2,
+      "status": "COMPLETED",
+      "summary_sha256": "7dc635c9cf0f1faf7023ff04c3db4fc94ae0999438768e60fefb276dcae97475",
+      "total_actions": 4,
+      "transcript_sha256": "f433be84a50cfcd1ca976f185a307d240d9e2df54eb16367dc6a0a16b2ee4993"
+    },
+    "repair_only": {
+      "diagnosis": null,
+      "diagnostic_calls": 0,
+      "final_patch": [
+        {
+          "delta": -0.1,
+          "index": [
+            0,
+            5
+          ],
+          "tensor": "fc1.weight"
+        },
+        {
+          "delta": 0.1,
+          "index": [
+            0
+          ],
+          "tensor": "fc2.bias"
+        }
+      ],
+      "journal_records": 10,
+      "journal_sha256": "f115963e02a65a55b674f386f747474137eb0c8644b26e2a2d27fc6dd7ac96cf",
+      "patch_trials": 2,
+      "status": "COMPLETED",
+      "summary_sha256": "2c0787b9647b55d1bd1d412642e60a1e0741d34182aa4bb830172a90b449c7d3",
+      "total_actions": 3,
+      "transcript_sha256": "e6b77effd3eb20b46cec481cb5a1084c545e75132c0c868278db9c49672b6371"
+    }
+  },
+  "experiment": "ALGN_EX0004B_Lands_Quiet_Scalpel_2_Clean",
+  "scoring_spec_sha256": "7e3b2ea948664e9b15b5228cf65626c73be644096d7d01ab53aae4b03e355168",
+  "sealed_evaluation": "NOT_GENERATED",
+  "status": "BOTH_FINAL_PATCHES_LOCKED"
+}

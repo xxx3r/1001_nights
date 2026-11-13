@@ -1,0 +1,15 @@
+{
+  "code_sha256": "84b9e2778b6ed0b5187bf221603f2a5ded5d128b0caf4c18e40e7ac5454831f4",
+  "event_journal": "APPEND_ONLY_HASH_CHAIN",
+  "feedback": "FIXED_TEMPLATE",
+  "incomplete_generation_policy": "STOP_NO_RETRY",
+  "max_diagnostic_calls": 12,
+  "max_patch_trials": 2,
+  "maximum_actions_per_arm": 20,
+  "mock_diagnosis_status": "COMPLETED",
+  "mock_repair_status": "COMPLETED",
+  "per_turn_seed_derivation": "SHA256(base|arm|turn)",
+  "prompt_sha256": "22d9d04a32c4b32f3a63f16bcf01de6c14ee16a8e5016012a717fdfa00a93747",
+  "teacher_exposed": false,
+  "version": "EX0004B_AUTONOMOUS_LOOP_V1"
+}
