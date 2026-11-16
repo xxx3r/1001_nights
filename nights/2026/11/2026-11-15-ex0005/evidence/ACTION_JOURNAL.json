@@ -1,0 +1,1052 @@
+[
+  {
+    "kind": "api_response",
+    "phase": "P0",
+    "id": "resp_0f36ab0cdb102dac006afa6af3712887d28910bcfd80a8c4a3",
+    "model": "gpt-6-luna",
+    "status": "completed",
+    "incomplete_details": "None",
+    "usage": {
+      "input_tokens": 84,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 115,
+      "output_tokens_details": {
+        "reasoning_tokens": 96
+      },
+      "total_tokens": 199
+    },
+    "output_items": [
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "message",
+        null
+      ]
+    ]
+  },
+  {
+    "kind": "api_response",
+    "phase": "P1_plus_diagnostic_1",
+    "id": "resp_0ee51221d2427868006afa6af6d02c87d2a5c4fac007935968",
+    "model": "gpt-6-luna",
+    "status": "completed",
+    "incomplete_details": "None",
+    "usage": {
+      "input_tokens": 352,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 70,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 422
+    },
+    "output_items": [
+      [
+        "function_call",
+        "inspect_weights"
+      ],
+      [
+        "function_call",
+        "probe_examples"
+      ]
+    ]
+  },
+  {
+    "kind": "diagnostic",
+    "case": "P1_plus",
+    "function": "inspect_weights",
+    "arguments": "{\"tensor\":\"W2\",\"start\":0,\"count\":2}",
+    "valid": true,
+    "return": {
+      "tensor": "W2",
+      "shape": [
+        2
+      ],
+      "flat_start": 0,
+      "values": [
+        1.75,
+        0.5
+      ],
+      "provenance": "current corrupted checkpoint"
+    }
+  },
+  {
+    "kind": "diagnostic",
+    "case": "P1_plus",
+    "function": "probe_examples",
+    "arguments": "{\"regime\":\"mixed\",\"indices\":[0,1,2,3]}",
+    "valid": false,
+    "return": {
+      "error": "ValueError: invalid regime or indices"
+    }
+  },
+  {
+    "kind": "api_response",
+    "phase": "P1_plus_diagnostic_2",
+    "id": "resp_0ee51221d2427868006afa6afa8ea887d298925b8ab42a77d3",
+    "model": "gpt-6-luna",
+    "status": "completed",
+    "incomplete_details": "None",
+    "usage": {
+      "input_tokens": 498,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 78,
+      "output_tokens_details": {
+        "reasoning_tokens": 51
+      },
+      "total_tokens": 576
+    },
+    "output_items": [
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "function_call",
+        "probe_examples"
+      ]
+    ]
+  },
+  {
+    "kind": "diagnostic",
+    "case": "P1_plus",
+    "function": "probe_examples",
+    "arguments": "{\"regime\":\"feature0\",\"indices\":[0]}",
+    "valid": true,
+    "return": {
+      "regime": "feature0",
+      "rows": [
+        {
+          "index": 0,
+          "x": [
+            0.5,
+            0.0
+          ],
+          "target": 0.6,
+          "prediction": 0.975,
+          "residual": 0.375
+        }
+      ],
+      "provenance": "public development probe; not sealed"
+    }
+  },
+  {
+    "kind": "api_response",
+    "phase": "P1_plus_commit",
+    "id": "resp_0ee51221d2427868006afa6afdd27887d28d4f582aef5dfca4",
+    "model": "gpt-6-luna",
+    "status": "completed",
+    "incomplete_details": "None",
+    "usage": {
+      "input_tokens": 773,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 453,
+      "output_tokens_details": {
+        "reasoning_tokens": 354
+      },
+      "total_tokens": 1226
+    },
+    "output_items": [
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "message",
+        null
+      ]
+    ]
+  },
+  {
+    "kind": "api_response",
+    "phase": "P1_minus_diagnostic_1",
+    "id": "resp_0d54b9311597b9a0006afa6b040cc887d28cdf4a436638a57b",
+    "model": "gpt-6-luna",
+    "status": "completed",
+    "incomplete_details": "None",
+    "usage": {
+      "input_tokens": 352,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 139,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 491
+    },
+    "output_items": [
+      [
+        "function_call",
+        "inspect_weights"
+      ],
+      [
+        "function_call",
+        "probe_examples"
+      ],
+      [
+        "function_call",
+        "inspect_weights"
+      ],
+      [
+        "function_call",
+        "inspect_weights"
+      ],
+      [
+        "function_call",
+        "inspect_weights"
+      ]
+    ]
+  },
+  {
+    "kind": "diagnostic",
+    "case": "P1_minus",
+    "function": "inspect_weights",
+    "arguments": "{\"tensor\":\"W2\",\"start\":0,\"count\":2}",
+    "valid": true,
+    "return": {
+      "tensor": "W2",
+      "shape": [
+        2
+      ],
+      "flat_start": 0,
+      "values": [
+        0.25,
+        0.5
+      ],
+      "provenance": "current corrupted checkpoint"
+    }
+  },
+  {
+    "kind": "diagnostic",
+    "case": "P1_minus",
+    "function": "probe_examples",
+    "arguments": "{\"regime\":\"feature0\",\"indices\":[0,1,2,3]}",
+    "valid": false,
+    "return": {
+      "error": "ValueError: invalid regime or indices"
+    }
+  },
+  {
+    "kind": "diagnostic",
+    "case": "P1_minus",
+    "function": "inspect_weights",
+    "arguments": "{\"tensor\":\"W1\",\"start\":0,\"count\":4}",
+    "valid": true,
+    "return": {
+      "tensor": "W1",
+      "shape": [
+        2,
+        2
+      ],
+      "flat_start": 0,
+      "values": [
+        1.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "provenance": "current corrupted checkpoint"
+    }
+  },
+  {
+    "kind": "diagnostic",
+    "case": "P1_minus",
+    "function": "inspect_weights",
+    "arguments": "{\"tensor\":\"b1\",\"start\":0,\"count\":2}",
+    "valid": true,
+    "return": {
+      "tensor": "b1",
+      "shape": [
+        2
+      ],
+      "flat_start": 0,
+      "values": [
+        0.0,
+        0.0
+      ],
+      "provenance": "current corrupted checkpoint"
+    }
+  },
+  {
+    "kind": "diagnostic",
+    "case": "P1_minus",
+    "function": "inspect_weights",
+    "valid": false,
+    "error": "over budget"
+  },
+  {
+    "kind": "api_response",
+    "phase": "P1_minus_diagnostic_2",
+    "id": "resp_0d54b9311597b9a0006afa6b06ee8087d2b1ad979654268aee",
+    "model": "gpt-6-luna",
+    "status": "completed",
+    "incomplete_details": "None",
+    "usage": {
+      "input_tokens": 702,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 28,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 730
+    },
+    "output_items": [
+      [
+        "function_call",
+        "probe_examples"
+      ]
+    ]
+  },
+  {
+    "kind": "diagnostic",
+    "case": "P1_minus",
+    "function": "probe_examples",
+    "valid": false,
+    "error": "over budget"
+  },
+  {
+    "kind": "api_response",
+    "phase": "P1_minus_diagnostic_3",
+    "id": "resp_0d54b9311597b9a0006afa6b08c5cc87d2b2883e3c3afdfe7d",
+    "model": "gpt-6-luna",
+    "status": "completed",
+    "incomplete_details": "None",
+    "usage": {
+      "input_tokens": 751,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 27,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 778
+    },
+    "output_items": [
+      [
+        "function_call",
+        "inspect_weights"
+      ]
+    ]
+  },
+  {
+    "kind": "diagnostic",
+    "case": "P1_minus",
+    "function": "inspect_weights",
+    "valid": false,
+    "error": "over budget"
+  },
+  {
+    "kind": "api_response",
+    "phase": "P1_minus_diagnostic_4",
+    "id": "resp_0d54b9311597b9a0006afa6b0a79f487d2967d94a59cb7cb0f",
+    "model": "gpt-6-luna",
+    "status": "completed",
+    "incomplete_details": "None",
+    "usage": {
+      "input_tokens": 798,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 345,
+      "output_tokens_details": {
+        "reasoning_tokens": 318
+      },
+      "total_tokens": 1143
+    },
+    "output_items": [
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "function_call",
+        "probe_examples"
+      ]
+    ]
+  },
+  {
+    "kind": "diagnostic",
+    "case": "P1_minus",
+    "function": "probe_examples",
+    "valid": false,
+    "error": "over budget"
+  },
+  {
+    "kind": "api_response",
+    "phase": "P2_diagnostic_1",
+    "id": "resp_0ac310e30ad7162a006afa6b10b3f087d29076e5b8db842611",
+    "model": "gpt-6-luna",
+    "status": "completed",
+    "incomplete_details": "None",
+    "usage": {
+      "input_tokens": 352,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 193,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 545
+    },
+    "output_items": [
+      [
+        "function_call",
+        "inspect_weights"
+      ],
+      [
+        "function_call",
+        "inspect_weights"
+      ],
+      [
+        "function_call",
+        "inspect_weights"
+      ],
+      [
+        "function_call",
+        "inspect_weights"
+      ],
+      [
+        "function_call",
+        "probe_examples"
+      ],
+      [
+        "function_call",
+        "probe_examples"
+      ],
+      [
+        "function_call",
+        "probe_examples"
+      ]
+    ]
+  },
+  {
+    "kind": "diagnostic",
+    "case": "P2",
+    "function": "inspect_weights",
+    "arguments": "{\"tensor\":\"W1\",\"start\":0,\"count\":4}",
+    "valid": true,
+    "return": {
+      "tensor": "W1",
+      "shape": [
+        2,
+        2
+      ],
+      "flat_start": 0,
+      "values": [
+        0.4,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "provenance": "current corrupted checkpoint"
+    }
+  },
+  {
+    "kind": "diagnostic",
+    "case": "P2",
+    "function": "inspect_weights",
+    "arguments": "{\"tensor\":\"b1\",\"start\":0,\"count\":2}",
+    "valid": true,
+    "return": {
+      "tensor": "b1",
+      "shape": [
+        2
+      ],
+      "flat_start": 0,
+      "values": [
+        0.0,
+        0.0
+      ],
+      "provenance": "current corrupted checkpoint"
+    }
+  },
+  {
+    "kind": "diagnostic",
+    "case": "P2",
+    "function": "inspect_weights",
+    "arguments": "{\"tensor\":\"W2\",\"start\":0,\"count\":2}",
+    "valid": true,
+    "return": {
+      "tensor": "W2",
+      "shape": [
+        2
+      ],
+      "flat_start": 0,
+      "values": [
+        1.0,
+        0.5
+      ],
+      "provenance": "current corrupted checkpoint"
+    }
+  },
+  {
+    "kind": "diagnostic",
+    "case": "P2",
+    "function": "inspect_weights",
+    "arguments": "{\"tensor\":\"b2\",\"start\":0,\"count\":1}",
+    "valid": true,
+    "return": {
+      "tensor": "b2",
+      "shape": [
+        1
+      ],
+      "flat_start": 0,
+      "values": [
+        0.1
+      ],
+      "provenance": "current corrupted checkpoint"
+    }
+  },
+  {
+    "kind": "diagnostic",
+    "case": "P2",
+    "function": "probe_examples",
+    "valid": false,
+    "error": "over budget"
+  },
+  {
+    "kind": "diagnostic",
+    "case": "P2",
+    "function": "probe_examples",
+    "valid": false,
+    "error": "over budget"
+  },
+  {
+    "kind": "diagnostic",
+    "case": "P2",
+    "function": "probe_examples",
+    "valid": false,
+    "error": "over budget"
+  },
+  {
+    "kind": "api_response",
+    "phase": "P2_diagnostic_2",
+    "id": "resp_0ac310e30ad7162a006afa6b13f44887d2a6d24edf2b2f7558",
+    "model": "gpt-6-luna",
+    "status": "completed",
+    "incomplete_details": "None",
+    "usage": {
+      "input_tokens": 820,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 198,
+      "output_tokens_details": {
+        "reasoning_tokens": 170
+      },
+      "total_tokens": 1018
+    },
+    "output_items": [
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "function_call",
+        "probe_examples"
+      ]
+    ]
+  },
+  {
+    "kind": "diagnostic",
+    "case": "P2",
+    "function": "probe_examples",
+    "valid": false,
+    "error": "over budget"
+  },
+  {
+    "kind": "api_response",
+    "phase": "P2_diagnostic_3",
+    "id": "resp_0ac310e30ad7162a006afa6b1870d887d2a78ab5f562810edd",
+    "model": "gpt-6-luna",
+    "status": "incomplete",
+    "incomplete_details": "IncompleteDetails(reason='max_messages')",
+    "usage": {
+      "input_tokens": 1039,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        }
+      },
+      "output_tokens": 1025,
+      "output_tokens_details": {
+        "reasoning_tokens": 1025
+      },
+      "total_tokens": 2064
+    },
+    "output_items": [
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ]
+    ]
+  }
+]
