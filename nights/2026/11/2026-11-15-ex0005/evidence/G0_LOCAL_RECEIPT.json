@@ -1,0 +1,59 @@
+{
+  "cases": {
+    "P1_minus": {
+      "corrupt_mse": 0.48995642819257357,
+      "decrease_w2_0_0p25_delta_mse": 0.3810772219275572,
+      "heuristic_mse": 0.0,
+      "no_edit_mse": 0.48995642819257357,
+      "oracle_mse": 0.0,
+      "zero_mse": 0.8710336501201308
+    },
+    "P1_plus": {
+      "corrupt_mse": 0.4899564281925735,
+      "decrease_w2_0_0p25_delta_mse": -0.2721980156625408,
+      "heuristic_mse": 0.0,
+      "no_edit_mse": 0.4899564281925735,
+      "oracle_mse": 0.0,
+      "zero_mse": 0.8710336501201308
+    },
+    "P2": {
+      "corrupt_mse": 0.3229143808312397,
+      "decrease_w2_0_0p25_delta_mse": 0.11660797085572538,
+      "heuristic_mse": 0.11624917709924625,
+      "no_edit_mse": 0.3229143808312397,
+      "oracle_mse": 0.0,
+      "zero_mse": 0.8969843911978881
+    }
+  },
+  "live_model_tests": "NOT RUN",
+  "malformed_requests_rejected": 3,
+  "p0_bad": {
+    "max_abs_error": 1.0,
+    "outputs": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "pass": false
+  },
+  "p0_oracle": {
+    "max_abs_error": 0.0,
+    "outputs": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "pass": true
+  },
+  "paired_prediction": "delta_mse(P1_plus)<0; delta_mse(P1_minus)>0",
+  "public_fixture_fingerprint": "39e3064ac2c4391b1013e9a37299bc527f5a7e6cd67549e1b075b06c85706fc6",
+  "seeds": {
+    "p1_eval": 150511,
+    "p1_probe": 150503,
+    "p2_eval": 150527
+  },
+  "simulated_truncation_rejected": true,
+  "status": "G0_LOCAL_PASS_ONLY"
+}
