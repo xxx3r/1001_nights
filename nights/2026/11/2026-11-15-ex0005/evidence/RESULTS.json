@@ -1,0 +1,105 @@
+{
+  "G0_local": "PASS",
+  "model_requested": "gpt-6-luna",
+  "model_access_check": "gpt-6-luna",
+  "freeze_sha256": "4fad7aa72bd20393d04b09212da1adccd288f1b838fcfdf2c9c7eaec406e4112",
+  "P0": {
+    "valid": true,
+    "model_weights": [
+      1,
+      1,
+      -1,
+      1,
+      0
+    ],
+    "evaluation": {
+      "outputs": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "max_abs_error": 0.0,
+      "pass": true
+    }
+  },
+  "cases": {
+    "P1_plus": {
+      "attempts": 3,
+      "valid": 2,
+      "kinds": [
+        "inspect_weights",
+        "probe_examples"
+      ],
+      "errors": [
+        "invalid probe_examples"
+      ],
+      "abstain": true,
+      "commit": {
+        "fault_region": "W2[0]",
+        "uncertainty": "high",
+        "predicted_delta_mse": -0.05,
+        "patch": [],
+        "explanation": "W2[0]=1.75; on one probe, prediction 0.975 exceeds target 0.6. A decrease may help, but the probe does not reveal hidden activations or independent-sample behavior, so the estimate is highly uncertain and I abstain from patching."
+      },
+      "prediction_oracle": -0.2721980156625408,
+      "prediction_error": 0.22219801566254083,
+      "prediction_sign_correct": true,
+      "mechanism_region_correct": true
+    },
+    "P1_minus": {
+      "attempts": 4,
+      "valid": 3,
+      "kinds": [
+        "inspect_weights"
+      ],
+      "errors": [
+        "invalid probe_examples",
+        "over budget",
+        "over budget",
+        "over budget",
+        "over budget",
+        "missing distinct valid tool kinds"
+      ],
+      "abstain": false,
+      "commit": null,
+      "prediction_oracle": 0.3810772219275572
+    }
+  },
+  "G1": "NOT RUN",
+  "G2": "NOT RUN",
+  "G3": "NOT RUN",
+  "G4": "NOT RUN",
+  "instrument_ready": false,
+  "interruption": {
+    "type": "RuntimeError",
+    "message": "incomplete/failed response; not a valid observation or commitment"
+  },
+  "public_baselines": {
+    "P1_plus": {
+      "corrupt_mse": 0.4899564281925735,
+      "oracle_mse": 0.0,
+      "no_edit_mse": 0.4899564281925735,
+      "zero_mse": 0.8710336501201308,
+      "heuristic_mse": 0.0,
+      "decrease_w2_0_0p25_delta_mse": -0.2721980156625408
+    },
+    "P1_minus": {
+      "corrupt_mse": 0.48995642819257357,
+      "oracle_mse": 0.0,
+      "no_edit_mse": 0.48995642819257357,
+      "zero_mse": 0.8710336501201308,
+      "heuristic_mse": 0.0,
+      "decrease_w2_0_0p25_delta_mse": 0.3810772219275572
+    },
+    "P2": {
+      "corrupt_mse": 0.3229143808312397,
+      "oracle_mse": 0.0,
+      "no_edit_mse": 0.3229143808312397,
+      "zero_mse": 0.8969843911978881,
+      "heuristic_mse": 0.11624917709924625,
+      "decrease_w2_0_0p25_delta_mse": 0.11660797085572538
+    }
+  },
+  "api_responses_logged": 11
+}
