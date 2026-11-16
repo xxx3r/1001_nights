@@ -54,6 +54,7 @@ The Alan Turing Institute's 2026 [replication report](https://www.turing.ac.uk/n
 - [EX0005A_FINAL_RESEARCH_REPORT.md](./EX0005A_FINAL_RESEARCH_REPORT.md): completed, source-bound analysis, denominator audit, validity limits and final disposition.
 - [NIGHT_CARD.md](./NIGHT_CARD.md): closed one-night receipt with post-run documentation clearly distinguished.
 - [evidence/RESULTS.json](./evidence/RESULTS.json) and [evidence/ACTION_JOURNAL.json](./evidence/ACTION_JOURNAL.json): original user-uploaded raw machine receipts, unaltered.
+- [evidence/G0_LOCAL_RECEIPT.json](./evidence/G0_LOCAL_RECEIPT.json) and [evidence/TEST_RESULTS.txt](./evidence/TEST_RESULTS.txt): original pre-live local numerical/checker receipts; their live-model NOT RUN status is a historical preflight snapshot.
 - [EX0005A_Colab.ipynb](./EX0005A_Colab.ipynb) and [source/](./source/): historical runnable public scaffold, independent fixture/checker and API runner. These are archived source, not permission to rerun a closed night.
 - [EX0005A_PROTOCOL_DRAFT.md](./EX0005A_PROTOCOL_DRAFT.md): unchanged **pre-execution draft** retained as provenance; its DRAFT/NOT RUN language describes the earlier planning state.
 - [potential_future.md](./potential_future.md): separate speculative EX0005B proposal and research idea bank; not part of the night's verdict.
