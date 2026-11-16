@@ -1,0 +1,57 @@
+{
+  "discovery_diagnostic_steps": 4,
+  "discovery_protocol": "free-choice 4 bounded calls; separate from paired contrast",
+  "experiment": "EX0005Aa",
+  "freeze_sha256": "802c11f959f34c0b54fe0eefe8625855d975d2aabf9eb1e242f16c14103053b5",
+  "frozen_at": "2026-11-15T20:45:55.737984-07:00",
+  "human_fields": {
+    "EX0005Aa_addendum": {
+      "patient": "I expect the synthetic network fixtures to be appropriate for this bounded experiment. Questions about larger language models remain outside this study.",
+      "scalpel": "I predict the repaired instrument will work well enough that interface failures will no longer prevent us from evaluating Luna.",
+      "surgeon": "I doubt Luna will demonstrate proficient weight-space programming."
+    },
+    "approved_as_prior_for_aa": true,
+    "assistance_disclosure": "C",
+    "human_false_positive_test": "The evaluator could falsely reward Luna if the prompt, examples, or simple heuristics supply the answer. Deliberately submit an incorrect directional prediction and verify that the checker rejects it. Ensure the model cannot see the oracle answer.",
+    "human_predicted_contrast": "I seriously doubt Luna will correctly recognize the causal difference between P1_plus and P1_minus. I predict it may fail to anticipate that decreasing the same weight improves P1_plus but worsens P1_minus.",
+    "human_predicted_failure": "I predict Luna may improve network performance through a heuristic or numerical shortcut, but fail to correctly explain WHY the repair works. This resembles our earlier experiments, where functional improvement did not establish mechanistic understanding.",
+    "human_unsupported_mechanism": "Luna might confidently identify a supposed underlying cause simply because a patch improves performance. But a successful patch does not prove the model understands the mechanism. Its explanation could be plausible but unsupported by causal evidence.",
+    "origin": "carried_from_EX0005A_pre_live"
+  },
+  "input_token_cap": 80000,
+  "max_output_tokens": 1800,
+  "max_response_calls": 14,
+  "metrics_and_gates": {
+    "G0": "analytical oracle restores cases; heuristic/noedit controls and numpy/torch agreement",
+    "G1": "both paired cases yield exactly two native valid forced calls; report discovery use separately",
+    "G2": "paired cases have opposing, oracle-correct signed prediction under exact matching calls",
+    "G3": "both paired cases produce schema-valid commitments; abstentions reported separately",
+    "G4": "secondary discovery: model patch has lower MSE than no-edit AND simple heuristic by >=0.05 absolute, and >=50% recovery; otherwise FAIL or NOT RUN",
+    "mechanism": "explanation only bounded and not validated by mere patch success"
+  },
+  "model": "gpt-6-luna",
+  "no_sealed_test": true,
+  "output_token_cap": 24000,
+  "paired_protocol": "fixed identical 2-tool sequence",
+  "prior_artifact_sha256": {
+    "EX0005A_ACTION_JOURNAL.json": "48d0f918dfc1c0b42a935a3af8f12d2189ed0318a6b72dfdcedd20b1d44ddb72",
+    "EX0005A_RESULTS.json": "16bd3d9dd5c9346a06a2b3ea9d2e432f86d42b70264a6cbe4687cd5d85e6178c"
+  },
+  "public_fixture_fingerprint": "bfa1ace7440f5320e5e008feb7fa3ecc44fd06346d836850607c39bab946e480",
+  "reasoning": {
+    "effort": "low"
+  },
+  "session_date": "2026-11-19",
+  "session_end": "23:59",
+  "session_start": "20:45",
+  "software": {
+    "numpy": "2.4.6",
+    "openai": "2.54.0",
+    "python": "3.13.18",
+    "torch": "2.14.1+cpu"
+  },
+  "source_sha256": {
+    "ex0005aa_public.py": "d410ecc5752018e35bbf7d4e9b74089a44bc41643bf7992f0d98a457fc622426",
+    "run_luna_aa.py": "fd4dedbab706c42736164bb63917a8257fb92c6a0b7a2292c94e3ab7e9f2618a"
+  }
+}
