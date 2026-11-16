@@ -1,0 +1,9 @@
+{
+  "reason": "November 19 was a user-reported date typo",
+  "superseded_freeze_sha256": "802c11f959f34c0b54fe0eefe8625855d975d2aabf9eb1e242f16c14103053b5",
+  "new_freeze_sha256": "2644e664eb2ca90483ff461bb8a069ef91e2b6fe65592adcf82969f92045c044",
+  "original_runner_sha256": "fd4dedbab706c42736164bb63917a8257fb92c6a0b7a2292c94e3ab7e9f2618a",
+  "amended_runner_sha256": "b7bdeaa8311acc7c7f72c87380032d2cdcfc085e38e3c02bf3ed3ad388a1d1ed",
+  "amendment": "Date restriction only; no scientific gates changed",
+  "live_calls_before_correction": 0
+}
