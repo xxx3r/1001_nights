@@ -1,0 +1,12 @@
+test_and_oracle_and_bad (test_offline.PublicChecker.test_and_oracle_and_bad) ... ok
+test_commit_checker (test_offline.PublicChecker.test_commit_checker) ... ok
+test_human_gate_is_closed (test_offline.PublicChecker.test_human_gate_is_closed) ... ok
+test_malformed_tool_contract (test_offline.PublicChecker.test_malformed_tool_contract) ... ok
+test_negative_control_scoring (test_offline.PublicChecker.test_negative_control_scoring) ... ok
+test_paired_is_matched_except_one_scalar (test_offline.PublicChecker.test_paired_is_matched_except_one_scalar) ... ok
+test_torch_numpy_agree (test_offline.PublicChecker.test_torch_numpy_agree) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.010s
+
+OK
