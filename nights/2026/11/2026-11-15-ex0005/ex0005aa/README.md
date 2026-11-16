@@ -50,7 +50,9 @@ The first freeze was for November 19 due to a human-entered typo. It was **not d
 
 - [Identifiability counterexample](./analysis/identifiability_counterexample.py), [reproduced output](./analysis/IDENTIFIABILITY_RESULTS.json). A second patient yields the same four observed diagnostics, yet requires `W1[0] += 0.8`, while Luna's +1.3 causes no improvement. This changes the interpretation of *evidence sufficiency*, **not** the original G4 PASS.
 
-**Full integrity ledger:** [ARCHIVE_INTEGRITY.md](./ARCHIVE_INTEGRITY.md), including every extracted ZIP file, original SHA-256 values, corrected source hashes and the distinction between frozen and post-run artifacts. The ZIP container itself is not duplicated in Git; its seven contents are archived individually.\n\n## Reproduction without changing the historical run
+**Full integrity ledger:** [ARCHIVE_INTEGRITY.md](./ARCHIVE_INTEGRITY.md), including every extracted ZIP file, original SHA-256 values, corrected source hashes and the distinction between frozen and post-run artifacts. The ZIP container itself is not duplicated in Git; its seven contents are archived individually.
+
+## Reproduction without changing the historical run
 
 From the `ex0005aa` directory, with the documented dependencies available:
 
