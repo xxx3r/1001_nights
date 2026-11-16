@@ -1,0 +1,54 @@
+{
+  "alternative_exact_patch": {
+    "after_mse": 0.0,
+    "before_mse": 0.9172305740954784,
+    "edits": [
+      {
+        "delta": 0.8,
+        "index": 0,
+        "tensor": "W1"
+      }
+    ]
+  },
+  "alternative_luna_patch": {
+    "after_mse": 0.9172305740954781,
+    "before_mse": 0.9172305740954784,
+    "edits": [
+      {
+        "delta": 1.3,
+        "index": 0,
+        "tensor": "W1"
+      }
+    ]
+  },
+  "classification": "POST_RUN_COUNTEREXAMPLE_NOT_MODEL_TRIAL",
+  "experiment": "EX0005Aa",
+  "interpretation": "The recorded W1, b1, feature0 and feature1 observations do not uniquely determine the exact W1[0] repair. G4 on the actual patient remains PASS.",
+  "observed_W1_and_b1_equal": true,
+  "original_freeze_sha256": "2644e664eb2ca90483ff461bb8a069ef91e2b6fe65592adcf82969f92045c044",
+  "original_luna_patch": {
+    "after_mse": 0.0,
+    "before_mse": 0.9172305740954784,
+    "edits": [
+      {
+        "delta": 1.3,
+        "index": 0,
+        "tensor": "W1"
+      }
+    ]
+  },
+  "probe_equivalence": {
+    "feature0": {
+      "same_observed_predictions": true,
+      "same_observed_targets": true
+    },
+    "feature1": {
+      "same_observed_predictions": true,
+      "same_observed_targets": true
+    }
+  },
+  "uninspected_output_weight": {
+    "alternative": 2.0,
+    "original": 1.0
+  }
+}
