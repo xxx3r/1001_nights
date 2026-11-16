@@ -81,6 +81,7 @@ There was **no model-authored intervention** and no sealed holdout opened. No po
 
 - [Raw RESULTS.json](./evidence/RESULTS.json), user-uploaded SHA-256 **16bd3d9dd5c9346a06a2b3ea9d2e432f86d42b70264a6cbe4687cd5d85e6178c**.
 - [Raw ACTION_JOURNAL.json](./evidence/ACTION_JOURNAL.json), user-uploaded SHA-256 **48d0f918dfc1c0b42a935a3af8f12d2189ed0318a6b72dfdcedd20b1d44ddb72**.
+- [Local G0 numerical receipt](./evidence/G0_LOCAL_RECEIPT.json) and [7-test output](./evidence/TEST_RESULTS.txt): pre-live controls only; their historical NOT RUN labels for live models are snapshots from before the later Luna run.
 - [Archived Colab notebook](./EX0005A_Colab.ipynb) and frozen [public fixture/checker](./source/ex0005a_public.py), [API runner](./source/run_luna.py), [offline tests](./source/test_offline.py). These are historical instruments, **not instructions to reopen EX0005A or rerun after its stop time**.
 - [Night card](./NIGHT_CARD.md) is the short closure record. [Potential futures](./potential_future.md) is speculative, not an EX0005A result.
 
