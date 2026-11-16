@@ -20,6 +20,16 @@ The original fixture already directed attention to W2[0], and a simple heuristic
 
 **Historical boundaries:** EX0005A is closed. EX0005Aa, authorized afterward to repair the instrument, is a separately labeled new investigation and cannot rescore this night.
 
+## Companion on the same date: EX0005Aa, a separately frozen post-run experiment
+
+The original **EX0005A remains closed**, with its historical instrument-qualification **FAIL** and broader model-capability **INCONCLUSIVE** verdict. It is not merged with or rescored by its successor.
+
+After the original result was examined, the human explicitly authorized **EX0005Aa** to repair the public instrument. A new freeze was made after 20:00 local and the model contacted only after that freeze. The revised interface produced all valid native observations and a complete run. EX0005Aa's paired causal contrast **G2 FAIL** remains a real failure; its separate unknown-fault repair **G4 PASS** is a real success: Luna proposed `W1[0] += 1.3` and the independent checker measured MSE 0.9172305741 → 0 against a non-improving simple heuristic.
+
+A later **post-run identifiability counterexample** proved that the four observed diagnostics did not uniquely establish the exact edit magnitude. It does not alter G4 or count as a fresh Luna attempt.
+
+**Companions:** [EX0005Aa archive and completed report](./ex0005aa/README.md) · [EX0005Aa night card](./ex0005aa/NIGHT_CARD.md) · [combined Galileo-style references, EX0005 A + Aa](./ex0005_A+Aa_references.md).
+
 ## Why EX0005A exists
 
 [EX0003](../2026-11-08-ex0003/README.md) recorded one functional repair by Qwen3-0.6B; a simple numerical heuristic made the same repair, and the model's mechanistic explanation was wrong. [EX0004](../2026-11-12-ex0004/README.md) stopped its initial pilot after tool-interface problems. The fresh EX0004B run formally failed its repair criteria, but both Qwen3-8B arms used **zero real diagnostic calls**. The capability question remained inconclusive. Neither historical verdict is changed.
