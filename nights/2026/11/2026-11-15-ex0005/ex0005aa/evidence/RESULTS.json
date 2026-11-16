@@ -1,0 +1,93 @@
+{
+  "G0_local": "PASS",
+  "G1": "PASS",
+  "G2": "FAIL",
+  "G3": "PASS",
+  "G4": "PASS",
+  "api_responses_logged": 11,
+  "cases": {
+    "C_negative": {
+      "actual_delta_mse": 0.45194324550857856,
+      "case": "C_negative",
+      "commit": {
+        "explanation": "The observed residuals are -0.375 and -0.75, but the probes do not reveal the relevant hidden activations or the separate set\u2019s rows. Thus the effect of changing W2 index 1 is not identifiable from these observations; zero is a neutral prediction, not evidence of no change.",
+        "predicted_delta_mse": 0,
+        "uncertainty": "high"
+      },
+      "errors": [],
+      "kinds": [
+        "inspect_output_weights",
+        "probe_feature1"
+      ],
+      "prediction_error": -0.45194324550857856,
+      "sign_correct": false,
+      "valid_calls": 2
+    },
+    "C_positive": {
+      "actual_delta_mse": -0.32281660393469896,
+      "case": "C_positive",
+      "commit": {
+        "explanation": "The two observed residuals are positive and grow from 0.375 to 0.750 as the feature1 input doubles; the observed output-weight value is 1.25. A decrease of 0.25 plausibly reduces these errors. The estimate uses the probe rows as a rough guide; the separate set\u2019s inputs and activations are unobserved.",
+        "predicted_delta_mse": -0.1625,
+        "uncertainty": "high"
+      },
+      "errors": [],
+      "kinds": [
+        "inspect_output_weights",
+        "probe_feature1"
+      ],
+      "prediction_error": 0.16031660393469896,
+      "sign_correct": true,
+      "valid_calls": 2
+    },
+    "D_unknown": {
+      "abstained": false,
+      "case": "D_unknown",
+      "commit": {
+        "explanation": "The feature0 probes show a missing positive slope of 1, while feature1 predictions match their targets. The current W1[0] is -0.3, making that ReLU inactive for the tested positive inputs. Changing it to 1 restores the observed feature0 slope, assuming the output weight of that unit is 1.",
+        "fault_region": "W1[0]",
+        "patch": [
+          {
+            "delta": 1.3,
+            "index": 0,
+            "tensor": "W1"
+          }
+        ],
+        "uncertainty": "medium"
+      },
+      "errors": [],
+      "fault_region_correct": true,
+      "kinds": [
+        "inspect_weights",
+        "probe_examples"
+      ],
+      "patch_evaluation": {
+        "G4_pass": true,
+        "after_mse": 0.0,
+        "beats_no_edit": true,
+        "beats_simple_heuristic_by_0p05": true,
+        "before_mse": 0.9172305740954784,
+        "edits": [
+          {
+            "delta": 1.3,
+            "index": 0,
+            "tensor": "W1"
+          }
+        ],
+        "recovery_fraction": 1.0
+      },
+      "valid_calls": 4
+    }
+  },
+  "discovery_tool_diversity": "PASS",
+  "experiment": "EX0005Aa",
+  "freeze_sha256": "2644e664eb2ca90483ff461bb8a069ef91e2b6fe65592adcf82969f92045c044",
+  "instrument_ready": false,
+  "matched_pair_observation_contract": true,
+  "mechanistic_understanding": "NOT ESTABLISHED",
+  "model_access_check": "gpt-6-luna",
+  "model_requested": "gpt-6-luna",
+  "status": "COMPLETE",
+  "usage_input_tokens": 5239,
+  "usage_output_tokens": 1770
+}
