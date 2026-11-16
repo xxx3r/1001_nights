@@ -1,0 +1,584 @@
+[
+  {
+    "case": "C_positive",
+    "id": "resp_0bed663886ca1ded006afa7eda921487d18919cbf1f6845579",
+    "incomplete_details": "None",
+    "kind": "api_response",
+    "model": "gpt-6-luna",
+    "output_types": [
+      [
+        "function_call",
+        "inspect_output_weights"
+      ]
+    ],
+    "phase": "paired_inspect_output_weights",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 305,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 15,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 320
+    }
+  },
+  {
+    "arguments": "{}",
+    "case": "C_positive",
+    "function": "inspect_output_weights",
+    "kind": "diagnostic",
+    "return": {
+      "provenance": "corrupted_checkpoint",
+      "shape": [
+        2
+      ],
+      "tensor": "W2",
+      "values": [
+        1.0,
+        1.25
+      ]
+    },
+    "stage": "paired",
+    "valid": true
+  },
+  {
+    "case": "C_positive",
+    "id": "resp_0bed663886ca1ded006afa7edeb8fc87d183f87ddaa74f0127",
+    "incomplete_details": "None",
+    "kind": "api_response",
+    "model": "gpt-6-luna",
+    "output_types": [
+      [
+        "function_call",
+        "probe_feature1"
+      ]
+    ],
+    "phase": "paired_probe_feature1",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 368,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 16,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 384
+    }
+  },
+  {
+    "arguments": "{}",
+    "case": "C_positive",
+    "function": "probe_feature1",
+    "kind": "diagnostic",
+    "return": {
+      "pack": "feature1",
+      "provenance": "public_development_examples",
+      "rows": [
+        {
+          "prediction": 0.725,
+          "residual": 0.375,
+          "target": 0.35,
+          "x": [
+            0.0,
+            0.5
+          ]
+        },
+        {
+          "prediction": 1.35,
+          "residual": 0.7500000000000001,
+          "target": 0.6,
+          "x": [
+            0.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "stage": "paired",
+    "valid": true
+  },
+  {
+    "case": "C_positive",
+    "id": "resp_0bed663886ca1ded006afa7ee1504887d1b3bcc44af3c7b24e",
+    "incomplete_details": "None",
+    "kind": "api_response",
+    "model": "gpt-6-luna",
+    "output_types": [
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "message",
+        null
+      ]
+    ],
+    "phase": "paired_commit",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 548,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 597,
+      "output_tokens_details": {
+        "reasoning_tokens": 494
+      },
+      "total_tokens": 1145
+    }
+  },
+  {
+    "case": "C_positive",
+    "kind": "model_commitment",
+    "raw_text": "{\"predicted_delta_mse\":-0.1625,\"uncertainty\":\"high\",\"explanation\":\"The two observed residuals are positive and grow from 0.375 to 0.750 as the feature1 input doubles; the observed output-weight value is 1.25. A decrease of 0.25 plausibly reduces these errors. The estimate uses the probe rows as a rough guide; the separate set\u2019s inputs and activations are unobserved.\"}",
+    "stage": "paired"
+  },
+  {
+    "case": "C_negative",
+    "id": "resp_0edc4fd03f211f60006afa7ee8dc8087d1a0f4f7efd499b2b0",
+    "incomplete_details": "None",
+    "kind": "api_response",
+    "model": "gpt-6-luna",
+    "output_types": [
+      [
+        "function_call",
+        "inspect_output_weights"
+      ]
+    ],
+    "phase": "paired_inspect_output_weights",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 305,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 15,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 320
+    }
+  },
+  {
+    "arguments": "{}",
+    "case": "C_negative",
+    "function": "inspect_output_weights",
+    "kind": "diagnostic",
+    "return": {
+      "provenance": "corrupted_checkpoint",
+      "shape": [
+        2
+      ],
+      "tensor": "W2",
+      "values": [
+        1.0,
+        -0.25
+      ]
+    },
+    "stage": "paired",
+    "valid": true
+  },
+  {
+    "case": "C_negative",
+    "id": "resp_0edc4fd03f211f60006afa7eecd19c87d18ab1cfb3b29747a9",
+    "incomplete_details": "None",
+    "kind": "api_response",
+    "model": "gpt-6-luna",
+    "output_types": [
+      [
+        "function_call",
+        "probe_feature1"
+      ]
+    ],
+    "phase": "paired_probe_feature1",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 368,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 16,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 384
+    }
+  },
+  {
+    "arguments": "{}",
+    "case": "C_negative",
+    "function": "probe_feature1",
+    "kind": "diagnostic",
+    "return": {
+      "pack": "feature1",
+      "provenance": "public_development_examples",
+      "rows": [
+        {
+          "prediction": -0.024999999999999994,
+          "residual": -0.375,
+          "target": 0.35,
+          "x": [
+            0.0,
+            0.5
+          ]
+        },
+        {
+          "prediction": -0.15,
+          "residual": -0.75,
+          "target": 0.6,
+          "x": [
+            0.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "stage": "paired",
+    "valid": true
+  },
+  {
+    "case": "C_negative",
+    "id": "resp_0edc4fd03f211f60006afa7ef0a63087d18d8154447888a1d8",
+    "incomplete_details": "None",
+    "kind": "api_response",
+    "model": "gpt-6-luna",
+    "output_types": [
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "message",
+        null
+      ]
+    ],
+    "phase": "paired_commit",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 548,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 327,
+      "output_tokens_details": {
+        "reasoning_tokens": 240
+      },
+      "total_tokens": 875
+    }
+  },
+  {
+    "case": "C_negative",
+    "kind": "model_commitment",
+    "raw_text": "{\"predicted_delta_mse\":0,\"uncertainty\":\"high\",\"explanation\":\"The observed residuals are -0.375 and -0.75, but the probes do not reveal the relevant hidden activations or the separate set\u2019s rows. Thus the effect of changing W2 index 1 is not identifiable from these observations; zero is a neutral prediction, not evidence of no change.\"}",
+    "stage": "paired"
+  },
+  {
+    "case": "D_unknown",
+    "id": "resp_065cb5beee848351006afa7ef5510487d18cdfb92168935875",
+    "incomplete_details": "None",
+    "kind": "api_response",
+    "model": "gpt-6-luna",
+    "output_types": [
+      [
+        "function_call",
+        "inspect_weights"
+      ]
+    ],
+    "phase": "discovery_1",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 361,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 19,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 380
+    }
+  },
+  {
+    "arguments": "{\"tensor\":\"W1\"}",
+    "case": "D_unknown",
+    "function": "inspect_weights",
+    "kind": "diagnostic",
+    "return": {
+      "provenance": "corrupted_checkpoint",
+      "shape": [
+        2,
+        2
+      ],
+      "tensor": "W1",
+      "values": [
+        -0.30000000000000004,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "stage": "discovery",
+    "valid": true
+  },
+  {
+    "case": "D_unknown",
+    "id": "resp_065cb5beee848351006afa7ef6aac087d18193bec54ca91802",
+    "incomplete_details": "None",
+    "kind": "api_response",
+    "model": "gpt-6-luna",
+    "output_types": [
+      [
+        "function_call",
+        "inspect_weights"
+      ]
+    ],
+    "phase": "discovery_2",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 445,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 19,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 464
+    }
+  },
+  {
+    "arguments": "{\"tensor\":\"b1\"}",
+    "case": "D_unknown",
+    "function": "inspect_weights",
+    "kind": "diagnostic",
+    "return": {
+      "provenance": "corrupted_checkpoint",
+      "shape": [
+        2
+      ],
+      "tensor": "b1",
+      "values": [
+        0.0,
+        0.0
+      ]
+    },
+    "stage": "discovery",
+    "valid": true
+  },
+  {
+    "case": "D_unknown",
+    "id": "resp_065cb5beee848351006afa7ef7eabc87d1af27e25e1adae761",
+    "incomplete_details": "None",
+    "kind": "api_response",
+    "model": "gpt-6-luna",
+    "output_types": [
+      [
+        "function_call",
+        "probe_examples"
+      ]
+    ],
+    "phase": "discovery_3",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 511,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 20,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 531
+    }
+  },
+  {
+    "arguments": "{\"pack\":\"feature0\"}",
+    "case": "D_unknown",
+    "function": "probe_examples",
+    "kind": "diagnostic",
+    "return": {
+      "pack": "feature0",
+      "provenance": "public_development_examples",
+      "rows": [
+        {
+          "prediction": 0.1,
+          "residual": -0.5,
+          "target": 0.6,
+          "x": [
+            0.5,
+            0.0
+          ]
+        },
+        {
+          "prediction": 0.1,
+          "residual": -1.0,
+          "target": 1.1,
+          "x": [
+            1.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    "stage": "discovery",
+    "valid": true
+  },
+  {
+    "case": "D_unknown",
+    "id": "resp_065cb5beee848351006afa7ef91f8487d18a6566a58bcc3861",
+    "incomplete_details": "None",
+    "kind": "api_response",
+    "model": "gpt-6-luna",
+    "output_types": [
+      [
+        "function_call",
+        "probe_examples"
+      ]
+    ],
+    "phase": "discovery_4",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 640,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 20,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 660
+    }
+  },
+  {
+    "arguments": "{\"pack\":\"feature1\"}",
+    "case": "D_unknown",
+    "function": "probe_examples",
+    "kind": "diagnostic",
+    "return": {
+      "pack": "feature1",
+      "provenance": "public_development_examples",
+      "rows": [
+        {
+          "prediction": 0.35,
+          "residual": 0.0,
+          "target": 0.35,
+          "x": [
+            0.0,
+            0.5
+          ]
+        },
+        {
+          "prediction": 0.6,
+          "residual": 0.0,
+          "target": 0.6,
+          "x": [
+            0.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "stage": "discovery",
+    "valid": true
+  },
+  {
+    "case": "D_unknown",
+    "id": "resp_065cb5beee848351006afa7efa604487d1969be94fe61ca5e1",
+    "incomplete_details": "None",
+    "kind": "api_response",
+    "model": "gpt-6-luna",
+    "output_types": [
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "reasoning",
+        null
+      ],
+      [
+        "message",
+        null
+      ]
+    ],
+    "phase": "discovery_commit",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 840,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 0
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 706,
+      "output_tokens_details": {
+        "reasoning_tokens": 593
+      },
+      "total_tokens": 1546
+    }
+  },
+  {
+    "case": "D_unknown",
+    "kind": "model_commitment",
+    "raw_text": "{\"fault_region\":\"W1[0]\",\"uncertainty\":\"medium\",\"patch\":[{\"tensor\":\"W1\",\"index\":0,\"delta\":1.3}],\"explanation\":\"The feature0 probes show a missing positive slope of 1, while feature1 predictions match their targets. The current W1[0] is -0.3, making that ReLU inactive for the tested positive inputs. Changing it to 1 restores the observed feature0 slope, assuming the output weight of that unit is 1.\"}",
+    "stage": "discovery"
+  }
+]
