@@ -45,6 +45,27 @@ class OfflineCheckerTests(unittest.TestCase):
         bad={'tool':'probe_gain','args':{'gain':2},'observed':{'target_dev_loss':1.5,'preserve_dev_loss':1.4}}
         self.assertEqual(g.assess_evidence(2,[base,good]),'PASS')
         self.assertEqual(g.assess_evidence(2,[base,bad]),'FAIL')
+    def test_exact_oracle_vs_inverse_gain_in_bfloat16(self):
+        import torch
+        class Down:
+            def __init__(self):
+                self.weight = torch.nn.Parameter(torch.tensor([[0.34765625, 1.0]],
+                    dtype=torch.bfloat16), requires_grad=False)
+        down=Down()
+        patient=g.Patient(None,None,0,down)
+        # Substitute a deterministic tiny numerical instrument, not a language model.
+        patient.loss=lambda split:(float(down.weight[0,0]), [])
+        exact_before=float(down.weight[0,0])
+        patient.install(0,-1.5)
+        corrupt=float(down.weight[0,0])
+        inverse,_=patient.metrics(-2/3, 'toy')
+        oracle,_=patient.reference_metrics('toy')
+        self.assertNotEqual(inverse, oracle)
+        self.assertEqual(oracle, exact_before)
+        self.assertEqual(float(down.weight[0,0]), corrupt)
+        patient.close()
+        self.assertEqual(float(down.weight[0,0]), exact_before)
+
     def test_manifest_tamper(self):
         m={'G0':'PASS','code_sha256':g.sha_file(g.__file__),'sets_sha256':g.digest(g.SETS),'model_id':g.MODEL_ID}
         m['freeze_sha256']=g.freeze_fingerprint(m)
