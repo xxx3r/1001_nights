@@ -8,7 +8,7 @@
 
 **Method:** Qwen3-0.6B pinned model; a disposable midpoint-MLP column gain corruption, dev-only calibration, at most six investigator diagnostics, one committed scalar gain or abstention, immutable checkpoint, separate six-example target and preservation holdouts. The full method, failure gates, metrics, seed and baselines are in `README.md` and `preservation_gate.py`.
 
-**Executed:** 13/13 local checker tests pass. Real-model preflight in the present CPU-only runtime returned **G0 NOT RUN** for no CUDA GPU. No model weights were downloaded or changed; no GPT-6 Luna API calls occurred, and no held-out examples were opened.
+**Executed:** 15/15 local checker tests pass. Real-model preflight in the present CPU-only runtime returned **G0 NOT RUN** for no CUDA GPU. No model weights were downloaded or changed; no GPT-6 Luna API calls occurred, and no held-out examples were opened.
 
 **Verdict at this preliminary preparation checkpoint:** Instrument offline tests PASS; **real-model hypothesis NOT RUN**. A GPU Colab notebook is ready for a separate single-use live attempt inside a prospectively frozen window, conditional on G0 qualification. No performance or preservation claim is yet warranted. The actual session card must be completed from real receipts, not this preparation note.
 
