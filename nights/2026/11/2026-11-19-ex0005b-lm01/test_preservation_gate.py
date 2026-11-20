@@ -35,6 +35,16 @@ class OfflineCheckerTests(unittest.TestCase):
     def test_baseline_margin_not_silent(self):
         out=g.score_result(2,3,2.1,1,1,1,2.105)
         self.assertEqual(out['G5_simple_baselines'],'FAIL')
+    def test_evidence_requires_two_distinct_probes(self):
+        p=[{'tool':'probe_gain','args':{'gain':2},'observed':{'target_dev_loss':1.2,'preserve_dev_loss':0.9}}]
+        self.assertEqual(g.assess_evidence(2,p),'FAIL')
+        self.assertEqual(g.assess_evidence(None,p),'ABSTAIN')
+    def test_evidence_requires_improvement_and_preservation(self):
+        base={'tool':'probe_gain','args':{'gain':1},'observed':{'target_dev_loss':2,'preserve_dev_loss':1}}
+        good={'tool':'probe_gain','args':{'gain':2},'observed':{'target_dev_loss':1.5,'preserve_dev_loss':1.01}}
+        bad={'tool':'probe_gain','args':{'gain':2},'observed':{'target_dev_loss':1.5,'preserve_dev_loss':1.4}}
+        self.assertEqual(g.assess_evidence(2,[base,good]),'PASS')
+        self.assertEqual(g.assess_evidence(2,[base,bad]),'FAIL')
     def test_manifest_tamper(self):
         m={'G0':'PASS','code_sha256':g.sha_file(g.__file__),'sets_sha256':g.digest(g.SETS),'model_id':g.MODEL_ID}
         m['freeze_sha256']=g.freeze_fingerprint(m)
