@@ -11,7 +11,7 @@ from zoneinfo import ZoneInfo
 
 MODEL_ID = 'Qwen/Qwen3-0.6B'
 SEED = 5111901
-ROOT = pathlib.Path('ex0005b_lm01_receipts')
+ROOT = pathlib.Path('ex0005b_lm01_v2_receipts')
 MAX_DIAGNOSTICS = 6
 ALPHAS = (0.25, -1.5, 2.0)  # ordered, predeclared calibration options
 GAIN_LIMIT = 5.0
@@ -232,6 +232,25 @@ class Patient:
         with self.candidate(gain):
             return self.loss(split)
 
+    def reference_metrics(self, split):
+        """Evaluate the *exact* frozen reference, not a rounded inverse gain.
+
+        A corrupted low-precision column multiplied by 1/alpha may differ from
+        the original column, even when it is mathematically the inverse.
+        Restore exact original bytes for the oracle and healthy baselines.
+        Candidate repair scores continue to use the actual low-precision gain.
+        """
+        import torch
+        if self.original is None or self.bad is None:
+            raise RuntimeError('patient not installed')
+        with torch.no_grad():
+            self.down.weight[:, self.col].copy_(self.original)
+        try:
+            return self.loss(split)
+        finally:
+            with torch.no_grad():
+                self.down.weight[:, self.col].copy_(self.bad)
+
     def inspect(self):
         import torch
         return {'layer': self.layer_index, 'tensor': 'mlp.down_proj.weight',
@@ -270,8 +289,12 @@ def qualify():
             for alpha in ALPHAS:
                 p.install(col,alpha)
                 loss,_=p.metrics(1.0,'target_dev')
-                oracle,_=p.metrics(1.0/alpha,'target_dev')
-                rec={'alpha':alpha,'corrupt_target_loss_dev':loss,'oracle_target_loss_dev':oracle}
+                oracle,_=p.reference_metrics('target_dev')
+                inverse_gain,_=p.metrics(1.0/alpha,'target_dev')
+                rec={'alpha':alpha,'corrupt_target_loss_dev':loss,
+                     'oracle_target_loss_dev':oracle,
+                     'inverse_gain_target_loss_dev':inverse_gain,
+                     'inverse_gain_minus_exact_oracle':inverse_gain-oracle}
                 trials.append(rec)
                 if loss - healthy_target >= MIN_DEV_GAP and abs(oracle - healthy_target) < 2e-3:
                     selected=rec; break
@@ -395,10 +418,10 @@ def live():
         grid=[-3,-2,-1.5,-1,-0.5,0,0.5,1,1.5,2,3,4,5]
         best_grid=min(grid,key=lambda g:p.metrics(g,'target_dev')[0])
         baseline_metrics={str(g):p.metrics(g,'target_test')[0] for g in sorted(set(basic_gains+[best_grid]))}
-        healthy_target=p.metrics(1/manifest['alpha'],'target_test')[0]
+        healthy_target=p.reference_metrics('target_test')[0]
         corrupt_target=baseline_metrics['1']
         patched_target, patched_outputs=p.metrics(choice,'target_test')
-        healthy_preserve,healthy_outputs=p.metrics(1/manifest['alpha'],'preserve_test')
+        healthy_preserve,healthy_outputs=p.reference_metrics('preserve_test')
         patched_preserve,_=p.metrics(choice,'preserve_test')
         # Next-token greedy agreement measured under same clean/candidate checkpoint on PRESERVE test.
         # Target gate additionally uses token-loss; not a safety guarantee outside these samples.
