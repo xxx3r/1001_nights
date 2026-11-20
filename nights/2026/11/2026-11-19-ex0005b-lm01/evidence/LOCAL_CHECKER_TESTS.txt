@@ -1,0 +1,18 @@
+test_baseline_margin_not_silent (test_preservation_gate.OfflineCheckerTests.test_baseline_margin_not_silent) ... ok
+test_finite_bound (test_preservation_gate.OfflineCheckerTests.test_finite_bound) ... ok
+test_manifest_tamper (test_preservation_gate.OfflineCheckerTests.test_manifest_tamper) ... ok
+test_negative_recovery_retained (test_preservation_gate.OfflineCheckerTests.test_negative_recovery_retained) ... ok
+test_nonfinite_rejected (test_preservation_gate.OfflineCheckerTests.test_nonfinite_rejected) ... ok
+test_patch_repair_preserve_pass (test_preservation_gate.OfflineCheckerTests.test_patch_repair_preserve_pass) ... ok
+test_schema_bad_gain (test_preservation_gate.OfflineCheckerTests.test_schema_bad_gain) ... ok
+test_schema_extra_key (test_preservation_gate.OfflineCheckerTests.test_schema_extra_key) ... ok
+test_snapshot (test_preservation_gate.OfflineCheckerTests.test_snapshot) ... ok
+test_target_improves_preserve_fails (test_preservation_gate.OfflineCheckerTests.test_target_improves_preserve_fails) ... ok
+test_valid_abstention (test_preservation_gate.OfflineCheckerTests.test_valid_abstention) ... ok
+test_valid_gain (test_preservation_gate.OfflineCheckerTests.test_valid_gain) ... ok
+test_zero_gap_not_scored (test_preservation_gate.OfflineCheckerTests.test_zero_gap_not_scored) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.001s
+
+OK
