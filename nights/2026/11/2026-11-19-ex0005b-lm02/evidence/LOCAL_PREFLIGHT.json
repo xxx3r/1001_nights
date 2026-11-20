@@ -1,0 +1,29 @@
+{
+  "experiment": "EX0005B-LM-02",
+  "prepared_date": "2026-11-19",
+  "status": "PREPARED_NO_REAL_MODEL_RUN",
+  "base_main_sha": "bd59bbf0ffa844b13bfd6763724e9bfbf9651767",
+  "code_sha256": "51561aad985c8a1b2cfd65f08ca58ae77bac47bebaf609f3213b4c962b57fa33",
+  "test_sha256": "41fb648ab7f481ae319bbbeb9165a03c3f54b4cc440ecdd6f98918de0fafc1ac",
+  "notebook_sha256": "1d2b7f217588254ee82231a4b0cbd2e5f1b8bbc93f635c19e2051d2bf65d5f55",
+  "checks": {
+    "offline_unittest": {
+      "passed": 20,
+      "failed": 0,
+      "errors": 0
+    },
+    "clean_embedded_source_materialization": "PASS",
+    "clean_notebook_embedded_unittest": "20/20 PASS",
+    "published_repo_git_blob_sha_matches_local": [
+      "README.md",
+      "NIGHT_CARD_PREPARED.md",
+      "preservation_gate_lm02.py",
+      "test_preservation_gate_lm02.py",
+      "EX0005B_LM02_Colab.ipynb"
+    ]
+  },
+  "G0": "NOT RUN",
+  "Luna": "NOT RUN",
+  "heldout": "NOT RUN",
+  "limitation": "mocked interface and independent checker only; no Qwen/GPU qualification in this preparation environment."
+}
