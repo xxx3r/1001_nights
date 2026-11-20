@@ -76,6 +76,32 @@ def validate_commit(c):
         validate_gain(c['gain'])
     return c
 
+def assess_evidence(choice, probes):
+    """Operational G2: the chosen gain must beat a probed baseline on DEV,
+    without worsening probed DEV preservation beyond a precommitted 2% margin.
+    This does not prove uniquely identified mechanism or unseen-set safety.
+    """
+    if choice is None:
+        return 'ABSTAIN'
+    chosen = None
+    base = None
+    for q in probes:
+        if q.get('tool') != 'probe_gain':
+            continue
+        record = q.get('observed', {})
+        if abs(q['args']['gain'] - 1.0) < 1e-6:
+            base = record
+        if abs(q['args']['gain'] - choice) < 1e-6:
+            chosen = record
+    if chosen is None or base is None:
+        return 'FAIL'
+    if not all(math.isfinite(q.get(k, math.nan)) for q in (base,chosen) for k in ('target_dev_loss','preserve_dev_loss')):
+        return 'FAIL'
+    improved = chosen['target_dev_loss'] <= base['target_dev_loss'] - 0.01
+    retained = chosen['preserve_dev_loss'] <= base['preserve_dev_loss'] * 1.02
+    return 'PASS' if (improved and retained) else 'FAIL'
+
+
 def recovery_fraction(corrupt, patch, healthy):
     for x in (corrupt, patch, healthy):
         if not math.isfinite(x):
@@ -356,10 +382,8 @@ def live():
             inp=[{'type':'function_call_output','call_id':c.call_id,'output':canonical(observation)}]
         if commitment is None:raise RuntimeError('no valid committed surgery')
         result['G1']='PASS'
-        used=[x for x in probes if x['tool']=='probe_gain']
         choice=commitment['gain']
-        supported=choice is None or any(abs(x['args']['gain']-choice)<1e-6 for x in used)
-        result['G2']='PASS' if supported else 'FAIL'
+        result['G2']=assess_evidence(choice, probes)
         result['commitment']=commitment
         result['diagnostics_used']=len(probes)
         if choice is None:
