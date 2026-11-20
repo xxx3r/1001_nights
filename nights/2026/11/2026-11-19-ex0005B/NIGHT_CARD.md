@@ -1,0 +1,23 @@
+# NIGHT CARD · 2026-11-19 · EX0005B
+
+**Window:** Thursday, 19 November 2026, America/Denver. The exact overall start/stop and total minutes were **not independently recorded**; do not invent a duration.  
+**Assistance:** **D (AI-drafted design/code, human-directed question, approvals, GPU execution and interpretation)**. Unaided human mathematical predictions / coding competence not evaluated.  
+**Hard-stop disposition:** **CLOSED · LM-01 INTERRUPTED; LM-02 PASS under frozen G0–G5.**
+
+**1. Question.** Can the GPT-6 Luna surgeon, equipped with a bounded scalpel and phased operating room, gather sufficient development evidence to intervene in a *real* Qwen3-0.6B language model, improve a target and preserve unrelated measured behavior under independent evaluation?
+
+**2. Hypotheses and rival.** H1: a scaffolded investigator commits an evidence-supported reversible gain and meets frozen held-out target/preservation gates. H2: success is caused by simple optimization, answer leakage, overfitting, instrument failures or an unsafe tradeoff. The optimizer tie and lack of general-preservation testing remain live rivals.
+
+**3. Human reasoning first.** The human approved the scientific question and explicitly redesigned the scaffold from a one-pool six-call limit into input/output/repair phases. The choice of metrics, implementation, preregistration wording, benchmarks and report were AI-assisted; **do not credit an unaided human derivation**. Major confounders: known edit site, small examples, injected one-column lesion, numeric grid can find the same gain, forced final commitment.
+
+**4. Method.** Real patient: `Qwen/Qwen3-0.6B`, revision `c1899de289a04d12100db370d81485cdf75e47ca`; L4 `cuda:0`. Fresh LM-02 patient: midpoint layer 14, column 194 (LM-01 column 4 excluded), corruption alpha 0.25; sealed healthy original column held by independent evaluator. Investigator: `gpt-6-luna`. Three phases at most **6 + 6 + 6** diagnostics and a distinct final-only commitment; actual **6 + 5 + 6**. Development: 12 target/12 preservation cases; held-out: 18 target/18 preservation cases. Primary metric: mean completion loss; preservation: relative completion-loss change and first-token retention. Freeze SHA-256 `54ef9670a89babd0d29614a1e96afd76a907019bdd17b7eb1626b66d5ea22996`. Frozen G3 >=50% held-out gap recovery; G4 <=2% relative preservation loss increase and >=90% retention; G5 >=0.01 loss advantage over simple controls.
+
+**5. What ran / failures.** LM-01: G0 v1 **FAIL** (approximate inverse versus exact BF16-restoration error), corrected G0 v2 **PASS**, then six diagnostics and seventh response seeking unavailable probe: **INTERRUPTED**, no edit. LM-02: G0–G5 all **PASS**, **19 completed API responses**, 17 accepted diagnostics, output phase ended voluntarily after five, repair phase exhausted six, valid **forced_final** commitment gain 5, medium confidence. No live interruption in LM-02. The raw LM-02 ZIP was uploaded by the user, inspected offline and archived unchanged. LM-01 raw receipts were not uploaded for this closure; the user-transcribed audit is distinguished from raw machine artifacts.
+
+**6. Evidence / independent check.** LM-02 held-out target healthy=0.388420, corrupt=0.627445, gain-5=0.333133, gap recovery **123.13%**. Held-out preservation healthy=6.208085, patched=6.190628, **−0.281%**, retention **17/18**. Simple control best gain 1.5 target=0.587513; 13-point development grid **ties gain 5**. The user's ZIP SHA-256 `986b246438d6dbf53f146e75b89799499e3ae54691f9737c1c42c0eed95a6915`; hashes/journal/metrics independently checked **offline**, not independently rerun on GPU.
+
+**7. Verdict and narrow claim.** **LM-02 PASS** as a single-case, scaffold-assisted, bounded real-LLM intervention on a deliberately damaged patient. LM-01 remains INTERRUPTED. A Luna-level investigator sufficed for *this* case; no claim of a general skill threshold, arbitrary WSP, behavioral math-accuracy improvement, model safety or superiority to numerical search.
+
+**8. Learned / unknown.** Operating-room phase transitions matter. Exact restoration in reduced precision differs from inverse-gain multiplication. Functional benefit differs from original-weight reconstruction. The largest unresolved scientific question is whether Luna can **improve independently scored accuracy of a healthy model** beyond equal-budget controls without unacceptable preservation loss.
+
+**Stop.** Historical results are closed and immutable. Sunday EX0005C is a new prospective proposal, not a replay or retuning of this patient. Missing duration is disclosed, not invented.
