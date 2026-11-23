@@ -1,3 +1,7 @@
+> **Archival reconciliation, 22 November 2026:** the document below originally described an **instrument-prepared** state and is retained as a preparation snapshot. **Later LM-02 outcome:** the human-run L4 trial completed, with frozen **G0–G5 PASS**; the selected gain 5.0 tied the 13-point development-selected numerical search. See the [receipt audit](evidence/LM02_RECEIPT_AUDIT_2026-11-19.md) and [canonical EX0005B report](../2026-11-19-ex0005B/EX0005B_FINAL_RESEARCH_REPORT.md). PR #2 was merged by explicit human request. This archival banner does not rescore the trial or revise its protocol.
+
+---
+
 # EX0005B-LM-02 | The Phased Laboratory
 
 **One Thousand & One Nights of Alignment | November 19, 2026 | Prospective independent follow-up**

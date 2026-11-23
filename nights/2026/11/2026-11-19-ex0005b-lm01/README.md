@@ -1,3 +1,7 @@
+> **Archival reconciliation, 22 November 2026:** this file's original preflight/preparation state is retained below for historical traceability. **Later LM-01 outcome:** corrected G0 was qualified; Luna consumed the available six diagnostic calls and then attempted a seventh, resulting in **INTERRUPTED** before a valid surgery commitment or held-out evaluation. Do not read early "NOT RUN" language in this prepared snapshot as the final LM-01 outcome. See [canonical EX0005B report](../2026-11-19-ex0005B/EX0005B_FINAL_RESEARCH_REPORT.md). PR #1 was merged by explicit human request. No original experimental thresholds or source were revised.
+
+---
+
 > **G0 v2 correction, November 19:** The first L4 Colab G0 preflight failed under the original inverse-gain oracle. `alpha=-1.5` gave corrupted target loss 0.2076632865 and inverse-restored loss 0.1484397352, versus approximately 0.1515267181 for the stable reference reading. This is a reduced-precision restoration ambiguity. The first G0=FAIL remains unchanged. New source evaluates the oracle through exact untouched reference weights and reports the inverse-gain loss separately, without changing alphas or qualification thresholds. Outputs use `ex0005b_lm01_v2_receipts/`. **No investigator call or held-out evaluation has been executed by this correction.**
 
 # EX0005B-LM-01 | The Preservation Gate

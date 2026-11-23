@@ -1,0 +1,30 @@
+{
+  "experiment": "EX0005C",
+  "local_date": "2026-11-22",
+  "phase": "G0_DEVELOPMENT",
+  "status": "G0_FAIL_STOP",
+  "source_archive": "EX0005C_v03_PRE_FLIGHT_receipts.zip",
+  "source_sha256": "6d07111bcaf81af2a123f12ea12887b3d222e162347b111d7ef2d92b0a80ce01",
+  "total": 24,
+  "unique_ids": 24,
+  "scorer_correct": 23,
+  "scorer_completed": 24,
+  "status_valid_complete": 24,
+  "median_output_tokens": 525,
+  "max_output_tokens": 2394,
+  "math_cap": 3072,
+  "frozen_g0_rule": {
+    "min_correct": 2,
+    "max_correct": 20,
+    "min_completed": 4
+  },
+  "single_incorrect_id": "gsm8k_train:4635",
+  "single_incorrect_numeric_answer": "51",
+  "manually_computed_correct_numeric_answer": "21",
+  "gpu_independent_reexecution": false,
+  "luna_intervention_run": false,
+  "holdouts_opened": false,
+  "full_key_regraded": false,
+  "elapsed_seconds_user_reported": 674,
+  "interpretation": "Baseline exceeds prospectively set G0 ceiling; H1/H2 not tested."
+}
