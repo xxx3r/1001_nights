@@ -1,0 +1,77 @@
+{
+  "report": "EX0005C family terminal summary",
+  "date": "2026-11-22",
+  "timezone": "America/Denver",
+  "verdict": "INCONCLUSIVE",
+  "reproducibility": "offline receipts audited; not GPU replicated",
+  "original_ex0005c": {
+    "status": "G0_FAIL_STOP",
+    "correct": 23,
+    "complete": 24,
+    "n": 24,
+    "luna_surgery_run": false,
+    "source": "G0_RECEIPT_AUDIT.md"
+  },
+  "ex0005cc": {
+    "pilot": {
+      "status": "NO_QUALIFIED_DISTRIBUTION",
+      "correct": 13,
+      "complete": 22,
+      "n": 32,
+      "zip_sha256": "a06b1b87dab764e7e821c83a39b3908003c56b4a416631d8f1ff4f76ab4c0537"
+    },
+    "exploratory_A": {
+      "correct": 8,
+      "complete": 15,
+      "n": 24,
+      "truncated_or_unterminated": 6,
+      "invalid_number": 3,
+      "zip_sha256": "05cba3e17aedf49909cdcc50c4efd101462832139898fcb1b4ec23c47b42bf96"
+    }
+  },
+  "ex0005cd": {
+    "status": "ABSTAINED_PROXY_ONLY",
+    "fullprobe_luna_api_responses": 12,
+    "fullprobe_repair_probes": 6,
+    "fullprobe_zip_sha256": "9cad8c9588c97cf8e616b20a9e8dcef487b37c4b60c76802459dd3ab7381f028",
+    "numeric_comparator_run": false
+  },
+  "ex0005ce": {
+    "wsp01": {
+      "status": "INTERRUPTED_USER_REPORTED",
+      "forward_passes": 0
+    },
+    "wsp02": {
+      "status": "ABSTAIN",
+      "luna_api_responses": 16,
+      "forward_passes": 4,
+      "generated_samples": 20,
+      "paired_tests": 1,
+      "paired_n": 4,
+      "original_correct": 0,
+      "edited_correct": 0,
+      "original_complete": 0,
+      "edited_complete": 0,
+      "pair_texts_differ": 4,
+      "original_truncated": 3,
+      "edited_truncated": 3,
+      "original_invalid_number": 1,
+      "edited_invalid_number": 1,
+      "python_tool_errors": 3,
+      "edit_tensor": "model.layers.12.mlp.down_proj.weight",
+      "edit_shape": [
+        1024,
+        3072
+      ],
+      "changed_float32_elements": 3144367,
+      "total_elements": 3145728,
+      "relative_norm": 0.0014919,
+      "controller_sha256": "b08f5cd36ea165fdc30f04e5a0f73cc41c91f9271953bada98a271f85015f903",
+      "zip_sha256": "30a165e80504beb1292743876329c929975cf67d473e6d89de694fc8c6bba5bc",
+      "final_holdout_run": false,
+      "optimizer_comparison_run": false,
+      "preservation_scored": false
+    }
+  },
+  "note": "No private dataset records or trace text published. Later exploratory results do not revise original frozen outcomes."
+}

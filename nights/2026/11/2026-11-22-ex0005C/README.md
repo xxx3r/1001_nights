@@ -47,3 +47,11 @@ The two November 19 implementation PRs were independently archived and are now m
 ## AET empirical follow-up after this archive snapshot
 
 The independently labelled **EX0005Cc** pilot subsequently ran on the healthy model: **13/32 correct**, **22/32 valid completed**; original frozen v1 mixture-selection decision **NO_QUALIFIED_DISTRIBUTION**. The human operator then explicitly overrode the arbitrary 75%-completion cutoff for a **new, post-pilot exploratory continuation**, selecting original candidate A and sealing 24 reserved item IDs. This is not an amendment to the closed EX0005C G0=FAIL and not an assertion of held-out success. See [pilot audit](ex0005Cc/AET_PILOT_RECEIPT_AUDIT_2026-11-22.md), [dated amendment](ex0005Cc/EXPLORATORY_AMENDMENT_AFTER_PILOT.md), and [optional follow-up notebook](ex0005Cc/EX0005Cc_EXPLORATORY_VALIDATION_A_Colab.ipynb). Raw Apple outputs remain in a private user-uploaded receipt ZIP, not publicly mirrored.
+
+## Terminal closeout of 22 November 2026
+
+**Final night verdict: CLOSED / INCONCLUSIVE** on Luna's ability to produce a genuine mathematical improvement on healthy Qwen3-0.6B. This does **not** revise the original EX0005C **G0 FAIL**, the EX0005Cc v1 **NO_QUALIFIED_DISTRIBUTION**, or the post-pilot exploratory designation.
+
+The later AET validation actually ran (**8/24 correct, 15/24 complete**). EX0005Cd's restrictive scalar controller ended in **proxy-only ABSTAINED**. EX0005Ce WSP-01 was interrupted; WSP-02 finally gave Luna real diagnostic and editing capabilities and produced **one paired behavioral test**: **0/4 versus 0/4 correct**, followed by **ABSTAIN**. No edited model earned a final heldout evaluation or numerical search comparison.
+
+Read the [terminal night report](NIGHT_CLOSEOUT_2026-11-22.md), [terminal card](NIGHT_CARD_TERMINAL_2026-11-22.md), [late-session receipt audit](evidence/LATE_SESSION_RECEIPT_AUDIT_2026-11-22.md), and [machine-readable aggregates](evidence/LATE_SESSION_AGGREGATES_2026-11-22.json). Raw Apple data and Luna reasoning traces remain private. **No continuation debt.**
