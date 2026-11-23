@@ -1,0 +1,8 @@
+{
+  "G0": "NOT RUN",
+  "attempted_at": "2026-11-19T17:21:59.190558-07:00",
+  "error_type": "RuntimeError",
+  "experiment": "EX0005B-LM-01",
+  "reason": "No CUDA GPU in this runtime; real-model qualification NOT RUN",
+  "stage": "G0_QUALIFICATION"
+}
