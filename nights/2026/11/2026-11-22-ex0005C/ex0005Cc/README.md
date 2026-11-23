@@ -13,3 +13,8 @@ If the chosen distribution is close to 55% on pilot, that is provisional. A sepa
 The dataset source `apple/GSM-Symbolic` is CC BY-NC-ND 4.0. Keep downloaded question/answer content and model traces private until its usage and redistribution conditions are reviewed.
 
 The original parser snapshot SHA-256 is `ce0fe0b4633e9c3175889b763fe91fa25e231f5e0889d061e24ee28bd23649ed`.
+## Post-pilot update: exploratory candidate A
+
+The real 32-item pilot finished **13/32 correct, 22/32 valid completions**, and the frozen v1 decision returned **NO_QUALIFIED_DISTRIBUTION** because its original 75% mixture-completion rule was not met. The human operator subsequently overrode that arbitrary design preference for a **new exploratory continuation**, not a reinterpretation of the original v1 verdict.
+
+See [pilot receipt audit](AET_PILOT_RECEIPT_AUDIT_2026-11-22.md), [exploratory amendment](EXPLORATORY_AMENDMENT_AFTER_PILOT.md), [sealed selection A IDs](EXPLORATORY_SELECTION_A.json), and the [one-shot optional exploratory validation notebook](EX0005Cc_EXPLORATORY_VALIDATION_A_Colab.ipynb). Candidate A (4 main/8 P1/8 P2/4 synthetic) is from the **original** candidate grid and has projected accuracy 9.5/24 and projected completion 16/24; neither is a held-out result. Original EX0005C remains G0 FAIL, untouched.

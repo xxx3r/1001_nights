@@ -43,3 +43,7 @@ The two November 19 implementation PRs were independently archived and are now m
 - [EX0005B final report](../2026-11-19-ex0005B/EX0005B_FINAL_RESEARCH_REPORT.md): controlling post-run interpretation, distinct from as-prepared protocol snapshots.
 
 **Scope:** Only an archive of a healthy-model baseline failure and a separate prospective calibration. No new skill, generalized self-improvement, WSP theorem or solver-over-optimizer advantage was established. Original EX0005B and EX0005C observations remain unchanged.
+
+## AET empirical follow-up after this archive snapshot
+
+The independently labelled **EX0005Cc** pilot subsequently ran on the healthy model: **13/32 correct**, **22/32 valid completed**; original frozen v1 mixture-selection decision **NO_QUALIFIED_DISTRIBUTION**. The human operator then explicitly overrode the arbitrary 75%-completion cutoff for a **new, post-pilot exploratory continuation**, selecting original candidate A and sealing 24 reserved item IDs. This is not an amendment to the closed EX0005C G0=FAIL and not an assertion of held-out success. See [pilot audit](ex0005Cc/AET_PILOT_RECEIPT_AUDIT_2026-11-22.md), [dated amendment](ex0005Cc/EXPLORATORY_AMENDMENT_AFTER_PILOT.md), and [optional follow-up notebook](ex0005Cc/EX0005Cc_EXPLORATORY_VALIDATION_A_Colab.ipynb). Raw Apple outputs remain in a private user-uploaded receipt ZIP, not publicly mirrored.
